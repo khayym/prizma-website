@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "requestDemo": "Demo Talep Et",
+    "getStarted": "Başla"
+  },
+  "hero": {
+    "eyebrow": "PRIZMA",
+    "title": "İş akışlarını basitleştirin, ERP ve İK verimliliğini artırın",
+    "subtitle": "İş süreçlerinizi Prizma ile hızlı ve verimli yönetin. Sezgisel arayüz, bütçe odaklı teslimat ve inşaat sektörüne özel çözümler.",
+    "primaryCta": "Demo Talep Et",
+    "secondaryCta": "Nasıl çalışır"
+  },
+  "stats": {
+    "partners": "İş Ortağı",
+    "users": "Mutlu Kullanıcı",
+    "procurements": "Başarılı Satın Alma",
+    "workflows": "Verimli İş Akışı"
+  },
+  "valueProp": {
+    "eyebrow": "Neden Prizma",
+    "title": "Dijitalleşmenin gücünü keşfedin",
+    "subtitle": "Prizma ile dijital dönüşümün avantajları",
+    "items": {
+      "digitization": {
+        "title": "Süreç dijitalleşmesi",
+        "body": "Verimliliği artırın ve maliyetleri düşürün."
+      },
+      "design": {
+        "title": "Hızlı süreç tasarımı",
+        "body": "Sezgisel arayüz ile iş akışlarını dakikalar içinde kurun."
+      },
+      "integrated": {
+        "title": "Entegre çözüm",
+        "body": "İnşaat sektörü için tüm süreçler tek platformda."
+      },
+      "productivity": {
+        "title": "Verimlilik artışı",
+        "body": "İş akışlarını hızlandırın, kaynak kullanımını optimize edin."
+      },
+      "analytics": {
+        "title": "Canlı analitik",
+        "body": "Harcamaları ve proje ilerlemesini gerçek zamanlı izleyin."
+      },
+      "integration": {
+        "title": "Kolay entegrasyon",
+        "body": "Kullandığınız sistemlerle sorunsuz uyum."
+      },
+      "mobile": {
+        "title": "Mobil esneklik",
+        "body": "Süreçleri sahadan ya da uzaktan, her yerden yönetin."
+      },
+      "access": {
+        "title": "Gelişmiş erişim kontrolü",
+        "body": "Detaylı yetki yönetimi ile veri güvenliği."
+      },
+      "reporting": {
+        "title": "Özelleştirilmiş raporlama",
+        "body": "Stratejik kararları destekleyen, ihtiyacınıza özel raporlar."
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Özellikler",
+    "title": "Prizma — iş süreçleri, finans ve operasyon yönetimi",
+    "items": {
+      "budget": "Fiili maliyet vs bütçe takibi",
+      "projects": "Sınırsız proje ve şantiye",
+      "approvals": "Şeffaf onay akışları",
+      "routes": "Özel satın alma rotaları",
+      "control": "Etkin bütçe kontrolü",
+      "history": "Geçmiş satın alma fiyat analizi",
+      "export": "Tek tıkla Excel'e aktarma",
+      "monitoring": "Satın alma süreç takibi",
+      "integration": "Tam entegre süreç yönetimi",
+      "personnel": "Bütçe koduyla personel takibi",
+      "hr": "Şeffaf İK süreç yönetimi",
+      "ar": "Borç ve alacak kontrolü"
+    }
+  },
+  "mobile": {
+    "eyebrow": "Mobil uygulama",
+    "title": "Prizma iOS ve Android'de",
+    "body": "Prizma mobil uygulaması ile iş süreçlerini her zaman, her yerden yönetin. Kullanıcı dostu arayüz, güçlü özellikler, veri güvenliği ve hızlı erişim.",
+    "appStore": "App Store'dan indirin",
+    "googlePlay": "Google Play'den edinin",
+    "features": {
+      "access": "Kolay erişim",
+      "compat": "Tam uyumluluk",
+      "realtime": "Gerçek zamanlı güncellemeler",
+      "ux": "Kullanıcı dostu arayüz"
+    }
+  },
+  "modules": {
+    "eyebrow": "Hizmetler",
+    "title": "Prizma Modülleri",
+    "items": {
+      "accounting": {
+        "title": "Genel Muhasebe",
+        "body": "Gelir-gider, banka ve kasa hareketleri, gelen ve giden faturalar."
+      },
+      "process": {
+        "title": "Süreç",
+        "body": "Operasyonel verimlilik ve üç temel süreçte kaynak yönetimi."
+      },
+      "erp": {
+        "title": "ERP",
+        "body": "Envanter, depo ve malzeme hareketleri tek merkezden."
+      },
+      "reporting": {
+        "title": "Raporlama",
+        "body": "Stratejik kararlar için canlı finansal ve operasyonel analiz."
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Çalışma süreci",
+    "title": "Prizma nasıl çalışır?",
+    "cta": "Demo planla"
+  },
+  "demo": {
+    "eyebrow": "Ürünümüzü tanıyın",
+    "title": "Demo talebi",
+    "body": "Prizma, farklı sektörlere hizmet veren güçlü bir BPM/ERP platformudur. Süreçleri optimize edin, verimliliği artırın, maliyeti düşürün ve projeleri zamanında tamamlayın.",
+    "name": "Adınız",
+    "email": "İş e-postası",
+    "company": "Şirket",
+    "phone": "Telefon",
+    "message": "Lütfen formdaki bilgileri doldurun",
+    "submit": "Gönder",
+    "phoneLabel": "+7 495 532 12 10"
+  },
+  "faq": {
+    "eyebrow": "SSS",
+    "title": "Sıkça sorulan sorular",
+    "items": {
+      "inventory": {
+        "q": "Satın aldığımız malzemeler depoda mı? Diğer şantiyelerin depolarında var mı?",
+        "a": "Prizma'nın modüler yapısı sayesinde depo ve proje seviyesinde stok kontrolü hızlı ve doğrudur — her şantiye için stok durumunu anlık görebilirsiniz."
+      },
+      "open": {
+        "q": "Açık satın alma, ödeme ya da malzeme taleplerinin durumu ne? Ne kadar süredir bekliyorlar?",
+        "a": "Süreç modülü ile her talebin nerede olduğunu, kimin onayının beklendiğini ve süresini şeffaf şekilde görebilirsiniz. Yorum ve hatırlatıcı eklenebilir."
+      },
+      "suppliers": {
+        "q": "Hangi tedarikçilerden teklif aldık? Her biri ne fiyat verdi?",
+        "a": "Prizma her tedarikçi için detaylı bilgi tutar ve talep başına birden fazla alternatif teklif eklemenize olanak tanır — satın alma için tam şeffaflık."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prizma ile tanışın ve işinizde fark yaratın.",
+    "button": "Bizimle iletişime geçin"
+  },
+  "footer": {
+    "about": "Hakkımızda",
+    "aboutText": "Prizma, inşaat sektörü için tasarlanmış BPM, ERP, raporlama ve muhasebe platformudur. 21 yıllık deneyimle.",
+    "quickAccess": "Hızlı erişim",
+    "contact": "İletişim",
+    "phone": "+7 495 532 12 10",
+    "email": "info@prizmaflow.com",
+    "address": "Igarsky proezd 11, Moskova, Rusya",
+    "rights": "Tüm hakları saklıdır."
+  }
+}

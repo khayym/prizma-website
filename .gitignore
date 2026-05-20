@@ -1,0 +1,15 @@
+node_modules/
+.cache/
+public/
+.env*
+!.env.example
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Local-only reference assets (design mockups, zips, extracted kits)
+design/
+
+# Claude Code local settings
+.claude/

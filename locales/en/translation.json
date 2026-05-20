@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "requestDemo": "Request Demo",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "eyebrow": "PRIZMA",
+    "title": "Simplify workflows, boost efficiency in ERP and HR",
+    "subtitle": "Manage your business processes quickly and efficiently with Prizma. Intuitive interface, on-budget delivery, and solutions purpose-built for construction.",
+    "primaryCta": "Request Demo",
+    "secondaryCta": "See how it works"
+  },
+  "stats": {
+    "partners": "Partner companies",
+    "users": "Satisfied users",
+    "procurements": "Successful procurements",
+    "workflows": "Efficient workflows"
+  },
+  "valueProp": {
+    "eyebrow": "Why Prizma",
+    "title": "Discover the power of digitization",
+    "subtitle": "The benefits of digital transformation with Prizma",
+    "items": {
+      "digitization": {
+        "title": "Process digitization",
+        "body": "Increase efficiency and reduce costs across the business."
+      },
+      "design": {
+        "title": "Fast process design",
+        "body": "An intuitive interface lets you build workflows in hours."
+      },
+      "integrated": {
+        "title": "Integrated solution",
+        "body": "All construction business processes on one platform."
+      },
+      "productivity": {
+        "title": "Productivity boost",
+        "body": "Speed up workflows and optimize how resources are used."
+      },
+      "analytics": {
+        "title": "Real-time analytics",
+        "body": "Track spend and project progress with live data and reports."
+      },
+      "integration": {
+        "title": "Easy integration",
+        "body": "Smooth compatibility with the systems you already run."
+      },
+      "mobile": {
+        "title": "Mobile flexibility",
+        "body": "Run processes from anywhere — in the field or remote."
+      },
+      "access": {
+        "title": "Advanced access control",
+        "body": "Granular permissions protect data from unwanted access."
+      },
+      "reporting": {
+        "title": "Custom reporting",
+        "body": "Tailored reports that support strategic decisions."
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Capabilities",
+    "title": "Prizma — manage business processes, finance and operations",
+    "items": {
+      "budget": "Actual cost vs. budget tracking",
+      "projects": "Unlimited projects and sites",
+      "approvals": "Transparent approval workflows",
+      "routes": "Custom procurement routes",
+      "control": "Effective budget control",
+      "history": "Historical procurement price analysis",
+      "export": "One-click Excel export",
+      "monitoring": "Procurement process monitoring",
+      "integration": "Fully integrated process management",
+      "personnel": "Personnel tracked by budget codes",
+      "hr": "Transparent HR process management",
+      "ar": "Accounts payable and receivable control"
+    }
+  },
+  "mobile": {
+    "eyebrow": "Mobile app",
+    "title": "Prizma on iOS and Android",
+    "body": "The Prizma mobile app lets you manage business processes anytime, anywhere. A friendly interface, powerful features, data security, and fast access.",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
+    "features": {
+      "access": "Easy access",
+      "compat": "Full compatibility",
+      "realtime": "Real-time updates",
+      "ux": "Friendly interface"
+    }
+  },
+  "modules": {
+    "eyebrow": "Services",
+    "title": "Prizma modules",
+    "items": {
+      "accounting": {
+        "title": "General Accounting",
+        "body": "Income and expense, bank and cash movements, incoming and outgoing invoices."
+      },
+      "process": {
+        "title": "Process",
+        "body": "Operational efficiency and resource management across three core processes."
+      },
+      "erp": {
+        "title": "ERP",
+        "body": "Inventory, warehouse, and material movement from a single control center."
+      },
+      "reporting": {
+        "title": "Reporting",
+        "body": "Live financial and operational analytics that power better decisions."
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Process",
+    "title": "How Prizma works",
+    "cta": "Book a demo"
+  },
+  "demo": {
+    "eyebrow": "See the product",
+    "title": "Request a demo",
+    "body": "Prizma is a powerful BPM/ERP platform serving multiple industries. Optimize processes, boost efficiency, reduce cost, and deliver projects on time.",
+    "name": "Your name",
+    "email": "Work email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "How can we help?",
+    "submit": "Send",
+    "phoneLabel": "+7 495 532 12 10"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": {
+      "inventory": {
+        "q": "Are the materials we ordered in stock? Are they available at other sites' warehouses?",
+        "a": "Prizma's modular structure makes warehouse and project-level stock control fast and accurate — you can check availability across every site."
+      },
+      "open": {
+        "q": "What's the status of open procurement, payment, or material requests? How long have they been pending?",
+        "a": "The Process module gives you full, transparent visibility into where each request sits, who hasn't approved yet, and how long it's been pending. Add comments and reminders inline."
+      },
+      "suppliers": {
+        "q": "Which suppliers did we get quotes from? What price did each one offer?",
+        "a": "Prizma stores detailed supplier info and lets you attach multiple alternative quotes per request — full transparency for procurement teams."
+      }
+    }
+  },
+  "cta": {
+    "title": "Meet Prizma and make a difference in your business.",
+    "button": "Contact us"
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "Prizma is a powerful platform for BPM, ERP, reporting, and accounting — purpose-built for construction and backed by 21 years of experience.",
+    "quickAccess": "Quick access",
+    "contact": "Contact",
+    "phone": "+7 495 532 12 10",
+    "email": "info@prizmaflow.com",
+    "address": "Igarsky proezd 11, Moscow, Russia",
+    "rights": "All rights reserved."
+  }
+}
