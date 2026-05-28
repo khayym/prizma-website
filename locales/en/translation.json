@@ -67,6 +67,9 @@
   "features": {
     "eyebrow": "Capabilities",
     "title": "Prizma — manage business processes, finance and operations",
+    "hint": "Hover or tap any capability to see it in motion.",
+    "play": "Play preview",
+    "pause": "Pause preview",
     "items": {
       "budget": "Actual cost vs. budget tracking",
       "projects": "Unlimited projects and sites",
@@ -116,6 +119,14 @@
         "body": "Live financial and operational analytics that power better decisions."
       }
     }
+  },
+  "productDemo": {
+    "eyebrow": "Product tour",
+    "title": "See Prizma in action",
+    "body": "A 90-second walkthrough of how teams plan budgets, route approvals, and track spend across every site.",
+    "overlayTitle": "Prizma platform demo",
+    "caption": "Watch demo · 1:30",
+    "play": "Play product demo"
   },
   "howItWorks": {
     "eyebrow": "Process",

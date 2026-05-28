@@ -9,6 +9,7 @@ import ValueProp from "../sections/ValueProp";
 import Features from "../sections/Features";
 import MobileApp from "../sections/MobileApp";
 import Modules from "../sections/Modules";
+import ProductDemo from "../sections/ProductDemo";
 import HowItWorks from "../sections/HowItWorks";
 import Demo from "../sections/Demo";
 import Faq from "../sections/Faq";
@@ -22,6 +23,7 @@ const IndexPage: React.FC = () => (
     <ValueProp />
     <Features />
     <Modules />
+    <ProductDemo />
     <MobileApp />
     <HowItWorks />
     <Demo />

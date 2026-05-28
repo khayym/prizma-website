@@ -67,6 +67,9 @@
   "features": {
     "eyebrow": "Özellikler",
     "title": "Prizma — iş süreçleri, finans ve operasyon yönetimi",
+    "hint": "Hareketi görmek için bir özelliğin üzerine gelin veya dokunun.",
+    "play": "Önizlemeyi başlat",
+    "pause": "Önizlemeyi durdur",
     "items": {
       "budget": "Fiili maliyet vs bütçe takibi",
       "projects": "Sınırsız proje ve şantiye",
@@ -116,6 +119,14 @@
         "body": "Stratejik kararlar için canlı finansal ve operasyonel analiz."
       }
     }
+  },
+  "productDemo": {
+    "eyebrow": "Ürün turu",
+    "title": "Prizma'yı iş başında görün",
+    "body": "Ekiplerin bütçeleri nasıl planladığını, onayları nasıl yönlendirdiğini ve her sahada harcamaları nasıl izlediğini gösteren 90 saniyelik tur.",
+    "overlayTitle": "Prizma platform demosu",
+    "caption": "Demoyu izleyin · 1:30",
+    "play": "Demoyu başlat"
   },
   "howItWorks": {
     "eyebrow": "Çalışma süreci",
