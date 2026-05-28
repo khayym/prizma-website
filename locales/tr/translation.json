@@ -167,6 +167,137 @@
     "title": "Prizma ile tanışın ve işinizde fark yaratın.",
     "button": "Bizimle iletişime geçin"
   },
+  "about": {
+    "eyebrow": "Hakkımızda",
+    "title": "21 yıldır inşaat için ERP geliştiriyoruz",
+    "subtitle": "Prizma, inşaat sektörü için özel olarak tasarlanmış ve yirmi yılı aşkın gerçek projeyle olgunlaşmış güçlü bir BPM, ERP, raporlama ve muhasebe platformudur.",
+    "yearsLabel": "inşaat tecrübesi",
+    "yearsBody": "İlk satın alma talebinden son hakedişe kadar Prizma, inşaat ekiplerinin gerçekte nasıl çalıştığına göre şekillenir.",
+    "storyEyebrow": "Hikâyemiz",
+    "storyTitle": "İnşaatı anlayan yazılım",
+    "storyBody1": "Prizma toplantı odasında değil, şantiyelerde doğdu. Müteahhitlerle 21 yıl birlikte çalıştıktan sonra bütçeleri, satın almayı, depoları, finansı ve İK'yı birleştiren tek bir platform kurduk.",
+    "storyBody2": "Bugün 5.000'den fazla kullanıcı günlük operasyonlarını Prizma üzerinde yürütüyor — projeleri planlıyor, onayları yönlendiriyor ve her şantiyede harcamaları gerçek zamanlı izliyor.",
+    "mission": {
+      "label": "Misyon",
+      "title": "İnşaat yönetimini zahmetsiz kılmak",
+      "body": "İnşaat şirketlerine verimliliği artıran, iş süreçlerini birleştiren ve projeleri bütçesinde ve zamanında teslim eden yenilikçi, kullanımı kolay bir ERP sunmak."
+    },
+    "vision": {
+      "label": "Vizyon",
+      "title": "İnşaatın ERP standardı",
+      "body": "Teknolojik yeniliği veri analitiğiyle birleştirerek sürdürülebilir ve rekabetçi işletmeler kurmak için dünyada inşaat sektörünün önde gelen ERP'si olmak."
+    },
+    "offerEyebrow": "Ne sunuyoruz",
+    "offerTitle": "Bir inşaat işletmesinin ihtiyaç duyduğu her şey"
+  },
+  "services": {
+    "eyebrow": "Hizmetler",
+    "title": "İnşaatta Prizma: tüm birimler yüksek verim için birleşti",
+    "subtitle": "Şirket ve proje yönetimini birleştiren tek ERP — maliyetleri kontrol edin, işleri daha hızlı bitirin ve verimliliği artırın.",
+    "items": {
+      "planning": {
+        "title": "Proje planlama ve ilerleme takibi",
+        "body": "Planlanan ve fiili maliyetleri gerçek zamanlı karşılaştırın, bütçe sapmalarını ve gecikmeleri erken yakalayın, veriye dayalı kararlar alın."
+      },
+      "inventory": {
+        "title": "Stok ve depo yönetimi",
+        "body": "Satın almayı ve stoğu talepten teslimata kadar merkezileştirin, malzeme rezerve edin ve gereksiz alımlardan kaçının."
+      },
+      "contracts": {
+        "title": "Sözleşmeler ve hakediş",
+        "body": "Müteahhit sözleşmelerini ve tamamlanan iş hesaplarını, şantiye raporlarına dayalı ceza ve kesintiler dâhil otomatikleştirin."
+      },
+      "finance": {
+        "title": "Finansal süreçler ve muhasebe",
+        "body": "Banka entegrasyonuyla banka, kasa, kredi ve çekleri yönetin; güvenli, hızlı ödemeler ve net finansal raporlama elde edin."
+      },
+      "personnel": {
+        "title": "Personel yönetimi ve bordro",
+        "body": "Çalışan verilerini birleştirin, sahadan çalışma saatlerini toplayın, izinleri yönetin ve belge takibiyle aylık bordro oluşturun."
+      },
+      "mrp": {
+        "title": "Malzeme ihtiyaç planlaması",
+        "body": "Gerçek zamanlı stok takibiyle malzeme ihtiyacını önceden planlayın, eksik ve fazlalıkları önleyin."
+      },
+      "accounting": {
+        "title": "Kümülatif gelir-gider muhasebesi",
+        "body": "Gelişmiş raporlama, geliri ve gideri gerçek zamanlı; proje ve dönem bazında analiz ederek güvenilir bütçeleme sağlar."
+      },
+      "customers": {
+        "title": "Müşteri cari yönetimi",
+        "body": "Proje veya müşteri bazında gelir ve gideri takip edin, kârlılığı hassas biçimde değerlendirin."
+      },
+      "dashboards": {
+        "title": "Panolar ve veri görselleştirme",
+        "body": "Özelleştirilebilir panolar, finansal ve operasyonel metrikleri gerçek zamanlı grafiklerle gösterir."
+      }
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "İnşaat ekipleri için içgörüler",
+    "subtitle": "Bütçe, satın alma, finans ve İK'yı dijitalleştirmeye dair pratik rehberler — Prizma'yı geliştirenlerden.",
+    "featured": "Öne çıkan",
+    "readMore": "Yazıyı oku",
+    "newsletterTitle": "Bir adım önde olun",
+    "newsletterBody": "Yeni yazıları ve ürün güncellemelerini ayda bir e-postanıza alın. Spam yok.",
+    "newsletterPlaceholder": "İş e-postanız",
+    "newsletterCta": "Abone ol",
+    "newsletterThanks": "Abone olduğunuz için teşekkürler! Onaylamak için e-postanızı kontrol edin.",
+    "posts": {
+      "post1": {
+        "category": "Satın alma",
+        "date": "12 Mayıs 2026",
+        "title": "Aktif şantiyelerde satın alma süresini %40 kısaltmak",
+        "excerpt": "Şeffaf onay rotaları ve geçmiş fiyat analizi, ekiplerin fazla harcamadan daha hızlı satın almasına nasıl yardımcı olur."
+      },
+      "post2": {
+        "category": "Bütçe",
+        "date": "28 Nisan 2026",
+        "title": "Fiili maliyet vs bütçe: aşımları zarar vermeden yakalamak",
+        "excerpt": "Her projede harcamayı bütçeye karşı gerçek zamanlı izlemek için sahada test edilmiş bir yöntem."
+      },
+      "post3": {
+        "category": "Ürün",
+        "date": "9 Nisan 2026",
+        "title": "Prizma'da yenilikler: mobil onaylar ve canlı panolar",
+        "excerpt": "Son sürüme bir bakış — talepleri hareket hâlinde onaylayın ve proje sağlığını canlı izleyin."
+      },
+      "post4": {
+        "category": "İK",
+        "date": "22 Mart 2026",
+        "title": "Saha saatlerini ve bordroyu tablolar olmadan takip etmek",
+        "excerpt": "Sahadan çalışma saatlerini toplayın, izinleri yönetin ve aylık bordroyu tek bir kaynaktan çalıştırın."
+      },
+      "post5": {
+        "category": "Finans",
+        "date": "3 Mart 2026",
+        "title": "Banka, kasa ve müteahhitleri tek deftere taşımak",
+        "excerpt": "Marjlar dar, takvimler daha darken entegre finans neden dağınık araçlardan üstündür."
+      },
+      "post6": {
+        "category": "Operasyon",
+        "date": "14 Şubat 2026",
+        "title": "Şirketinizin tabloları aştığını gösteren beş işaret",
+        "excerpt": "Bu sorunlar tanıdık geliyorsa, operasyonlarınızı gerçek bir ERP'ye taşımanın zamanı gelmiş olabilir."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "Sorunuz mu var?",
+    "subtitle": "Projelerinizi anlatın, Prizma'nın iş akışınıza nasıl uyduğunu gösterelim. Genellikle bir iş günü içinde yanıt veriyoruz.",
+    "phoneLabel": "Bizi arayın",
+    "emailLabel": "E-posta gönderin",
+    "addressLabel": "Bizi ziyaret edin",
+    "hoursLabel": "Çalışma saatleri",
+    "hours": "Pzt–Cum, 9:00–18:00 (MSK)",
+    "mapTitle": "Prizma'nın Moskova ofis konumu",
+    "formTitle": "Bize mesaj gönderin",
+    "formNote": "Formu doldurun, ekibimiz en kısa sürede size dönecektir.",
+    "successTitle": "Teşekkürler!",
+    "successBody": "Bir iş günü içinde sizinle iletişime geçeceğiz."
+  },
   "footer": {
     "about": "Hakkımızda",
     "aboutText": "Prizma, inşaat sektörü için tasarlanmış BPM, ERP, raporlama ve muhasebe platformudur. 21 yıllık deneyimle.",
