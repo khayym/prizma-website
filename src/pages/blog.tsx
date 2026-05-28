@@ -4,15 +4,8 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
-
-const posts: { key: string; tone: string }[] = [
-  { key: "post1", tone: "from-brand-600 to-brand-900" },
-  { key: "post2", tone: "from-ink-700 to-ink-900" },
-  { key: "post3", tone: "from-brand-700 to-ink-900" },
-  { key: "post4", tone: "from-accent-600 to-brand-900" },
-  { key: "post5", tone: "from-brand-800 to-ink-950" },
-  { key: "post6", tone: "from-ink-600 to-brand-900" },
-];
+import Link from "../components/Link";
+import { blogPosts as posts } from "../data/blogPosts";
 
 const ArrowIcon: React.FC = () => (
   <svg
@@ -68,21 +61,22 @@ const BlogPage: React.FC = () => {
               <p className="mt-3 text-ink-600">
                 {t(`blog.posts.${featured.key}.excerpt`)}
               </p>
-              <button
-                type="button"
+              <Link
+                to={`/blog/${featured.key}`}
                 className="mt-6 inline-flex items-center gap-2 self-start text-sm font-semibold text-brand-700 transition hover:gap-3 hover:text-brand-800"
               >
                 {t("blog.readMore")}
                 <ArrowIcon />
-              </button>
+              </Link>
             </div>
           </article>
 
           {/* Article grid */}
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {rest.map((p) => (
-              <article
+              <Link
                 key={p.key}
+                to={`/blog/${p.key}`}
                 className="group flex flex-col overflow-hidden rounded-3xl border border-ink-100 bg-white transition hover:border-brand-200 hover:shadow-lg"
               >
                 <div
@@ -102,15 +96,12 @@ const BlogPage: React.FC = () => {
                   <p className="mt-2 flex-1 text-sm text-ink-600">
                     {t(`blog.posts.${p.key}.excerpt`)}
                   </p>
-                  <button
-                    type="button"
-                    className="mt-4 inline-flex items-center gap-2 self-start text-sm font-semibold text-brand-700 transition hover:gap-3"
-                  >
+                  <span className="mt-4 inline-flex items-center gap-2 self-start text-sm font-semibold text-brand-700 transition group-hover:gap-3">
                     {t("blog.readMore")}
                     <ArrowIcon />
-                  </button>
+                  </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

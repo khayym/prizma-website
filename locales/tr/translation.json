@@ -244,42 +244,136 @@
     "newsletterPlaceholder": "İş e-postanız",
     "newsletterCta": "Abone ol",
     "newsletterThanks": "Abone olduğunuz için teşekkürler! Onaylamak için e-postanızı kontrol edin.",
+    "backToBlog": "Bloga dön",
+    "relatedTitle": "İlgili yazılar",
+    "ctaInline": "Bunun Prizma'da nasıl çalıştığını görmek ister misiniz? Ekibimizle kısa bir demo planlayın.",
+    "ctaInlineButton": "Demo talep et",
     "posts": {
       "post1": {
         "category": "Satın alma",
         "date": "12 Mayıs 2026",
+        "readTime": "5 dk okuma",
+        "author": "Marina Volkova",
+        "role": "Satın Alma Lideri",
         "title": "Aktif şantiyelerde satın alma süresini %40 kısaltmak",
-        "excerpt": "Şeffaf onay rotaları ve geçmiş fiyat analizi, ekiplerin fazla harcamadan daha hızlı satın almasına nasıl yardımcı olur."
+        "excerpt": "Şeffaf onay rotaları ve geçmiş fiyat analizi, ekiplerin fazla harcamadan daha hızlı satın almasına nasıl yardımcı olur.",
+        "lead": "Yoğun bir şantiyede yavaş bir satın alma talebi sadece bir sıkıntı değildir — işi durdurur, ekipleri boş bekletir ve maliyeti sessizce şişirir. İnşaat ekipleri satın alma süresini, kadro eklemeden nasıl neredeyse yarıya indirdi, anlatıyoruz.",
+        "quote": "Onayları telefonla kovalamayı bıraktık. Rota bizim için yapıyor ve herkes bir talebin tam olarak nerede olduğunu görebiliyor.",
+        "sections": [
+          {
+            "heading": "Zaman gerçekte nereye gidiyor",
+            "body": "Gecikmelerin çoğu satın almanın kendisinde değil, beklemededir. Talepler gelen kutularında bekler, onaylayanlar belirsizdir ve kimin işi tuttuğu bilinmez. Talepten satın alma siparişine giden gerçek rotayı çıkardığınızda, neredeyse her zaman gün ekleyen ama değer katmayan iki üç adım ortaya çıkar."
+          },
+          {
+            "heading": "Rotalar ve fiyat geçmişi işin ağırını taşır",
+            "body": "Kural tabanlı onay rotalarıyla her talep otomatik olarak doğru kişiye gider ve takılırsa eskale olur. Buna geçmiş fiyat analizini ekleyin; satın almacılar tahminle değil gerçek rakamlarla pazarlık eder — daha hızlı kararlar, daha iyi fiyatlar ve her sipariş için tam denetim izi."
+          }
+        ]
       },
       "post2": {
         "category": "Bütçe",
         "date": "28 Nisan 2026",
+        "readTime": "6 dk okuma",
+        "author": "Daniel Roth",
+        "role": "Proje Finansmanı Direktörü",
         "title": "Fiili maliyet vs bütçe: aşımları zarar vermeden yakalamak",
-        "excerpt": "Her projede harcamayı bütçeye karşı gerçek zamanlı izlemek için sahada test edilmiş bir yöntem."
+        "excerpt": "Her projede harcamayı bütçeye karşı gerçek zamanlı izlemek için sahada test edilmiş bir yöntem.",
+        "lead": "Bütçe aşımları nadiren sürpriz olur — sinyaller, nihai rapora düşmeden haftalar önce oradadır. İşin püf noktası, hâlâ harekete geçebilecekken onları görmektir.",
+        "quote": "Bir aşım aylık rapora ulaştığında artık tarihtir. Onu olduğu gün görmemiz gerekiyordu.",
+        "sections": [
+          {
+            "heading": "Sonradan değil, gerçek zamanlı karşılaştırın",
+            "body": "Aylık mutabakat size neyin zaten yanlış gittiğini söyler. Taahhüt ve fiiliyi bütçeye karşı sürekli karşılaştırmak, bütçelemeyi bir erken uyarı sistemine dönüştürür — sapmalar ay sonunda değil, günler içinde belirir."
+          },
+          {
+            "heading": "Herkesin güvendiği tek rakam",
+            "body": "Satın alma, finans ve şantiye şefleri aynı canlı rakamı okuduğunda, kimin tablosunun doğru olduğu tartışmaları biter. Veri ortak, güncel ve tek tek siparişlere kadar izlenebilir olduğundan kararlar hızlanır."
+          }
+        ]
       },
       "post3": {
         "category": "Ürün",
         "date": "9 Nisan 2026",
+        "readTime": "4 dk okuma",
+        "author": "Prizma Ürün Ekibi",
+        "role": "Ürün",
         "title": "Prizma'da yenilikler: mobil onaylar ve canlı panolar",
-        "excerpt": "Son sürüme bir bakış — talepleri hareket hâlinde onaylayın ve proje sağlığını canlı izleyin."
+        "excerpt": "Son sürüme bir bakış — talepleri hareket hâlinde onaylayın ve proje sağlığını canlı izleyin.",
+        "lead": "Bu sürüm tamamen hızla ilgili — kararları ofisin dışına çıkarmak ve yöneticilere, nerede olurlarsa olsunlar her projenin canlı görünümünü sunmak.",
+        "quote": "Eskiden birinin masasına dönmesini bekleyen onaylar artık bir kamyonun şoför mahallinden yapılıyor.",
+        "sections": [
+          {
+            "heading": "Her yerden onaylayın",
+            "body": "Mobil onaylar, yöneticilerin satın alma, ödeme ve İK taleplerini doğrudan telefonlarından inceleyip onaylamasını sağlar. Her talep tüm bağlamını taşır — tutarlar, ekler ve geçmiş — böylece kararlar aceleye gelmez, bilgiye dayanır."
+          },
+          {
+            "heading": "Kendini güncelleyen panolar",
+            "body": "Yeni canlı panolar veriler değiştikçe yenilenir; bütçe sağlığını, açık talepleri ve proje ilerlemesini tek bakışta gösterir. Durumu anlamak için artık tabloya aktarmaya gerek yok."
+          }
+        ]
       },
       "post4": {
         "category": "İK",
         "date": "22 Mart 2026",
+        "readTime": "5 dk okuma",
+        "author": "Aigerim Suleimenova",
+        "role": "İK Operasyonları",
         "title": "Saha saatlerini ve bordroyu tablolar olmadan takip etmek",
-        "excerpt": "Sahadan çalışma saatlerini toplayın, izinleri yönetin ve aylık bordroyu tek bir kaynaktan çalıştırın."
+        "excerpt": "Sahadan çalışma saatlerini toplayın, izinleri yönetin ve aylık bordroyu tek bir kaynaktan çalıştırın.",
+        "lead": "Kâğıt puantajlara ve WhatsApp mesajlarına dağılmış saha saatleri, bordroyu her ay bir telaşa çevirir. Bunları tek yerde toplamak hem doğruluğu hem de moralı değiştirir.",
+        "quote": "Bordro eskiden bir hafta çapraz kontrol alıyordu. Artık ayı kapattığımızda saatler sistemde hazır.",
+        "sections": [
+          {
+            "heading": "Saatleri işin olduğu yerde kaydedin",
+            "body": "Çalışma saatlerini doğrudan sahadan — doğru proje ve bütçe koduyla — toplamak, bordronun temiz veriyle başlaması demektir. Yeniden giriş yok, kaybolan puantaj yok, ay sonu yeniden kurgulama yok."
+          },
+          {
+            "heading": "İzin, belge ve bordro tek akışta",
+            "body": "İzin talepleri, belge takibi ve bordro aynı sistemde yaşadığında İK araçları birbirine dikmeyi bırakır. Aylık bordrolar zaten doğrulanmış veriden üretilir ve her rakam kaynağına kadar izlenir."
+          }
+        ]
       },
       "post5": {
         "category": "Finans",
         "date": "3 Mart 2026",
+        "readTime": "7 dk okuma",
+        "author": "Daniel Roth",
+        "role": "Proje Finansmanı Direktörü",
         "title": "Banka, kasa ve müteahhitleri tek deftere taşımak",
-        "excerpt": "Marjlar dar, takvimler daha darken entegre finans neden dağınık araçlardan üstündür."
+        "excerpt": "Marjlar dar, takvimler daha darken entegre finans neden dağınık araçlardan üstündür.",
+        "lead": "Dağınık finans araçları, mutabakat sezonuna kadar ucuz görünür — o zaman rakamları sistemler arasında taşımanın gizli maliyeti acı biçimde ortaya çıkar.",
+        "quote": "İki sistem arasındaki her devir, bir hatanın saklanabileceği bir yerdir. Devirleri ortadan kaldırdık.",
+        "sections": [
+          {
+            "heading": "Dağınık araçların gerçek maliyeti",
+            "body": "Bankacılık, kasa, krediler ve müteahhit hakedişleri ayrı yerlerde yaşadığında her rapor elle bir birleştirme olur. Bu yavaştır, hataya açıktır ve bir soru geldiğinde hızlı denetlenemez."
+          },
+          {
+            "heading": "Baştan sona tek defter",
+            "body": "Banka operasyonlarını müteahhit hakedişleri ve proje maliyetleriyle entegre etmek, paranın taahhütten ödemeye tek bir defterde izlenmesi demektir. Mutabakat bir yeniden kurgu değil, bir incelemeye dönüşür ve nakit pozisyonu her zaman günceldir."
+          }
+        ]
       },
       "post6": {
         "category": "Operasyon",
         "date": "14 Şubat 2026",
+        "readTime": "4 dk okuma",
+        "author": "Marina Volkova",
+        "role": "Operasyon",
         "title": "Şirketinizin tabloları aştığını gösteren beş işaret",
-        "excerpt": "Bu sorunlar tanıdık geliyorsa, operasyonlarınızı gerçek bir ERP'ye taşımanın zamanı gelmiş olabilir."
+        "excerpt": "Bu sorunlar tanıdık geliyorsa, operasyonlarınızı gerçek bir ERP'ye taşımanın zamanı gelmiş olabilir.",
+        "lead": "Tablolar, çoğu inşaat işletmesinin başladığı yerdir ve çatlaklar gerçek paraya mal olmaya başlayana kadar bunda yanlış bir şey yoktur. İşte dikkat etmeye değer sinyaller.",
+        "quote": "Tablo gürültüyle çökmedi. Sadece sessizce doğruyu söylemeyi bıraktı.",
+        "sections": [
+          {
+            "heading": "Veri güvenilir olmaktan çıktığında",
+            "body": "Aynı dosyanın birden çok sürümü, bozuk formüller ve kimsenin tam açıklayamadığı rakamlar ilk işaretlerdir. Ekipler her toplantı öncesi sayılardan şüphe ediyorsa, araç artık size hizmet etmiyordur."
+          },
+          {
+            "heading": "Büyüme işi kötüleştirdiğinde",
+            "body": "Her yeni proje, şantiye ve ekip üyesi elle yapılan işi katlar. Entegre bir ERP bu ölçek eğrisini tersine çevirir — proje eklemek, elle sürdürülecek bir tablo değil, bir ayar hâline gelir."
+          }
+        ]
       }
     }
   },
