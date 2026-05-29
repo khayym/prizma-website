@@ -1,8 +1,9 @@
 import * as React from "react";
+import { withPrefix } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-const HERO_VIDEO = "/videos/hero-loop.mp4";
-const DEMO_VIDEO = "/videos/product-demo.mp4";
+const HERO_VIDEO = withPrefix("/videos/hero-loop.mp4");
+const DEMO_VIDEO = withPrefix("/videos/product-demo.mp4");
 
 interface FeatureSpec {
   key: string;

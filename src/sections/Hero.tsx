@@ -1,4 +1,5 @@
 import * as React from "react";
+import { withPrefix } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Link from "../components/Link";
 
@@ -73,7 +74,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="relative flex-1 overflow-hidden rounded-xl bg-ink-950">
                 <video
-                  src="/videos/hero-loop.mp4"
+                  src={withPrefix("/videos/hero-loop.mp4")}
                   className="absolute inset-0 h-full w-full object-cover"
                   autoPlay
                   muted

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { withPrefix } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import VideoPlayer from "../components/VideoPlayer";
 
@@ -17,7 +18,7 @@ const ProductDemo: React.FC = () => {
 
         <div className="mt-14">
           <VideoPlayer
-            src="/videos/product-demo.mp4"
+            src={withPrefix("/videos/product-demo.mp4")}
             title={t("productDemo.overlayTitle")}
             caption={t("productDemo.caption")}
             playLabel={t("productDemo.play")}
