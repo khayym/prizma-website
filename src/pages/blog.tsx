@@ -111,7 +111,7 @@ const BlogPage: React.FC = () => {
       <section className="section pt-0">
         <div className="container">
           <div className="relative overflow-hidden rounded-3xl bg-brand-900 px-6 py-14 sm:px-12">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(132,204,22,0.15),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.18),transparent_60%)]" />
             <div className="relative mx-auto max-w-2xl text-center">
               <h2 className="text-2xl font-semibold text-white sm:text-3xl">
                 {t("blog.newsletterTitle")}

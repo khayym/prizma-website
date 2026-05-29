@@ -72,7 +72,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 aria-label={playLabel}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-800 to-ink-900" />
-                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#bef264_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#22c55e_0%,transparent_50%)]" />
+                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#7dd3fc_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#2563eb_0%,transparent_50%)]" />
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-950/70 to-transparent" />
 
                 <div className="relative flex flex-col items-center gap-5 px-8 text-center">
@@ -85,7 +85,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
                       aria-hidden="true"
                       className="ml-1"
                     >
-                      <path d="M6 4l16 8-16 8z" fill="#15803d" />
+                      <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
                     </svg>
                   </span>
                   {title && (

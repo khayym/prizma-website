@@ -14,10 +14,10 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => (
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      <rect width="28" height="28" rx="8" fill="#15803d" />
+      <rect width="28" height="28" rx="8" fill="#1d4ed8" />
       <path
         d="M9 7v14M9 7h6.5a4 4 0 010 8H9"
-        stroke="#bef264"
+        stroke="#7dd3fc"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"

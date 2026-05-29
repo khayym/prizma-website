@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             <div className="hidden sm:block h-10 w-px bg-ink-200" />
             <div className="flex items-center gap-3">
               <div className="flex -space-x-2">
-                {["#bef264", "#86efac", "#4ade80", "#22c55e"].map((c, i) => (
+                {["#7dd3fc", "#60a5fa", "#3b82f6", "#2563eb"].map((c, i) => (
                   <span
                     key={i}
                     className="h-9 w-9 rounded-full ring-2 ring-white"
