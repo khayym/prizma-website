@@ -13,3 +13,6 @@ design/
 
 # Claude Code local settings
 .claude/
+
+# Editor / antivirus atomic-write swap artifacts
+.!*!*
