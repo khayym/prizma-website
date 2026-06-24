@@ -10,8 +10,8 @@
   },
   "hero": {
     "eyebrow": "PRIZMA",
-    "title": "İş akışlarını basitleştirin, ERP ve İK verimliliğini artırın",
-    "subtitle": "İş süreçlerinizi Prizma ile hızlı ve verimli yönetin. Sezgisel arayüz, bütçe odaklı teslimat ve inşaat sektörüne özel çözümler.",
+    "title": "İnşaat sektörü için güçlü ERP ve iş süreçleri yönetimi",
+    "subtitle": "Satın alma, stok, finans, insan kaynakları ve proje yönetimi süreçlerinizi tek merkezden yönetin. Prizma ile operasyonlarınızı dijitalleştirin, verimliliği artırın ve projelerinizi tam kontrol altında tutun.",
     "primaryCta": "Demo Talep Et",
     "secondaryCta": "Nasıl çalışır"
   },
@@ -170,7 +170,7 @@
   "about": {
     "eyebrow": "Hakkımızda",
     "title": "21 yıldır inşaat için ERP geliştiriyoruz",
-    "subtitle": "Prizma, inşaat sektörü için özel olarak tasarlanmış ve yirmi yılı aşkın gerçek projeyle olgunlaşmış güçlü bir BPM, ERP, raporlama ve muhasebe platformudur.",
+    "subtitle": "Prizma, 21 yılı aşkın sektör deneyimiyle inşaat firmalarının dijital dönüşüm süreçlerine liderlik eden; iş süreçleri yönetimi, ERP, finans, muhasebe ve raporlama alanlarında kapsamlı çözümler sunan yenilikçi bir platformdur.",
     "yearsLabel": "inşaat tecrübesi",
     "yearsBody": "İlk satın alma talebinden son hakedişe kadar Prizma, inşaat ekiplerinin gerçekte nasıl çalıştığına göre şekillenir.",
     "storyEyebrow": "Hikâyemiz",
@@ -180,12 +180,12 @@
     "mission": {
       "label": "Misyon",
       "title": "İnşaat yönetimini zahmetsiz kılmak",
-      "body": "İnşaat şirketlerine verimliliği artıran, iş süreçlerini birleştiren ve projeleri bütçesinde ve zamanında teslim eden yenilikçi, kullanımı kolay bir ERP sunmak."
+      "body": "Prizma olarak misyonumuz, inşaat sektöründeki firmaların tüm operasyonlarını tek bir platform üzerinden yönetebilmelerini sağlayarak dijital dönüşümlerine öncülük etmektir. İş süreçlerini daha hızlı, daha verimli ve daha şeffaf hale getiren yenilikçi çözümler sunarak işletmelerin sürdürülebilir büyümesine katkı sağlıyoruz."
     },
     "vision": {
       "label": "Vizyon",
       "title": "İnşaatın ERP standardı",
-      "body": "Teknolojik yeniliği veri analitiğiyle birleştirerek sürdürülebilir ve rekabetçi işletmeler kurmak için dünyada inşaat sektörünün önde gelen ERP'si olmak."
+      "body": "Prizma olarak vizyonumuz, inşaat sektörünün dijital dönüşümüne yön veren, yenilikçi teknolojileri ve güçlü iş süreçleri yönetimini bir araya getiren lider bir platform olmaktır. Sürekli gelişen yapımızla işletmelerin verimliliğini artırmayı, karar alma süreçlerini güçlendirmeyi ve sürdürülebilir büyümelerine katkı sağlamayı hedefliyoruz."
     },
     "offerEyebrow": "Ne sunuyoruz",
     "offerTitle": "Bir inşaat işletmesinin ihtiyaç duyduğu her şey"

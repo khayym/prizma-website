@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: "Prizma Flow",
     description:
-      "Simplify workflows and boost efficiency in ERP and HR with Prizma Flow.",
+      "Streamline workflows and boost efficiency across ERP and HR with Prizma Flow.",
     siteUrl: "https://prizmaflow.com",
   },
   // Served from a subpath on GitHub Pages (khayym.github.io/prizma-website).
@@ -15,6 +15,19 @@ const config: GatsbyConfig = {
   graphqlTypegen: false,
   plugins: [
     "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Prizma Flow",
+        short_name: "Prizma",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#2563eb",
+        display: "standalone",
+        // Prism app-icon supplied by the brand team; generates favicons.
+        icon: "src/images/prizma-icon.png",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
