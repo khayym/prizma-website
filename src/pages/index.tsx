@@ -3,14 +3,12 @@ import { graphql, HeadFC } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import Hero from "../sections/Hero";
-import LogoCloud from "../sections/LogoCloud";
 import Stats from "../sections/Stats";
 import ValueProp from "../sections/ValueProp";
 import Features from "../sections/Features";
 import MobileApp from "../sections/MobileApp";
 import Modules from "../sections/Modules";
 import ProductDemo from "../sections/ProductDemo";
-import HowItWorks from "../sections/HowItWorks";
 import Demo from "../sections/Demo";
 import Faq from "../sections/Faq";
 import CtaBanner from "../sections/CtaBanner";
@@ -18,14 +16,12 @@ import CtaBanner from "../sections/CtaBanner";
 const IndexPage: React.FC = () => (
   <Layout>
     <Hero />
-    <LogoCloud />
     <Stats />
     <ValueProp />
     <Features />
     <Modules />
     <ProductDemo />
     <MobileApp />
-    <HowItWorks />
     <Demo />
     <Faq />
     <CtaBanner />

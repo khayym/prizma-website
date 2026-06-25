@@ -6,6 +6,7 @@ import Seo from "../components/Seo";
 import Link from "../components/Link";
 import CtaBanner from "../sections/CtaBanner";
 import { blogPosts, toneByKey } from "../data/blogPosts";
+import { blogImages } from "../data/blogImages";
 
 interface PageContext {
   postKey: string;
@@ -56,6 +57,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
   const base = `blog.posts.${postKey}`;
 
   const tone = toneByKey[postKey] ?? "from-brand-700 to-ink-900";
+  const image = blogImages[postKey];
   const sections =
     (t(`${base}.sections`, { returnObjects: true }) as unknown as Section[]) ||
     [];
@@ -70,10 +72,21 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
       <article>
         {/* Article hero */}
         <header className="relative overflow-hidden bg-ink-900">
+          {image && (
+            <img
+              src={image}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          )}
           <div
-            className={`absolute inset-0 -z-0 bg-gradient-to-br ${tone}`}
+            className={`absolute inset-0 ${
+              image
+                ? "bg-gradient-to-br from-ink-950/85 via-ink-950/70 to-brand-900/70"
+                : `bg-gradient-to-br ${tone}`
+            }`}
           />
-          <div className="absolute -right-24 -top-24 -z-0 h-72 w-72 rounded-full bg-accent-400/10 blur-3xl" />
+          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-400/10 blur-3xl" />
           <div className="container relative z-10 py-16 lg:py-24">
             <Link
               to="/blog"
@@ -149,9 +162,14 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
                   to={`/blog/${p.key}`}
                   className="group flex flex-col overflow-hidden rounded-3xl border border-ink-100 bg-white transition hover:border-brand-200 hover:shadow-lg"
                 >
-                  <div
-                    className={`h-32 bg-gradient-to-br ${p.tone} transition group-hover:opacity-90`}
-                  />
+                  <div className={`h-32 overflow-hidden bg-gradient-to-br ${p.tone}`}>
+                    <img
+                      src={blogImages[p.key]}
+                      alt=""
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="flex flex-1 flex-col p-6">
                     <div className="flex items-center gap-3 text-xs font-medium text-ink-500">
                       <span className="text-brand-700">

@@ -1,4 +1,9 @@
 {
+  "common": {
+    "backToTop": "Yukarı çık",
+    "sending": "Gönderiliyor…",
+    "formError": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya bize doğrudan e-posta gönderin."
+  },
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
@@ -6,7 +11,8 @@
     "blog": "Blog",
     "contact": "İletişim",
     "requestDemo": "Demo Talep Et",
-    "getStarted": "Başla"
+    "getStarted": "Başla",
+    "trainingVideos": "Eğitim videoları"
   },
   "hero": {
     "eyebrow": "PRIZMA",
@@ -101,22 +107,55 @@
   "modules": {
     "eyebrow": "Hizmetler",
     "title": "Prizma Modülleri",
+    "subtitle": "Tüm inşaat süreçleri için tek platform — iş akışları ve ERP'den İK, ekipman, iş güvenliği ve raporlamaya kadar.",
     "items": {
-      "accounting": {
-        "title": "Genel Muhasebe",
-        "body": "Gelir-gider, banka ve kasa hareketleri, gelen ve giden faturalar."
-      },
       "process": {
-        "title": "Süreç",
-        "body": "Operasyonel verimlilik ve üç temel süreçte kaynak yönetimi."
+        "title": "Süreç Yönetimi",
+        "body": "İş süreçlerini dijitalleştirerek operasyonel verimliliği artırır, onay mekanizmaları ve iş akışlarıyla süreç yönetimini merkezi hale getirir."
       },
       "erp": {
-        "title": "ERP",
-        "body": "Envanter, depo ve malzeme hareketleri tek merkezden."
+        "title": "Kurumsal Kaynak Planlama",
+        "body": "Envanter, depo, satın alma ve malzeme hareketlerini entegre bir yapı altında yöneterek kaynak kullanımını optimize eder."
+      },
+      "accounting": {
+        "title": "Genel Muhasebe",
+        "body": "Gelir-gider yönetimi, banka ve kasa işlemleri ile gelen ve giden faturaların takibini tek platformda gerçekleştirir."
       },
       "reporting": {
-        "title": "Raporlama",
-        "body": "Stratejik kararlar için canlı finansal ve operasyonel analiz."
+        "title": "Raporlama ve İş Zekâsı",
+        "body": "Finansal ve operasyonel verileri anlık olarak analiz ederek yöneticilere stratejik karar alma süreçlerinde güçlü içgörüler sunar."
+      },
+      "hr": {
+        "title": "İnsan Kaynakları",
+        "body": "Personel özlük dosyaları, puantaj, izin, bordro, personel evrakları ve harcama fişlerini tek merkezden yöneterek İK operasyonlarını dijitalleştirir."
+      },
+      "equipment": {
+        "title": "Ekipman Yönetimi",
+        "body": "Makine ve ekipmanların envanter, konum, kullanım ve bakım süreçlerini takip ederek operasyonel sürekliliği destekler."
+      },
+      "hse": {
+        "title": "İş Sağlığı ve Güvenliği",
+        "body": "İSG eğitimleri, saha denetimleri, uygunsuzluk kayıtları ve düzeltici faaliyetlerin etkin şekilde yönetilmesini sağlar."
+      },
+      "subcon": {
+        "title": "Taşeron Yönetimi",
+        "body": "Taşeron sözleşmeleri, personel yönetimi, performans takibi ve hakediş süreçlerini dijital ortamda kontrol altına alır."
+      },
+      "legal": {
+        "title": "Hukuki Süreçler",
+        "body": "Dava, sözleşme, ihtar, bildirim ve diğer hukuki süreçlerin merkezi olarak yönetilmesini ve izlenmesini sağlar."
+      },
+      "dms": {
+        "title": "Doküman Yönetimi",
+        "body": "Kurumsal belge, doküman ve versiyon yönetimini güvenli dijital arşiv altyapısıyla destekleyerek bilgiye hızlı erişim sunar."
+      },
+      "ai": {
+        "title": "Yapay Zekâ Destekli Yönetim",
+        "body": "Yapay zekâ destekli analiz ve önerilerle verilerinizi daha verimli değerlendirin, karar süreçlerinizi hızlandırın."
+      },
+      "chat": {
+        "title": "Kurumsal İletişim",
+        "body": "Ekipler arasındaki iletişimi sistem içerisinde sürdürün, süreçlerle ilgili bilgi paylaşımını daha hızlı ve düzenli hale getirin."
       }
     }
   },
@@ -171,7 +210,7 @@
     "eyebrow": "Hakkımızda",
     "title": "21 yıldır inşaat için ERP geliştiriyoruz",
     "subtitle": "Prizma, 21 yılı aşkın sektör deneyimiyle inşaat firmalarının dijital dönüşüm süreçlerine liderlik eden; iş süreçleri yönetimi, ERP, finans, muhasebe ve raporlama alanlarında kapsamlı çözümler sunan yenilikçi bir platformdur.",
-    "yearsLabel": "inşaat tecrübesi",
+    "yearsLabel": "yıllık tecrübe",
     "yearsBody": "İlk satın alma talebinden son hakedişe kadar Prizma, inşaat ekiplerinin gerçekte nasıl çalıştığına göre şekillenir.",
     "storyEyebrow": "Hikâyemiz",
     "storyTitle": "İnşaatı anlayan yazılım",
@@ -249,129 +288,108 @@
     "ctaInline": "Bunun Prizma'da nasıl çalıştığını görmek ister misiniz? Ekibimizle kısa bir demo planlayın.",
     "ctaInlineButton": "Demo talep et",
     "posts": {
-      "post1": {
-        "category": "Satın alma",
-        "date": "12 Mayıs 2026",
-        "readTime": "5 dk okuma",
-        "author": "Marina Volkova",
-        "role": "Satın Alma Lideri",
-        "title": "Aktif şantiyelerde satın alma süresini %40 kısaltmak",
-        "excerpt": "Şeffaf onay rotaları ve geçmiş fiyat analizi, ekiplerin fazla harcamadan daha hızlı satın almasına nasıl yardımcı olur.",
-        "lead": "Yoğun bir şantiyede yavaş bir satın alma talebi sadece bir sıkıntı değildir — işi durdurur, ekipleri boş bekletir ve maliyeti sessizce şişirir. İnşaat ekipleri satın alma süresini, kadro eklemeden nasıl neredeyse yarıya indirdi, anlatıyoruz.",
-        "quote": "Onayları telefonla kovalamayı bıraktık. Rota bizim için yapıyor ve herkes bir talebin tam olarak nerede olduğunu görebiliyor.",
-        "sections": [
-          {
-            "heading": "Zaman gerçekte nereye gidiyor",
-            "body": "Gecikmelerin çoğu satın almanın kendisinde değil, beklemededir. Talepler gelen kutularında bekler, onaylayanlar belirsizdir ve kimin işi tuttuğu bilinmez. Talepten satın alma siparişine giden gerçek rotayı çıkardığınızda, neredeyse her zaman gün ekleyen ama değer katmayan iki üç adım ortaya çıkar."
-          },
-          {
-            "heading": "Rotalar ve fiyat geçmişi işin ağırını taşır",
-            "body": "Kural tabanlı onay rotalarıyla her talep otomatik olarak doğru kişiye gider ve takılırsa eskale olur. Buna geçmiş fiyat analizini ekleyin; satın almacılar tahminle değil gerçek rakamlarla pazarlık eder — daha hızlı kararlar, daha iyi fiyatlar ve her sipariş için tam denetim izi."
-          }
-        ]
-      },
-      "post2": {
-        "category": "Bütçe",
-        "date": "28 Nisan 2026",
-        "readTime": "6 dk okuma",
-        "author": "Daniel Roth",
-        "role": "Proje Finansmanı Direktörü",
-        "title": "Fiili maliyet vs bütçe: aşımları zarar vermeden yakalamak",
-        "excerpt": "Her projede harcamayı bütçeye karşı gerçek zamanlı izlemek için sahada test edilmiş bir yöntem.",
-        "lead": "Bütçe aşımları nadiren sürpriz olur — sinyaller, nihai rapora düşmeden haftalar önce oradadır. İşin püf noktası, hâlâ harekete geçebilecekken onları görmektir.",
-        "quote": "Bir aşım aylık rapora ulaştığında artık tarihtir. Onu olduğu gün görmemiz gerekiyordu.",
-        "sections": [
-          {
-            "heading": "Sonradan değil, gerçek zamanlı karşılaştırın",
-            "body": "Aylık mutabakat size neyin zaten yanlış gittiğini söyler. Taahhüt ve fiiliyi bütçeye karşı sürekli karşılaştırmak, bütçelemeyi bir erken uyarı sistemine dönüştürür — sapmalar ay sonunda değil, günler içinde belirir."
-          },
-          {
-            "heading": "Herkesin güvendiği tek rakam",
-            "body": "Satın alma, finans ve şantiye şefleri aynı canlı rakamı okuduğunda, kimin tablosunun doğru olduğu tartışmaları biter. Veri ortak, güncel ve tek tek siparişlere kadar izlenebilir olduğundan kararlar hızlanır."
-          }
-        ]
-      },
-      "post3": {
-        "category": "Ürün",
-        "date": "9 Nisan 2026",
-        "readTime": "4 dk okuma",
-        "author": "Prizma Ürün Ekibi",
+      "process": {
+        "category": "Modüller",
+        "date": "26 Ekim 2024",
+        "readTime": "3 dk okuma",
+        "author": "Prizma Ekibi",
         "role": "Ürün",
-        "title": "Prizma'da yenilikler: mobil onaylar ve canlı panolar",
-        "excerpt": "Son sürüme bir bakış — talepleri hareket hâlinde onaylayın ve proje sağlığını canlı izleyin.",
-        "lead": "Bu sürüm tamamen hızla ilgili — kararları ofisin dışına çıkarmak ve yöneticilere, nerede olurlarsa olsunlar her projenin canlı görünümünü sunmak.",
-        "quote": "Eskiden birinin masasına dönmesini bekleyen onaylar artık bir kamyonun şoför mahallinden yapılıyor.",
+        "title": "Süreç Modülü",
+        "excerpt": "Üç temel süreçle operasyonel verimlilik: Malzeme Talep, Satınalma Talep ve Ödeme Talep.",
+        "lead": "Prizma Flow'un Süreç modülü, işletmelerin operasyonel verimliliğini artırmak için üç ana süreçten oluşur: Malzeme Talep, Satınalma Talep ve Ödeme Talep.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Her yerden onaylayın",
-            "body": "Mobil onaylar, yöneticilerin satın alma, ödeme ve İK taleplerini doğrudan telefonlarından inceleyip onaylamasını sağlar. Her talep tüm bağlamını taşır — tutarlar, ekler ve geçmiş — böylece kararlar aceleye gelmez, bilgiye dayanır."
+            "heading": "Malzeme talep süreci",
+            "body": "Süreç, bir departmanın ihtiyaç duyduğu malzeme veya hizmeti tanımlamasıyla başlar. Depo bölümü stok kontrolü yapar; malzeme stokta varsa doğrudan iletilir, yoksa satın alma talebine yönlendirilir."
           },
           {
-            "heading": "Kendini güncelleyen panolar",
-            "body": "Yeni canlı panolar veriler değiştikçe yenilenir; bütçe sağlığını, açık talepleri ve proje ilerlemesini tek bakışta gösterir. Durumu anlamak için artık tabloya aktarmaya gerek yok."
+            "heading": "Satınalma ve ödeme süreçleri",
+            "body": "Satın alma bölümü bütçe ve kriterler doğrultusunda tedarikçilerden teklif alır; düşük tutarlı alımlarda en az iki, yüksek tutarlarda en az üç firmadan teklif istenir. Onay ve teknik incelemenin ardından süreç ödeme takvimine yönlendirilir. Gelen kutusu, tamamlanmış ödemeler, sözleşmeler ve sipariş takibi gibi özelleştirilebilir ekranlar kaynakların etkin kullanılmasını sağlar."
           }
         ]
       },
-      "post4": {
-        "category": "İK",
-        "date": "22 Mart 2026",
-        "readTime": "5 dk okuma",
-        "author": "Aigerim Suleimenova",
-        "role": "İK Operasyonları",
-        "title": "Saha saatlerini ve bordroyu tablolar olmadan takip etmek",
-        "excerpt": "Sahadan çalışma saatlerini toplayın, izinleri yönetin ve aylık bordroyu tek bir kaynaktan çalıştırın.",
-        "lead": "Kâğıt puantajlara ve WhatsApp mesajlarına dağılmış saha saatleri, bordroyu her ay bir telaşa çevirir. Bunları tek yerde toplamak hem doğruluğu hem de moralı değiştirir.",
-        "quote": "Bordro eskiden bir hafta çapraz kontrol alıyordu. Artık ayı kapattığımızda saatler sistemde hazır.",
+      "erp": {
+        "category": "Modüller",
+        "date": "26 Ekim 2024",
+        "readTime": "3 dk okuma",
+        "author": "Prizma Ekibi",
+        "role": "Ürün",
+        "title": "ERP (Kurumsal Kaynak Planlama) Modülü",
+        "excerpt": "Envanter, stok ve malzeme hareketlerini tek merkezden kontrol edin; muhasebe kayıtları otomatik oluşsun.",
+        "lead": "ERP modülü, işletmelerin envanter, stok ve malzeme hareketlerini tek bir merkezden kontrol etmesini sağlayan, süreç yönetimini kolaylaştıran kapsamlı bir programdır.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Saatleri işin olduğu yerde kaydedin",
-            "body": "Çalışma saatlerini doğrudan sahadan — doğru proje ve bütçe koduyla — toplamak, bordronun temiz veriyle başlaması demektir. Yeniden giriş yok, kaybolan puantaj yok, ay sonu yeniden kurgulama yok."
+            "heading": "Ana özellikler",
+            "body": "Malzeme yönetimi; adet, birim ve tutar bilgilerini merkezî olarak takip eder. Malzeme fişleri sarf, fire, devir, üretim giriş, sayım ve zimmet işlemlerini kaydeder. Depo transferleri depolar arası hareketleri otomatikleştirir, envanter ve masraf merkezi raporları sunar. Muhasebe entegrasyonu sayesinde muhasebe kayıtları otomatik oluşur."
           },
           {
-            "heading": "İzin, belge ve bordro tek akışta",
-            "body": "İzin talepleri, belge takibi ve bordro aynı sistemde yaşadığında İK araçları birbirine dikmeyi bırakır. Aylık bordrolar zaten doğrulanmış veriden üretilir ve her rakam kaynağına kadar izlenir."
+            "heading": "İşletmelere sağladığı faydalar",
+            "body": "Operasyonel verimlilik, maliyet tasarrufu, gerçek zamanlı izlenebilirlik, hızlı karar alma, detaylı analiz, esneklik, zaman tasarrufu, kârlılık ve veri güvenliği. Doğru stok yönetimi kâr marjını artırır ve rekabet avantajı sağlar."
           }
         ]
       },
-      "post5": {
-        "category": "Finans",
-        "date": "3 Mart 2026",
-        "readTime": "7 dk okuma",
-        "author": "Daniel Roth",
-        "role": "Proje Finansmanı Direktörü",
-        "title": "Banka, kasa ve müteahhitleri tek deftere taşımak",
-        "excerpt": "Marjlar dar, takvimler daha darken entegre finans neden dağınık araçlardan üstündür.",
-        "lead": "Dağınık finans araçları, mutabakat sezonuna kadar ucuz görünür — o zaman rakamları sistemler arasında taşımanın gizli maliyeti acı biçimde ortaya çıkar.",
-        "quote": "İki sistem arasındaki her devir, bir hatanın saklanabileceği bir yerdir. Devirleri ortadan kaldırdık.",
+      "accounting": {
+        "category": "Modüller",
+        "date": "26 Ekim 2024",
+        "readTime": "3 dk okuma",
+        "author": "Prizma Ekibi",
+        "role": "Ürün",
+        "title": "Genel Muhasebe Modülü",
+        "excerpt": "Tüm mali işlemlerinizi tek platformdan yönetin: gelir-gider, banka ve kasa hareketleri, alış-satış faturaları.",
+        "lead": "Prizma'nın Genel Muhasebe modülü, şirketinizin tüm mali işlemlerini tek bir platformdan yönetmenize olanak tanır. Gelir ve giderleri, banka ve kasa hareketlerini, alış ve satış faturalarını eksiksiz ve şeffaf biçimde kayıt altına alır.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Dağınık araçların gerçek maliyeti",
-            "body": "Bankacılık, kasa, krediler ve müteahhit hakedişleri ayrı yerlerde yaşadığında her rapor elle bir birleştirme olur. Bu yavaştır, hataya açıktır ve bir soru geldiğinde hızlı denetlenemez."
+            "heading": "Kapsamlı fiş yönetimi",
+            "body": "Modül; devir, banka, kasa, tahsil, tediye, mahsup, virman, tahakkuk, avans, alış ve satış faturaları gibi 25'in üzerinde fiş türünü destekler. Her işlem doğru hesaba kaydedilerek günlük, aylık ve yıllık mali süreçlerde tam şeffaflık sağlanır."
           },
           {
-            "heading": "Baştan sona tek defter",
-            "body": "Banka operasyonlarını müteahhit hakedişleri ve proje maliyetleriyle entegre etmek, paranın taahhütten ödemeye tek bir defterde izlenmesi demektir. Mutabakat bir yeniden kurgu değil, bir incelemeye dönüşür ve nakit pozisyonu her zaman günceldir."
+            "heading": "İşletmenize katkısı",
+            "body": "Tüm muhasebe süreçlerinin tek platformda toplanması verimliliği artırır, hata riskini ve operasyonel maliyetleri azaltır. Web tabanlı yapısı sayesinde verilerinize her yerden, kullanıcı dostu bir arayüzle erişirsiniz."
           }
         ]
       },
-      "post6": {
-        "category": "Operasyon",
-        "date": "14 Şubat 2026",
-        "readTime": "4 dk okuma",
-        "author": "Marina Volkova",
-        "role": "Operasyon",
-        "title": "Şirketinizin tabloları aştığını gösteren beş işaret",
-        "excerpt": "Bu sorunlar tanıdık geliyorsa, operasyonlarınızı gerçek bir ERP'ye taşımanın zamanı gelmiş olabilir.",
-        "lead": "Tablolar, çoğu inşaat işletmesinin başladığı yerdir ve çatlaklar gerçek paraya mal olmaya başlayana kadar bunda yanlış bir şey yoktur. İşte dikkat etmeye değer sinyaller.",
-        "quote": "Tablo gürültüyle çökmedi. Sadece sessizce doğruyu söylemeyi bıraktı.",
+      "reports": {
+        "category": "Modüller",
+        "date": "26 Ekim 2024",
+        "readTime": "3 dk okuma",
+        "author": "Prizma Ekibi",
+        "role": "Ürün",
+        "title": "Raporlar Modülü",
+        "excerpt": "Finansal ve operasyonel performansınızı gerçek zamanlı izleyin: kümülatif ve pivot raporlar, yönetim raporları ve dashboard.",
+        "lead": "Prizma'nın Raporlar modülü, işletmelerin finansal ve operasyonel performanslarını gerçek zamanlı izlemesini sağlar. Şirketlerin her açıdan kapsamlı değerlendirme yapmasına olanak tanıyarak karar alma hızını artırır.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Veri güvenilir olmaktan çıktığında",
-            "body": "Aynı dosyanın birden çok sürümü, bozuk formüller ve kimsenin tam açıklayamadığı rakamlar ilk işaretlerdir. Ekipler her toplantı öncesi sayılardan şüphe ediyorsa, araç artık size hizmet etmiyordur."
+            "heading": "Dört temel bileşen",
+            "body": "Gelir-gider kümülatif raporları belirli dönemlerin gelir ve giderlerini tek tabloda sunar. Pivot raporları verileri kategorilere ayırarak detaylı analiz sağlar. Yönetim raporları tüm verileri rakamsal ve grafiksel olarak bir arada gösterir. Dashboard ise kritik bilgileri tek ekranda toplar."
           },
           {
-            "heading": "Büyüme işi kötüleştirdiğinde",
-            "body": "Her yeni proje, şantiye ve ekip üyesi elle yapılan işi katlar. Entegre bir ERP bu ölçek eğrisini tersine çevirir — proje eklemek, elle sürdürülecek bir tablo değil, bir ayar hâline gelir."
+            "heading": "İşletme faydaları",
+            "body": "Sistem; zaman tasarrufu, hızlı karar alma, özelleştirilebilir raporlar, finansal kontrol ve kapsamlı analiz imkânı sunar. Böylece verimlilik artışını ve sürdürülebilir büyümeyi destekler."
+          }
+        ]
+      },
+      "hrm": {
+        "category": "Modüller",
+        "date": "26 Ekim 2024",
+        "readTime": "3 dk okuma",
+        "author": "Prizma Ekibi",
+        "role": "Ürün",
+        "title": "İnsan Kaynakları Modülü (HRM)",
+        "excerpt": "Personel verilerini, puantajı, bordroyu, fazla mesai ve izinleri tek merkezden yönetin.",
+        "lead": "Prizma'nın İnsan Kaynakları (HRM) modülü, işletmenizin çalışan yönetimini kolaylaştırır. Personel verilerini, devam kayıtlarını, bordro hesaplamalarını, fazla mesaileri ve izin süreçlerini tek bir merkezde toplar.",
+        "quote": "",
+        "sections": [
+          {
+            "heading": "Personel yönetimi",
+            "body": "Modül; kimlik, sosyal güvenlik, adres ve iletişim bilgileri dâhil tüm personel kayıtlarını düzenli ve erişilebilir biçimde tutar. Böylece çalışan belgeleri her zaman güncel ve kolay ulaşılabilir olur."
+          },
+          {
+            "heading": "Maaş, performans ve veri entegrasyonu",
+            "body": "Sistem; personel maaşlarını, fazla mesaileri ve izin günlerini yönetir, performans takibini ve mesai maliyeti kontrolünü kolaylaştırır. Veriler Excel ile çift yönlü uyumludur; içe ve dışa aktarım esnek biçimde yapılır."
           }
         ]
       }

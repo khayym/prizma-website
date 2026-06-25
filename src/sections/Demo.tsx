@@ -1,13 +1,25 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import Captcha from "../components/Captcha";
+import { submitContactForm } from "../utils/contactForm";
 
 const Demo: React.FC = () => {
   const { t } = useTranslation();
-  const [sent, setSent] = React.useState(false);
+  const [status, setStatus] = React.useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
+  const sent = status === "success";
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
+    const form = e.currentTarget;
+    setStatus("sending");
+    try {
+      const ok = await submitContactForm(form);
+      setStatus(ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -64,10 +76,10 @@ const Demo: React.FC = () => {
                 </svg>
               </div>
               <p className="mt-4 text-lg font-semibold text-ink-900">
-                Thank you!
+                {t("contact.successTitle")}
               </p>
               <p className="mt-1 text-sm text-ink-600">
-                We will reach out within one business day.
+                {t("contact.successBody")}
               </p>
             </div>
           ) : (
@@ -93,9 +105,30 @@ const Demo: React.FC = () => {
                   className="mt-1.5 w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
                 />
               </label>
-              <button type="submit" className="btn-primary mt-2">
-                {t("demo.submit")}
+              <input
+                type="hidden"
+                name="subject"
+                value="New Prizma demo request"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+                aria-hidden="true"
+              />
+              <Captcha className="mt-1" />
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="btn-primary mt-2 disabled:opacity-60"
+              >
+                {status === "sending" ? t("common.sending") : t("demo.submit")}
               </button>
+              {status === "error" && (
+                <p className="text-sm text-red-600">{t("common.formError")}</p>
+              )}
             </div>
           )}
         </form>

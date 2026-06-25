@@ -42,10 +42,20 @@ const MobileApp: React.FC = () => {
           </ul>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#" className="btn-primary">
+            <a
+              href="https://apps.apple.com/tr/app/prizma-flow/id1579328322"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary"
+            >
               {t("mobile.appStore")}
             </a>
-            <a href="#" className="btn-ghost">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.bpm.theia"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-ghost"
+            >
               {t("mobile.googlePlay")}
             </a>
           </div>

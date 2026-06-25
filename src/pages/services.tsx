@@ -4,7 +4,6 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
-import HowItWorks from "../sections/HowItWorks";
 import CtaBanner from "../sections/CtaBanner";
 
 const services: { key: string; icon: React.ReactNode }[] = [
@@ -100,7 +99,6 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
-      <HowItWorks />
       <CtaBanner />
     </Layout>
   );

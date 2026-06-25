@@ -24,6 +24,23 @@ const Footer: React.FC = () => {
             <p className="text-sm text-ink-600 max-w-xs">
               {t("footer.aboutText")}
             </p>
+            <a
+              href="https://www.youtube.com/@PrizmaFlow"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-800"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
+              </svg>
+              {t("nav.trainingVideos")}
+            </a>
           </div>
 
           <div>
@@ -74,7 +91,7 @@ const Footer: React.FC = () => {
               {t("footer.about")}
             </h4>
             <div className="mt-4 flex gap-3">
-              <SocialIcon href="https://youtube.com" label="YouTube">
+              <SocialIcon href="https://www.youtube.com/@PrizmaFlow" label="YouTube">
                 <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
               </SocialIcon>
               <SocialIcon href="https://linkedin.com" label="LinkedIn">

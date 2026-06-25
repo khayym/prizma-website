@@ -4,6 +4,8 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
+import Captcha from "../components/Captcha";
+import { submitContactForm } from "../utils/contactForm";
 
 const PhoneIcon: React.FC = () => (
   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z" />
@@ -64,7 +66,10 @@ const Field: React.FC<FieldProps> = ({ name, label, type = "text", required }) =
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation();
-  const [sent, setSent] = React.useState(false);
+  const [status, setStatus] = React.useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
+  const sent = status === "success";
 
   const phone = t("footer.phone");
   const email = t("footer.email");
@@ -148,9 +153,16 @@ const ContactPage: React.FC = () => {
 
           {/* Form column */}
           <form
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
-              setSent(true);
+              const form = e.currentTarget;
+              setStatus("sending");
+              try {
+                const ok = await submitContactForm(form);
+                setStatus(ok ? "success" : "error");
+              } catch {
+                setStatus("error");
+              }
             }}
             className="rounded-3xl border border-ink-100 bg-white p-8 shadow-sm lg:p-10"
           >
@@ -196,9 +208,34 @@ const ContactPage: React.FC = () => {
                       className="mt-1.5 w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
                     />
                   </label>
-                  <button type="submit" className="btn-primary mt-2">
-                    {t("demo.submit")}
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="New Prizma contact message"
+                  />
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="hidden"
+                    aria-hidden="true"
+                  />
+                  <Captcha className="mt-1" />
+                  <button
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="btn-primary mt-2 disabled:opacity-60"
+                  >
+                    {status === "sending"
+                      ? t("common.sending")
+                      : t("demo.submit")}
                   </button>
+                  {status === "error" && (
+                    <p className="text-sm text-red-600">
+                      {t("common.formError")}
+                    </p>
+                  )}
                 </div>
               </>
             )}

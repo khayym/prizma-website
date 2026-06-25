@@ -1,4 +1,9 @@
 {
+  "common": {
+    "backToTop": "Back to top",
+    "sending": "Sending…",
+    "formError": "Something went wrong. Please try again or email us directly."
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -6,7 +11,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "requestDemo": "Request Demo",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "trainingVideos": "Training videos"
   },
   "hero": {
     "eyebrow": "PRIZMA",
@@ -101,22 +107,55 @@
   "modules": {
     "eyebrow": "Services",
     "title": "Prizma modules",
+    "subtitle": "One platform for every construction process — from workflows and ERP to HR, equipment, safety and reporting.",
     "items": {
-      "accounting": {
-        "title": "General Accounting",
-        "body": "Income and expense, bank and cash movements, incoming and outgoing invoices."
-      },
       "process": {
-        "title": "Process",
-        "body": "Operational efficiency and resource management across three core processes."
+        "title": "Process Management",
+        "body": "Digitalizes business processes to improve operational efficiency and centralizes process management through approval mechanisms and automated workflows."
       },
       "erp": {
-        "title": "ERP",
-        "body": "Inventory, warehouse, and material movement from a single control center."
+        "title": "Enterprise Resource Planning",
+        "body": "Optimizes resource utilization by managing inventory, warehouse operations, procurement, and material movements within an integrated system."
+      },
+      "accounting": {
+        "title": "General Accounting",
+        "body": "Manages income and expenses, bank and cash transactions, and incoming and outgoing invoices through a single platform."
       },
       "reporting": {
-        "title": "Reporting",
-        "body": "Live financial and operational analytics that power better decisions."
+        "title": "Reporting & Business Intelligence",
+        "body": "Analyzes financial and operational data in real time, providing managers with valuable insights for strategic decision-making."
+      },
+      "hr": {
+        "title": "Human Resources",
+        "body": "Digitalizes HR operations by centrally managing employee records, timesheets, leave, payroll, personnel documents, expense receipts, and employee processes."
+      },
+      "equipment": {
+        "title": "Equipment Management",
+        "body": "Supports operational continuity by tracking the inventory, location, usage, and maintenance processes of machinery and equipment."
+      },
+      "hse": {
+        "title": "Health & Safety (OHS)",
+        "body": "Enables the effective management of OHS training, site inspections, non-conformity records, and corrective actions."
+      },
+      "subcon": {
+        "title": "Subcontractor Management",
+        "body": "Digitally manages subcontractor agreements, personnel, performance monitoring, and progress payment processes."
+      },
+      "legal": {
+        "title": "Legal Management",
+        "body": "Enables legal cases, contracts, formal notices, notifications, and other legal processes to be centrally managed and monitored."
+      },
+      "dms": {
+        "title": "Document Management",
+        "body": "Provides fast access to information by supporting corporate document, file, and version management through a secure digital archive."
+      },
+      "ai": {
+        "title": "AI-Powered Management",
+        "body": "Evaluate your data more efficiently and accelerate decision-making with AI-powered analyses and recommendations."
+      },
+      "chat": {
+        "title": "Corporate Communication",
+        "body": "Keep teams in sync inside the system and make process-related information sharing faster and more organized."
       }
     }
   },
@@ -171,7 +210,7 @@
     "eyebrow": "About us",
     "title": "21 years building ERP for construction",
     "subtitle": "With over 21 years of industry expertise, Prizma is a comprehensive ERP, business process management, financial management, and reporting platform designed specifically for the construction industry.",
-    "yearsLabel": "of construction expertise",
+    "yearsLabel": "years of experience",
     "yearsBody": "From the first procurement request to the final settlement, Prizma is shaped by how construction teams actually work.",
     "storyEyebrow": "Our story",
     "storyTitle": "Software that understands construction",
@@ -249,129 +288,108 @@
     "ctaInline": "Want to see how this works in Prizma? Book a quick demo with our team.",
     "ctaInlineButton": "Request a demo",
     "posts": {
-      "post1": {
-        "category": "Procurement",
-        "date": "May 12, 2026",
-        "readTime": "5 min read",
-        "author": "Marina Volkova",
-        "role": "Procurement Lead",
-        "title": "Cutting procurement cycle time by 40% on active sites",
-        "excerpt": "How transparent approval routes and historical price analysis help teams buy faster without overspending.",
-        "lead": "On a busy site, a slow purchase request is more than an annoyance — it stalls work, idles crews and quietly inflates cost. Here is how construction teams cut their procurement cycle by nearly half without adding headcount.",
-        "quote": "We stopped chasing approvals over the phone. The route does it for us, and everyone can see exactly where a request stands.",
-        "sections": [
-          {
-            "heading": "Where the time actually goes",
-            "body": "Most delays aren't in the buying itself — they're in the waiting. Requests sit in inboxes, approvers are unclear, and nobody knows who is holding things up. Mapping the real route from request to purchase order almost always reveals two or three steps that add days but no value."
-          },
-          {
-            "heading": "Routes and price history do the heavy lifting",
-            "body": "With rule-based approval routes, each request goes to the right person automatically and escalates if it stalls. Pair that with historical price analysis, and buyers negotiate from real numbers instead of guesswork — faster decisions, better prices, and a full audit trail behind every order."
-          }
-        ]
-      },
-      "post2": {
-        "category": "Budgeting",
-        "date": "Apr 28, 2026",
-        "readTime": "6 min read",
-        "author": "Daniel Roth",
-        "role": "Head of Project Finance",
-        "title": "Actual cost vs. budget: catching overruns before they hurt",
-        "excerpt": "A field-tested framework for tracking spend against budget in real time across every project.",
-        "lead": "Budget overruns rarely arrive as a surprise — the signals are there for weeks before they show up in the final report. The trick is to see them while you can still act.",
-        "quote": "By the time an overrun reaches the monthly report, it's history. We needed to see it on the day it happened.",
-        "sections": [
-          {
-            "heading": "Compare in real time, not in hindsight",
-            "body": "A monthly reconciliation tells you what already went wrong. Comparing committed and actual cost against budget continuously turns budgeting into an early-warning system — deviations surface in days, not at month-end."
-          },
-          {
-            "heading": "One number everyone trusts",
-            "body": "When procurement, finance and site managers all read the same live figure, arguments about whose spreadsheet is right disappear. Decisions get faster because the data is shared, current, and traceable down to the individual purchase order."
-          }
-        ]
-      },
-      "post3": {
-        "category": "Product",
-        "date": "Apr 9, 2026",
-        "readTime": "4 min read",
-        "author": "Prizma Product Team",
+      "process": {
+        "category": "Modules",
+        "date": "October 26, 2024",
+        "readTime": "3 min read",
+        "author": "Prizma Team",
         "role": "Product",
-        "title": "What's new in Prizma: mobile approvals and live dashboards",
-        "excerpt": "A look at the latest release — approve requests on the go and watch project health update live.",
-        "lead": "This release is all about speed — getting decisions out of the office and giving managers a live view of every project, wherever they are.",
-        "quote": "Approvals that used to wait for someone to get back to their desk now happen from the cab of a truck.",
+        "title": "Process Module",
+        "excerpt": "Operational efficiency built on three core processes: material request, purchase request and payment request.",
+        "lead": "Prizma Flow's Process module is built on three core processes that raise operational efficiency: material request, purchase request and payment request.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Approve from anywhere",
-            "body": "Mobile approvals let managers review and sign off on procurement, payment and HR requests directly from their phone. Each request carries its full context — amounts, attachments and history — so decisions are informed, not rushed."
+            "heading": "The material request process",
+            "body": "The process starts when a department defines the material or service it needs. The warehouse checks stock: if the material is available it is delivered directly; if not, it is routed to a purchase request."
           },
           {
-            "heading": "Dashboards that update themselves",
-            "body": "The new live dashboards refresh as data changes, showing budget health, open requests and project progress at a glance. No more exporting to a spreadsheet to find out where things stand."
+            "heading": "Purchase and payment processes",
+            "body": "The purchasing department collects supplier quotes within budget and criteria — at least two companies for low-value purchases and at least three for high-value ones. After approval and technical review, the process moves to the payment schedule. Customizable screens — inbox, completed payments, contracts and order tracking — ensure resources are used effectively."
           }
         ]
       },
-      "post4": {
-        "category": "HR",
-        "date": "Mar 22, 2026",
-        "readTime": "5 min read",
-        "author": "Aigerim Suleimenova",
-        "role": "HR Operations",
-        "title": "Tracking field hours and payroll without the spreadsheets",
-        "excerpt": "Collect work hours from site, manage leave and run monthly payroll from a single source of truth.",
-        "lead": "Field hours scattered across paper timesheets and WhatsApp messages make payroll a monthly scramble. Bringing them into one place changes both accuracy and morale.",
-        "quote": "Payroll used to take a week of cross-checking. Now the hours are already in the system when we close the month.",
+      "erp": {
+        "category": "Modules",
+        "date": "October 26, 2024",
+        "readTime": "3 min read",
+        "author": "Prizma Team",
+        "role": "Product",
+        "title": "ERP (Enterprise Resource Planning) Module",
+        "excerpt": "Control inventory, stock and material movements from one center, with accounting entries created automatically.",
+        "lead": "The ERP module is a comprehensive program that lets businesses control inventory, stock and material movements from a single center while simplifying process management.",
+        "quote": "",
         "sections": [
           {
-            "heading": "Capture hours where the work happens",
-            "body": "Collecting work hours directly from site — with the right project and budget code attached — means payroll starts from clean data. No re-keying, no lost timesheets, no end-of-month reconstruction."
+            "heading": "Key features",
+            "body": "Material management tracks quantity, unit and amount centrally. Material vouchers record consumption, scrap, transfer, production entry, counting and assignment. Warehouse transfers automate movements between warehouses and produce inventory and cost-center reports. Thanks to accounting integration, accounting entries are created automatically."
           },
           {
-            "heading": "Leave, documents and payroll in one flow",
-            "body": "When leave requests, document tracking and payroll live in the same system, HR stops stitching tools together. Monthly payroll sheets generate from data that's already verified, and every figure traces back to its source."
+            "heading": "Benefits for businesses",
+            "body": "Operational efficiency, cost savings, real-time traceability, fast decisions, detailed analysis, flexibility, time savings, higher profitability and data security. Accurate stock management raises the profit margin and provides a competitive edge."
           }
         ]
       },
-      "post5": {
-        "category": "Finance",
-        "date": "Mar 3, 2026",
-        "readTime": "7 min read",
-        "author": "Daniel Roth",
-        "role": "Head of Project Finance",
-        "title": "Bringing banks, cash and contractors into one ledger",
-        "excerpt": "Why integrated finance beats disconnected tools when margins are tight and timelines are tighter.",
-        "lead": "Disconnected finance tools feel cheap until reconciliation season — then the hidden cost of moving numbers between systems becomes painfully clear.",
-        "quote": "Every handoff between two systems is a place for an error to hide. We removed the handoffs.",
+      "accounting": {
+        "category": "Modules",
+        "date": "October 26, 2024",
+        "readTime": "3 min read",
+        "author": "Prizma Team",
+        "role": "Product",
+        "title": "General Accounting Module",
+        "excerpt": "Manage all financial transactions from one platform: income and expense, bank and cash movements, purchase and sales invoices.",
+        "lead": "Prizma's General Accounting module lets you manage all of your company's financial transactions from a single platform. Income and expenses, bank and cash movements, and purchase and sales invoices are recorded completely and transparently.",
+        "quote": "",
         "sections": [
           {
-            "heading": "The real cost of disconnected tools",
-            "body": "When banking, cash, credits and contractor settlements live in separate places, every report is a manual merge. That's slow, error-prone, and impossible to audit quickly when a question comes up."
+            "heading": "Comprehensive voucher management",
+            "body": "The module supports more than 25 voucher types — transfer, bank, cash, collection, payment, offset, interbank transfer, accrual, advance, and purchase and sales invoices. Every transaction is posted to the right account, giving full transparency across daily, monthly and annual financial processes."
           },
           {
-            "heading": "One ledger, end to end",
-            "body": "Integrating bank operations with contractor settlements and project costs means money is tracked from commitment to payment in a single ledger. Reconciliation becomes a review, not a reconstruction, and cash position is always current."
+            "heading": "What it brings to your business",
+            "body": "Bringing every accounting process onto one platform increases efficiency and reduces both error risk and operational cost. Its web-based structure lets you reach your data from anywhere through a user-friendly interface."
           }
         ]
       },
-      "post6": {
-        "category": "Operations",
-        "date": "Feb 14, 2026",
-        "readTime": "4 min read",
-        "author": "Marina Volkova",
-        "role": "Operations",
-        "title": "Five signs your construction firm has outgrown spreadsheets",
-        "excerpt": "If these problems sound familiar, it may be time to move your operations onto a real ERP.",
-        "lead": "Spreadsheets are where most construction businesses start — and there's nothing wrong with that, until the cracks start to cost you real money. Here are the signals worth watching for.",
-        "quote": "The spreadsheet didn't fail loudly. It just quietly stopped being the truth.",
+      "reports": {
+        "category": "Modules",
+        "date": "October 26, 2024",
+        "readTime": "3 min read",
+        "author": "Prizma Team",
+        "role": "Product",
+        "title": "Reports Module",
+        "excerpt": "Track financial and operational performance in real time: cumulative and pivot reports, management reports and a dashboard.",
+        "lead": "Prizma's Reports module lets businesses monitor their financial and operational performance in real time. It enables comprehensive evaluation from every angle and speeds up decision-making.",
+        "quote": "",
         "sections": [
           {
-            "heading": "When data stops being trustworthy",
-            "body": "Multiple versions of the same file, broken formulas, and figures nobody can quite explain are the first signs. If teams second-guess the numbers before every meeting, the tool is no longer serving you."
+            "heading": "Four core components",
+            "body": "Cumulative income-expense reports present a period's income and expenses in a single table. Pivot reports break data into categories for detailed analysis. Management reports show all data numerically and graphically together. The dashboard gathers critical information on a single screen."
           },
           {
-            "heading": "When growth makes it worse",
-            "body": "Each new project, site and team member multiplies the manual work. An integrated ERP turns that scaling curve around — adding a project becomes a setting, not another spreadsheet to maintain by hand."
+            "heading": "Business benefits",
+            "body": "The system delivers time savings, faster decisions, customizable reports, financial control and comprehensive analysis — supporting higher efficiency and sustainable growth."
+          }
+        ]
+      },
+      "hrm": {
+        "category": "Modules",
+        "date": "October 26, 2024",
+        "readTime": "3 min read",
+        "author": "Prizma Team",
+        "role": "Product",
+        "title": "Human Resources Module (HRM)",
+        "excerpt": "Manage employee data, timesheets, payroll, overtime and leave from one central place.",
+        "lead": "Prizma's Human Resources (HRM) module simplifies employee management. It brings personnel data, attendance records, payroll calculations, overtime and leave processes together in one central place.",
+        "quote": "",
+        "sections": [
+          {
+            "heading": "Personnel management",
+            "body": "The module keeps all employee records — ID, social security, address and contact details — organized and accessible, so worker documentation stays current and easy to reach."
+          },
+          {
+            "heading": "Payroll, performance and data integration",
+            "body": "The system manages salaries, overtime and leave days, and makes performance and overtime-cost control easier. Data is bidirectionally compatible with Excel, so import and export are flexible."
           }
         ]
       }

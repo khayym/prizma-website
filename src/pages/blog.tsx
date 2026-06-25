@@ -6,6 +6,7 @@ import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
 import Link from "../components/Link";
 import { blogPosts as posts } from "../data/blogPosts";
+import { blogImages } from "../data/blogImages";
 
 const ArrowIcon: React.FC = () => (
   <svg
@@ -43,7 +44,14 @@ const BlogPage: React.FC = () => {
             <div
               className={`relative min-h-[260px] bg-gradient-to-br ${featured.tone} p-8`}
             >
-              <span className="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
+              <img
+                src={blogImages[featured.key]}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-950/50 to-transparent" />
+              <span className="relative z-10 inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
                 {t("blog.featured")}
               </span>
             </div>
@@ -79,9 +87,14 @@ const BlogPage: React.FC = () => {
                 to={`/blog/${p.key}`}
                 className="group flex flex-col overflow-hidden rounded-3xl border border-ink-100 bg-white transition hover:border-brand-200 hover:shadow-lg"
               >
-                <div
-                  className={`h-40 bg-gradient-to-br ${p.tone} transition group-hover:opacity-90`}
-                />
+                <div className={`h-40 overflow-hidden bg-gradient-to-br ${p.tone}`}>
+                  <img
+                    src={blogImages[p.key]}
+                    alt=""
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3 text-xs font-medium text-ink-500">
                     <span className="text-brand-700">
