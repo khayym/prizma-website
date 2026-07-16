@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Captcha from "../components/Captcha";
+import PhoneField from "../components/PhoneField";
 import { submitContactForm } from "../utils/contactForm";
 
 const Demo: React.FC = () => {
@@ -93,7 +94,7 @@ const Demo: React.FC = () => {
               />
               <div className="grid gap-4 sm:grid-cols-2">
                 <Field name="company" label={t("demo.company")} />
-                <Field name="phone" label={t("demo.phone")} type="tel" />
+                <PhoneField label={t("demo.phone")} />
               </div>
               <label className="block">
                 <span className="text-sm font-medium text-ink-700">

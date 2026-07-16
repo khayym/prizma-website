@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
 import Captcha from "../components/Captcha";
+import PhoneField from "../components/PhoneField";
 import { submitContactForm } from "../utils/contactForm";
 
 const PhoneIcon: React.FC = () => (
@@ -195,7 +196,7 @@ const ContactPage: React.FC = () => {
                       type="email"
                       required
                     />
-                    <Field name="phone" label={t("demo.phone")} type="tel" />
+                    <PhoneField label={t("demo.phone")} />
                   </div>
                   <Field name="company" label={t("demo.company")} />
                   <label className="block">

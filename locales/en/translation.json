@@ -29,44 +29,56 @@
   },
   "valueProp": {
     "eyebrow": "Why Prizma",
-    "title": "Discover the power of digitization",
-    "subtitle": "The benefits of digital transformation with Prizma",
+    "title": "Discover the Power of Digitalization",
+    "subtitle": "The advantages of digital transformation with Prizma",
     "items": {
-      "digitization": {
-        "title": "Process digitization",
-        "body": "Increase efficiency and reduce costs across the business."
+      "process": {
+        "title": "Business Process Management",
+        "body": "Digitalize your workflows, accelerate approval processes, and transparently track every transaction."
       },
-      "design": {
-        "title": "Fast process design",
-        "body": "An intuitive interface lets you build workflows in hours."
+      "erp": {
+        "title": "Enterprise Resource Planning",
+        "body": "Manage your finance, procurement, inventory, contract, and project management processes through a fully integrated system."
       },
-      "integrated": {
-        "title": "Integrated solution",
-        "body": "All construction business processes on one platform."
+      "hr": {
+        "title": "Human Resources Management",
+        "body": "Easily manage employee records, timesheets, leave, personnel administration, and payroll processes within a centralized structure."
       },
-      "productivity": {
-        "title": "Productivity boost",
-        "body": "Speed up workflows and optimize how resources are used."
+      "equipment": {
+        "title": "Equipment Management",
+        "body": "Regularly monitor the location, usage, maintenance, operating hours, and cost information of machinery and equipment."
       },
-      "analytics": {
-        "title": "Real-time analytics",
-        "body": "Track spend and project progress with live data and reports."
+      "ohs": {
+        "title": "Occupational Health and Safety",
+        "body": "Digitally record and manage OHS training, inspections, non-conformities, and corrective actions."
       },
-      "integration": {
-        "title": "Easy integration",
-        "body": "Smooth compatibility with the systems you already run."
+      "subcon": {
+        "title": "Subcontractor Management",
+        "body": "Manage subcontractor contracts, employees, progress payments, project progress, and costs from a single platform."
       },
-      "mobile": {
-        "title": "Mobile flexibility",
-        "body": "Run processes from anywhere — in the field or remote."
+      "legal": {
+        "title": "Legal Process Management",
+        "body": "Securely and transparently track your contracts, legal cases, official documents, notifications, and legal obligations."
       },
-      "access": {
-        "title": "Advanced access control",
-        "body": "Granular permissions protect data from unwanted access."
+      "dms": {
+        "title": "Document Management",
+        "body": "Store and authorize access to corporate documents and files in a centralized environment and quickly access their latest versions."
       },
       "reporting": {
-        "title": "Custom reporting",
-        "body": "Tailored reports that support strategic decisions."
+        "title": "Reporting and Business Intelligence",
+        "body": "Analyze your business processes in detail using real-time data, customizable reports, and visual dashboards."
+      },
+      "ai": {
+        "title": "AI-Powered Management",
+        "body": "Evaluate your data more efficiently and accelerate decision-making processes with AI-powered analyses and recommendations."
+      },
+      "chat": {
+        "title": "Corporate Communication",
+        "body": "Maintain communication between teams within the system and make process-related information sharing faster and more organized."
+      },
+      "settings": {
+        "title": "Flexible System Settings",
+        "body": "Customize user roles, access permissions, notifications, and system preferences according to your organization’s requirements."
       }
     }
   },
@@ -94,14 +106,16 @@
   "mobile": {
     "eyebrow": "Mobile app",
     "title": "Prizma on iOS and Android",
-    "body": "The Prizma mobile app lets you manage business processes anytime, anywhere. A friendly interface, powerful features, data security, and fast access.",
+    "body": "Manage your business processes, projects, and pending approvals anytime, anywhere with the Prizma mobile application. Its user-friendly interface, secure infrastructure, and real-time data access allow you to monitor your processes seamlessly, whether you are working in the office, on-site, or remotely.",
     "appStore": "Download on the App Store",
     "googlePlay": "Get it on Google Play",
     "features": {
-      "access": "Easy access",
-      "compat": "Full compatibility",
-      "realtime": "Real-time updates",
-      "ux": "Friendly interface"
+      "access": "Easy Access from Anywhere",
+      "realtime": "Real-Time Updates",
+      "approvals": "Mobile Approval Processes",
+      "ux": "User-Friendly Interface",
+      "secure": "Secure Data Access",
+      "compat": "iOS and Android Compatibility"
     }
   },
   "modules": {
@@ -127,14 +141,14 @@
       },
       "hr": {
         "title": "Human Resources",
-        "body": "Digitalizes HR operations by centrally managing employee records, timesheets, leave, payroll, personnel documents, expense receipts, and employee processes."
+        "body": "Digitalizes human resources operations by centrally managing employee records, timesheets, leave, payroll, personnel documents, expense receipts, and employee-related processes."
       },
       "equipment": {
         "title": "Equipment Management",
         "body": "Supports operational continuity by tracking the inventory, location, usage, and maintenance processes of machinery and equipment."
       },
       "hse": {
-        "title": "Health & Safety (OHS)",
+        "title": "Occupational Health & Safety",
         "body": "Enables the effective management of OHS training, site inspections, non-conformity records, and corrective actions."
       },
       "subcon": {
@@ -147,15 +161,7 @@
       },
       "dms": {
         "title": "Document Management",
-        "body": "Provides fast access to information by supporting corporate document, file, and version management through a secure digital archive."
-      },
-      "ai": {
-        "title": "AI-Powered Management",
-        "body": "Evaluate your data more efficiently and accelerate decision-making with AI-powered analyses and recommendations."
-      },
-      "chat": {
-        "title": "Corporate Communication",
-        "body": "Keep teams in sync inside the system and make process-related information sharing faster and more organized."
+        "body": "Provides fast access to information by supporting corporate document, file, and version management through a secure digital archive infrastructure."
       }
     }
   },
@@ -188,17 +194,45 @@
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": {
+      "purchases": {
+        "q": "How can we track our purchase requests and approval processes?",
+        "a": "With Prizma FLOW, you can track the current stage of each purchase request, the person responsible for the pending action, and its approval status in real time."
+      },
+      "orders": {
+        "q": "Can we monitor the status of our orders and delivery processes?",
+        "a": "With Prizma ERP, delivery details, quantities, suppliers, and the status of open orders can be easily monitored and reported."
+      },
+      "payments": {
+        "q": "How can we control pending payment requests and payment processes?",
+        "a": "Payment requests, approval statuses, and completed payments are tracked throughout each process, providing effective financial control."
+      },
+      "quotes": {
+        "q": "Can we view supplier quotations and purchasing comparisons?",
+        "a": "Received quotations, supplier prices, and purchasing histories are securely recorded and can be easily compared and analyzed."
+      },
+      "stages": {
+        "q": "How can we track the current stage of processes and identify delayed tasks?",
+        "a": "With Prizma FLOW, all process steps, waiting times, and responsible users can be viewed in real time."
+      },
+      "reports": {
+        "q": "Can we report our operational and financial data?",
+        "a": "With Prizma Reporting, procurement, order, payment, cost, and budget data can be analyzed through detailed reports."
+      },
+      "dashboards": {
+        "q": "Can we create customized reports and dashboards for management?",
+        "a": "With Prizma Reporting, customizable reports and visual management dashboards can be created according to your organization’s requirements."
+      },
+      "hr": {
+        "q": "How can we manage employee records, timesheets, leave, and payroll processes?",
+        "a": "With Prizma HRM, employee information, documents, timesheets, leave, and payroll processes can be managed through a single system."
+      },
+      "hrReports": {
+        "q": "Can we report personnel costs and human resources data?",
+        "a": "Prizma HRM reports make it easy to monitor employee costs, timesheets, leave, and workforce analytics."
+      },
       "inventory": {
-        "q": "Are the materials we ordered in stock? Are they available at other sites' warehouses?",
-        "a": "Prizma's modular structure makes warehouse and project-level stock control fast and accurate — you can check availability across every site."
-      },
-      "open": {
-        "q": "What's the status of open procurement, payment, or material requests? How long have they been pending?",
-        "a": "The Process module gives you full, transparent visibility into where each request sits, who hasn't approved yet, and how long it's been pending. Add comments and reminders inline."
-      },
-      "suppliers": {
-        "q": "Which suppliers did we get quotes from? What price did each one offer?",
-        "a": "Prizma stores detailed supplier info and lets you attach multiple alternative quotes per request — full transparency for procurement teams."
+        "q": "How can we control inventory and material requirements?",
+        "a": "With Prizma ERP, warehouse inventory, material movements, and procurement requirements can be monitored on a project-by-project basis."
       }
     }
   },
@@ -210,12 +244,12 @@
     "eyebrow": "About us",
     "title": "21 years building ERP for construction",
     "subtitle": "With over 21 years of industry expertise, Prizma is a comprehensive ERP, business process management, financial management, and reporting platform designed specifically for the construction industry.",
-    "yearsLabel": "years of experience",
-    "yearsBody": "From the first procurement request to the final settlement, Prizma is shaped by how construction teams actually work.",
+    "yearsLabel": "Years of Industry Experience",
+    "yearsBody": "From the initial request to the final progress payment, Prizma is developed in line with the real workflow of the construction industry, bringing together field and office processes on a single platform.",
     "storyEyebrow": "Our story",
-    "storyTitle": "Software that understands construction",
-    "storyBody1": "Prizma began on construction sites, not in a boardroom. After 21 years working alongside contractors, we built a single platform that connects budgets, procurement, warehouses, finance and HR.",
-    "storyBody2": "Today more than 5,000 users run their daily operations on Prizma — planning projects, routing approvals and tracking spend across every site in real time.",
+    "storyTitle": "Technology That Understands Construction",
+    "storyBody1": "Prizma is more than just software; it is a management platform built on over 21 years of field experience, real project requirements, and the dynamics of the construction industry.",
+    "storyBody2": "Developed through a detailed analysis of the challenges faced in budgeting, procurement, finance, human resources, and project management, Prizma has evolved into an integrated solution that enables businesses to manage all their operations from a single platform.",
     "mission": {
       "label": "Mission",
       "title": "Make construction management effortless",
@@ -227,48 +261,117 @@
       "body": "Our vision is to become the leading digital transformation and ERP platform for the global construction industry. By combining innovative technologies, data-driven insights, and industry expertise, we empower organizations to optimize operations, improve decision-making, and achieve sustainable growth."
     },
     "offerEyebrow": "What we offer",
-    "offerTitle": "Everything a construction business needs"
+    "offerTitle": "An integrated digital management solution that manages all construction business processes on a single platform",
+    "storyBody3": "Continuously enhanced through experience gained from real projects, Prizma accelerates processes, strengthens operational control, and provides managers with powerful analytical tools to make the right decisions at the right time.",
+    "storyBody4": "Today, more than 5,000 users manage their daily operations faster, more transparently, and more efficiently through Prizma’s reliable infrastructure.",
+    "storyBody5": "By closely following the evolving needs of the industry, we continue to develop stronger, more flexible, and smarter solutions with every new project.",
+    "offer": {
+      "integrated": {
+        "title": "Integrated Project Management",
+        "body": "Manage finance, procurement, human resources, equipment, and site operations through a single, fully integrated platform."
+      },
+      "budget": {
+        "title": "Budget and Cost Control",
+        "body": "Compare planned budgets with actual costs, identify deviations at an early stage, and make more effective decisions."
+      },
+      "process": {
+        "title": "Digital Process and Approval Management",
+        "body": "Track the current stage of requests, orders, payments, and operational processes, identify who is responsible for pending actions, and view the complete transaction history in real time."
+      },
+      "visibility": {
+        "title": "Real-Time Management Visibility",
+        "body": "Analyze project, financial, and operational data through up-to-date reports and management dashboards, enabling data-driven business management."
+      },
+      "financial": {
+        "title": "Project-Based Financial Tracking",
+        "body": "Examine income, expenses, payments, cash flow, and profitability in detail by project, client, and cost item."
+      },
+      "procurement": {
+        "title": "Procurement and Supplier Management",
+        "body": "Transparently manage quotation processes, supplier performance, order statuses, and purchasing history."
+      },
+      "hr": {
+        "title": "Human Resources and Personnel Management",
+        "body": "Centrally manage employee information, documents, timesheets, leave, payroll, and personnel costs."
+      },
+      "flexible": {
+        "title": "Flexible Process Structure",
+        "body": "Create customized approval workflows, user permissions, and business processes that adapt to your organization’s operational requirements."
+      },
+      "site": {
+        "title": "Site and Head Office Integration",
+        "body": "Accelerate the flow of information between construction sites and the head office, ensuring that all teams work with accurate and up-to-date data."
+      },
+      "secure": {
+        "title": "Secure and Traceable Management",
+        "body": "Securely manage your corporate data through authorization controls, transaction records, and detailed tracking mechanisms."
+      }
+    }
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Prizma in construction: every department, unified for peak efficiency",
-    "subtitle": "One ERP that connects company and project management — control costs, finish tasks faster and raise productivity across the board.",
+    "title": "End-to-End Digital Control in Construction Management with Prizma ERP",
+    "subtitle": "Prizma ERP brings company and project management together on a single platform, helping businesses control costs, accelerate processes, and provide managers with accurate, real-time decision support.",
     "items": {
       "planning": {
-        "title": "Project planning & progress tracking",
-        "body": "Compare planned vs. actual costs in real time, spot budget deviations and delays early, and make data-driven decisions."
+        "title": "Project Planning and Progress Tracking",
+        "body": "Monitor planned and actual project costs, progress levels, and budget performance in real time to identify and manage risks at an early stage."
       },
       "inventory": {
-        "title": "Inventory & warehouse management",
-        "body": "Centralize procurement and stock from requisition to delivery, reserve materials and avoid unnecessary purchases."
+        "title": "Inventory and Warehouse Management",
+        "body": "Optimize inventory costs by controlling material receipts, issues, transfers, and consumption on a project-by-project basis."
+      },
+      "procurement": {
+        "title": "Procurement and Supplier Management",
+        "body": "Digitalize request, quotation, order, and supply processes to procure the right materials at the right time."
       },
       "contracts": {
-        "title": "Contracts & work settlements",
-        "body": "Automate contractor agreements and completed-work calculations, including penalties and deductions based on site reports."
+        "title": "Contract and Progress Payment Management",
+        "body": "Securely manage employer and subcontractor contracts, progress payments, deductions, and payment processes through a centralized system."
       },
       "finance": {
-        "title": "Financial processes & accounting",
-        "body": "Manage banking, cash, credits and checks with bank integration for secure, fast payments and clear financial reporting."
+        "title": "Financial Management and Accounting",
+        "body": "Maintain control over banking, cash, current accounts, payments, collections, and accounting processes through an integrated financial structure."
       },
-      "personnel": {
-        "title": "Personnel management & payroll",
-        "body": "Consolidate employee data, collect field work hours, manage leave and generate monthly payroll with document tracking."
+      "hr": {
+        "title": "Human Resources and Payroll Management (Prizma HR)",
+        "body": "Manage employee records, timesheets, leave, documents, expenses, payroll, and personnel costs from a single centralized platform."
       },
       "mrp": {
-        "title": "Material requirements planning",
-        "body": "Plan material needs in advance with real-time inventory monitoring to prevent shortages and surpluses."
+        "title": "Material Requirements Planning (MRP)",
+        "body": "Analyze project requirements in advance to prevent excess inventory and improve the efficiency of procurement processes."
       },
-      "accounting": {
-        "title": "Cumulative income & expense accounting",
-        "body": "Advanced reporting tracks revenue and expense in real time, analyzed by project and period for reliable budgeting."
+      "analysis": {
+        "title": "Income, Expense, and Cost Analysis",
+        "body": "Analyze project income, expenses, budgets, and profitability performance on both a periodic and cumulative basis."
       },
-      "customers": {
-        "title": "Customer account management",
-        "body": "Track income and expense per project or customer to assess profitability with precision."
+      "clients": {
+        "title": "Employer and Client Management",
+        "body": "Monitor progress payments, collections, costs, and project financial performance in detail for each employer or client."
       },
       "dashboards": {
-        "title": "Dashboards & data visualization",
-        "body": "Customizable panels show financial and operational metrics as real-time graphs for faster decisions."
+        "title": "Dashboards and Management Reports",
+        "body": "Analyze financial and operational data through advanced dashboards to make faster and more strategic decisions."
+      },
+      "dms": {
+        "title": "Digital Document Management (Prizma DISK)",
+        "body": "Classify, manage, and easily access company and project documents within a secure digital environment."
+      },
+      "equipment": {
+        "title": "Equipment Management (Prizma Equipment)",
+        "body": "Effectively manage the inventory, maintenance, usage, breakdown, and cost processes of machinery and equipment."
+      },
+      "ohs": {
+        "title": "Occupational Health and Safety Management (OHS)",
+        "body": "Digitally track OHS training, inspections, non-conformities, and corrective actions."
+      },
+      "subcon": {
+        "title": "Subcontractor Management (Prizma SubCon)",
+        "body": "Control subcontractor contracts, personnel, progress, progress payments, and costs on a project-by-project basis."
+      },
+      "legal": {
+        "title": "Legal Process Management (Prizma Legal)",
+        "body": "Manage legal cases, contracts, official notifications, and other legal processes through a centralized, secure, and traceable system."
       }
     }
   },
@@ -411,7 +514,7 @@
     "successBody": "We will reach out within one business day."
   },
   "footer": {
-    "about": "About",
+    "followUs": "Follow us",
     "aboutText": "Prizma is a powerful platform for BPM, ERP, reporting, and accounting — purpose-built for construction and backed by 21 years of experience.",
     "quickAccess": "Quick access",
     "contact": "Contact",

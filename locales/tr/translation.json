@@ -29,44 +29,56 @@
   },
   "valueProp": {
     "eyebrow": "Neden Prizma",
-    "title": "Dijitalleşmenin gücünü keşfedin",
+    "title": "Dijitalleşmenin Gücünü Keşfedin",
     "subtitle": "Prizma ile dijital dönüşümün avantajları",
     "items": {
-      "digitization": {
-        "title": "Süreç dijitalleşmesi",
-        "body": "Verimliliği artırın ve maliyetleri düşürün."
+      "process": {
+        "title": "Süreç Yönetimi",
+        "body": "İş akışlarınızı dijitalleştirin, onay süreçlerini hızlandırın ve tüm işlemleri şeffaf biçimde takip edin."
       },
-      "design": {
-        "title": "Hızlı süreç tasarımı",
-        "body": "Sezgisel arayüz ile iş akışlarını dakikalar içinde kurun."
+      "erp": {
+        "title": "Kurumsal Kaynak Planlama",
+        "body": "Finans, satın alma, stok, sözleşme ve proje yönetimi süreçlerinizi entegre bir sistem üzerinden yönetin."
       },
-      "integrated": {
-        "title": "Entegre çözüm",
-        "body": "İnşaat sektörü için tüm süreçler tek platformda."
+      "hr": {
+        "title": "İnsan Kaynakları Yönetimi",
+        "body": "Personel kayıtları, puantaj, izin, özlük ve bordro süreçlerini merkezi bir yapı altında kolayca takip edin."
       },
-      "productivity": {
-        "title": "Verimlilik artışı",
-        "body": "İş akışlarını hızlandırın, kaynak kullanımını optimize edin."
+      "equipment": {
+        "title": "Ekipman Yönetimi",
+        "body": "Makine ve ekipmanların konum, kullanım, bakım, çalışma süresi ve maliyet bilgilerini düzenli olarak izleyin."
       },
-      "analytics": {
-        "title": "Canlı analitik",
-        "body": "Harcamaları ve proje ilerlemesini gerçek zamanlı izleyin."
+      "ohs": {
+        "title": "İş Sağlığı ve Güvenliği",
+        "body": "İSG eğitimlerini, denetimleri, uygunsuzlukları ve düzeltici faaliyetleri dijital ortamda kayıt altına alın."
       },
-      "integration": {
-        "title": "Kolay entegrasyon",
-        "body": "Kullandığınız sistemlerle sorunsuz uyum."
+      "subcon": {
+        "title": "Taşeron Yönetimi",
+        "body": "Taşeron sözleşmelerini, çalışanları, hakedişleri, ilerleme durumlarını ve maliyetleri tek platformdan yönetin."
       },
-      "mobile": {
-        "title": "Mobil esneklik",
-        "body": "Süreçleri sahadan ya da uzaktan, her yerden yönetin."
+      "legal": {
+        "title": "Hukuki Süreç Yönetimi",
+        "body": "Sözleşme, dava, resmi belge, bildirim ve hukuki yükümlülüklerinizi güvenli ve izlenebilir biçimde takip edin."
       },
-      "access": {
-        "title": "Gelişmiş erişim kontrolü",
-        "body": "Detaylı yetki yönetimi ile veri güvenliği."
+      "dms": {
+        "title": "Doküman Yönetimi",
+        "body": "Kurumsal belge ve dosyalarınızı merkezi bir ortamda saklayın, yetkilendirin ve güncel versiyonlarına hızlıca ulaşın."
       },
       "reporting": {
-        "title": "Özelleştirilmiş raporlama",
-        "body": "Stratejik kararları destekleyen, ihtiyacınıza özel raporlar."
+        "title": "Raporlama ve İş Zekâsı",
+        "body": "Gerçek zamanlı veriler, özelleştirilebilir raporlar ve görsel panellerle süreçlerinizi ayrıntılı olarak analiz edin."
+      },
+      "ai": {
+        "title": "Yapay Zekâ Destekli Yönetim",
+        "body": "Yapay zekâ destekli analiz ve önerilerle verilerinizi daha verimli değerlendirin, karar süreçlerinizi hızlandırın."
+      },
+      "chat": {
+        "title": "Kurumsal İletişim",
+        "body": "Ekipler arasındaki iletişimi sistem içerisinde sürdürün, süreçlerle ilgili bilgi paylaşımını daha hızlı ve düzenli hale getirin."
+      },
+      "settings": {
+        "title": "Esnek Sistem Ayarları",
+        "body": "Kullanıcı rolleri, erişim yetkileri, bildirimler ve sistem tercihlerini kurumunuzun ihtiyaçlarına göre özelleştirin."
       }
     }
   },
@@ -94,14 +106,16 @@
   "mobile": {
     "eyebrow": "Mobil uygulama",
     "title": "Prizma iOS ve Android'de",
-    "body": "Prizma mobil uygulaması ile iş süreçlerini her zaman, her yerden yönetin. Kullanıcı dostu arayüz, güçlü özellikler, veri güvenliği ve hızlı erişim.",
+    "body": "Prizma mobil uygulamasıyla iş süreçlerinizi, projelerinizi ve onay bekleyen işlemlerinizi her zaman, her yerden yönetin. Kullanıcı dostu arayüzü, güvenli altyapısı ve gerçek zamanlı veri erişimi sayesinde ofiste, sahada veya uzaktan çalışırken süreçlerinizi kesintisiz takip edin.",
     "appStore": "App Store'dan indirin",
     "googlePlay": "Google Play'den edinin",
     "features": {
-      "access": "Kolay erişim",
-      "compat": "Tam uyumluluk",
-      "realtime": "Gerçek zamanlı güncellemeler",
-      "ux": "Kullanıcı dostu arayüz"
+      "access": "Her Yerden Kolay Erişim",
+      "realtime": "Gerçek Zamanlı Güncellemeler",
+      "approvals": "Mobil Onay Süreçleri",
+      "ux": "Kullanıcı Dostu Arayüz",
+      "secure": "Güvenli Veri Erişimi",
+      "compat": "iOS ve Android Uyumluluğu"
     }
   },
   "modules": {
@@ -127,7 +141,7 @@
       },
       "hr": {
         "title": "İnsan Kaynakları",
-        "body": "Personel özlük dosyaları, puantaj, izin, bordro, personel evrakları ve harcama fişlerini tek merkezden yöneterek İK operasyonlarını dijitalleştirir."
+        "body": "Personel özlük dosyaları, puantaj, izin, bordro, personel evrakları, harcama fişleri ve çalışan süreçlerini tek merkezden yöneterek insan kaynakları operasyonlarını dijitalleştirir."
       },
       "equipment": {
         "title": "Ekipman Yönetimi",
@@ -142,25 +156,17 @@
         "body": "Taşeron sözleşmeleri, personel yönetimi, performans takibi ve hakediş süreçlerini dijital ortamda kontrol altına alır."
       },
       "legal": {
-        "title": "Hukuki Süreçler",
+        "title": "Hukuki Süreç Yönetimi",
         "body": "Dava, sözleşme, ihtar, bildirim ve diğer hukuki süreçlerin merkezi olarak yönetilmesini ve izlenmesini sağlar."
       },
       "dms": {
         "title": "Doküman Yönetimi",
         "body": "Kurumsal belge, doküman ve versiyon yönetimini güvenli dijital arşiv altyapısıyla destekleyerek bilgiye hızlı erişim sunar."
-      },
-      "ai": {
-        "title": "Yapay Zekâ Destekli Yönetim",
-        "body": "Yapay zekâ destekli analiz ve önerilerle verilerinizi daha verimli değerlendirin, karar süreçlerinizi hızlandırın."
-      },
-      "chat": {
-        "title": "Kurumsal İletişim",
-        "body": "Ekipler arasındaki iletişimi sistem içerisinde sürdürün, süreçlerle ilgili bilgi paylaşımını daha hızlı ve düzenli hale getirin."
       }
     }
   },
   "productDemo": {
-    "eyebrow": "Ürün turu",
+    "eyebrow": "Tanıtım videosu",
     "title": "Prizma'yı iş başında görün",
     "body": "Ekiplerin bütçeleri nasıl planladığını, onayları nasıl yönlendirdiğini ve her sahada harcamaları nasıl izlediğini gösteren 90 saniyelik tur.",
     "overlayTitle": "Prizma platform demosu",
@@ -188,17 +194,45 @@
     "eyebrow": "SSS",
     "title": "Sıkça sorulan sorular",
     "items": {
+      "purchases": {
+        "q": "Satın alma taleplerimizi ve onay süreçlerini nasıl takip edebiliriz?",
+        "a": "Prizma FLOW ile satın alma taleplerinin hangi aşamada olduğu, kimde beklediği ve onay durumları anlık olarak takip edilir."
+      },
+      "orders": {
+        "q": "Siparişlerimizin durumunu ve teslim süreçlerini görebilir miyiz?",
+        "a": "Prizma ERP ile verilen siparişlerin teslimat, miktar, tedarikçi ve açık sipariş durumları kolayca raporlanabilir."
+      },
+      "payments": {
+        "q": "Bekleyen ödeme taleplerini ve ödeme süreçlerini nasıl kontrol ederiz?",
+        "a": "Ödeme talepleri, onay durumları ve gerçekleşen ödemeler süreç bazlı takip edilerek finansal kontrol sağlanır."
+      },
+      "quotes": {
+        "q": "Tedarikçi tekliflerini ve satın alma karşılaştırmalarını görüntüleyebilir miyiz?",
+        "a": "Alınan teklifler, tedarikçi fiyatları ve satın alma geçmişleri kayıt altında tutulur, kolayca analiz edilir."
+      },
+      "stages": {
+        "q": "Süreçlerin hangi aşamada olduğunu ve geciken işleri nasıl takip ederiz?",
+        "a": "Prizma FLOW ile tüm süreç adımları, bekleme süreleri ve sorumlu kullanıcılar anlık olarak görüntülenebilir."
+      },
+      "reports": {
+        "q": "Operasyonel ve finansal verilerimizi raporlayabilir miyiz?",
+        "a": "Prizma Raporlama ile satın alma, sipariş, ödeme, maliyet ve bütçe verileri detaylı raporlar üzerinden analiz edilir."
+      },
+      "dashboards": {
+        "q": "Yönetim için özel rapor ve dashboard oluşturabilir miyiz?",
+        "a": "Prizma Raporlama ile ihtiyaçlara göre özelleştirilebilir raporlar ve görsel yönetim panelleri hazırlanabilir."
+      },
+      "hr": {
+        "q": "Personel, puantaj, izin ve bordro süreçlerini nasıl yönetebiliriz?",
+        "a": "Prizma HRM ile personel bilgileri, evraklar, puantaj, izin ve bordro süreçleri tek sistem üzerinden yönetilir."
+      },
+      "hrReports": {
+        "q": "Personel maliyetlerini ve insan kaynakları verilerini raporlayabilir miyiz?",
+        "a": "Prizma HRM raporları ile çalışan maliyetleri, puantaj, izin ve personel analizleri kolayca takip edilir."
+      },
       "inventory": {
-        "q": "Satın aldığımız malzemeler depoda mı? Diğer şantiyelerin depolarında var mı?",
-        "a": "Prizma'nın modüler yapısı sayesinde depo ve proje seviyesinde stok kontrolü hızlı ve doğrudur — her şantiye için stok durumunu anlık görebilirsiniz."
-      },
-      "open": {
-        "q": "Açık satın alma, ödeme ya da malzeme taleplerinin durumu ne? Ne kadar süredir bekliyorlar?",
-        "a": "Süreç modülü ile her talebin nerede olduğunu, kimin onayının beklendiğini ve süresini şeffaf şekilde görebilirsiniz. Yorum ve hatırlatıcı eklenebilir."
-      },
-      "suppliers": {
-        "q": "Hangi tedarikçilerden teklif aldık? Her biri ne fiyat verdi?",
-        "a": "Prizma her tedarikçi için detaylı bilgi tutar ve talep başına birden fazla alternatif teklif eklemenize olanak tanır — satın alma için tam şeffaflık."
+        "q": "Stok ve malzeme ihtiyaçlarını nasıl kontrol edebiliriz?",
+        "a": "Prizma ERP ile depo stokları, malzeme hareketleri ve satın alma ihtiyaçları proje bazında takip edilir."
       }
     }
   },
@@ -210,12 +244,12 @@
     "eyebrow": "Hakkımızda",
     "title": "21 yıldır inşaat için ERP geliştiriyoruz",
     "subtitle": "Prizma, 21 yılı aşkın sektör deneyimiyle inşaat firmalarının dijital dönüşüm süreçlerine liderlik eden; iş süreçleri yönetimi, ERP, finans, muhasebe ve raporlama alanlarında kapsamlı çözümler sunan yenilikçi bir platformdur.",
-    "yearsLabel": "yıllık tecrübe",
-    "yearsBody": "İlk satın alma talebinden son hakedişe kadar Prizma, inşaat ekiplerinin gerçekte nasıl çalıştığına göre şekillenir.",
+    "yearsLabel": "Yıllık Sektör Deneyimi",
+    "yearsBody": "İlk talepten son hakedişe kadar Prizma, inşaat sektörünün gerçek çalışma düzenine göre geliştirilir; saha ve ofis süreçlerini tek platformda buluşturur.",
     "storyEyebrow": "Hikâyemiz",
-    "storyTitle": "İnşaatı anlayan yazılım",
-    "storyBody1": "Prizma toplantı odasında değil, şantiyelerde doğdu. Müteahhitlerle 21 yıl birlikte çalıştıktan sonra bütçeleri, satın almayı, depoları, finansı ve İK'yı birleştiren tek bir platform kurduk.",
-    "storyBody2": "Bugün 5.000'den fazla kullanıcı günlük operasyonlarını Prizma üzerinde yürütüyor — projeleri planlıyor, onayları yönlendiriyor ve her şantiyede harcamaları gerçek zamanlı izliyor.",
+    "storyTitle": "İnşaatı Anlayan Teknoloji",
+    "storyBody1": "Prizma, yalnızca bir yazılım değil; 21 yılı aşkın saha deneyimi, gerçek proje ihtiyaçları ve sektörün dinamiklerinden doğan bir yönetim platformudur.",
+    "storyBody2": "İnşaat sektöründe bütçe, satın alma, finans, insan kaynakları ve proje yönetimi süreçlerinde karşılaşılan zorlukları yakından analiz ederek geliştirdiğimiz Prizma, işletmelerin tüm operasyonlarını tek merkezden yönetmesini sağlayan entegre bir çözüme dönüşmüştür.",
     "mission": {
       "label": "Misyon",
       "title": "İnşaat yönetimini zahmetsiz kılmak",
@@ -227,48 +261,117 @@
       "body": "Prizma olarak vizyonumuz, inşaat sektörünün dijital dönüşümüne yön veren, yenilikçi teknolojileri ve güçlü iş süreçleri yönetimini bir araya getiren lider bir platform olmaktır. Sürekli gelişen yapımızla işletmelerin verimliliğini artırmayı, karar alma süreçlerini güçlendirmeyi ve sürdürülebilir büyümelerine katkı sağlamayı hedefliyoruz."
     },
     "offerEyebrow": "Ne sunuyoruz",
-    "offerTitle": "Bir inşaat işletmesinin ihtiyaç duyduğu her şey"
+    "offerTitle": "İnşaat işletmelerinin tüm süreçlerini tek platformda yöneten entegre dijital yönetim çözümü",
+    "storyBody3": "Gerçek projelerden elde ettiğimiz deneyimle sürekli gelişen Prizma; süreçleri hızlandırır, operasyonel kontrolü artırır ve yöneticilere doğru zamanda doğru kararlar alabilecekleri güçlü analiz imkanları sunar.",
+    "storyBody4": "Bugün 5.000’den fazla kullanıcı, günlük operasyonlarını Prizma’nın güvenilir altyapısı üzerinden daha hızlı, şeffaf ve verimli şekilde yönetmektedir.",
+    "storyBody5": "Sektörün değişen ihtiyaçlarını yakından takip ederek, her yeni projede daha güçlü, daha esnek ve daha akıllı çözümler geliştirmeye devam ediyoruz.",
+    "offer": {
+      "integrated": {
+        "title": "Entegre Proje Yönetimi",
+        "body": "Finans, satın alma, insan kaynakları, ekipman ve saha operasyonlarını tek bir platform üzerinden birbirine entegre şekilde yönetin."
+      },
+      "budget": {
+        "title": "Bütçe ve Maliyet Kontrolü",
+        "body": "Planlanan bütçe ile gerçekleşen maliyetleri karşılaştırın, sapmaları erken tespit ederek daha etkin kararlar alın."
+      },
+      "process": {
+        "title": "Dijital Süreç ve Onay Yönetimi",
+        "body": "Talep, sipariş, ödeme ve operasyon süreçlerinin hangi aşamada olduğunu, kimde beklediğini ve işlem geçmişini anlık takip edin."
+      },
+      "visibility": {
+        "title": "Gerçek Zamanlı Yönetim Görünürlüğü",
+        "body": "Proje, finans ve operasyon verilerini güncel raporlar ve yönetim panelleri üzerinden analiz ederek işletmenizi verilerle yönetin."
+      },
+      "financial": {
+        "title": "Proje Bazlı Finansal Takip",
+        "body": "Gelir, gider, ödeme, nakit akışı ve kârlılık analizlerini proje, işveren ve maliyet kalemi bazında detaylı olarak inceleyin."
+      },
+      "procurement": {
+        "title": "Satın Alma ve Tedarik Yönetimi",
+        "body": "Teklif süreçlerini, tedarikçi performansını, sipariş durumlarını ve satın alma geçmişini şeffaf bir şekilde yönetin."
+      },
+      "hr": {
+        "title": "İnsan Kaynakları ve Personel Yönetimi",
+        "body": "Personel bilgileri, evraklar, puantaj, izin, bordro ve çalışan maliyetlerini merkezi bir yapı üzerinden kontrol edin."
+      },
+      "flexible": {
+        "title": "Esnek Süreç Yapısı",
+        "body": "Kurumunuza özel onay akışları, kullanıcı yetkileri ve iş süreçleri oluşturarak operasyonlarınıza uyum sağlayın."
+      },
+      "site": {
+        "title": "Saha ve Merkez Entegrasyonu",
+        "body": "Şantiye ile merkez arasındaki bilgi akışını hızlandırın, tüm ekiplerin güncel ve doğru verilerle çalışmasını sağlayın."
+      },
+      "secure": {
+        "title": "Güvenli ve İzlenebilir Yönetim",
+        "body": "Yetkilendirme, işlem kayıtları ve detaylı takip mekanizmaları ile kurumsal verilerinizi güvenli şekilde yönetin."
+      }
+    }
   },
   "services": {
     "eyebrow": "Hizmetler",
-    "title": "İnşaatta Prizma: tüm birimler yüksek verim için birleşti",
-    "subtitle": "Şirket ve proje yönetimini birleştiren tek ERP — maliyetleri kontrol edin, işleri daha hızlı bitirin ve verimliliği artırın.",
+    "title": "Prizma ERP ile İnşaat Yönetiminde Uçtan Uca Dijital Kontrol",
+    "subtitle": "Şirket ve proje yönetimini tek platformda birleştiren Prizma ERP; maliyetleri kontrol altına alır, süreçleri hızlandırır ve yöneticilere gerçek zamanlı, doğru karar desteği sunar.",
     "items": {
       "planning": {
-        "title": "Proje planlama ve ilerleme takibi",
-        "body": "Planlanan ve fiili maliyetleri gerçek zamanlı karşılaştırın, bütçe sapmalarını ve gecikmeleri erken yakalayın, veriye dayalı kararlar alın."
+        "title": "Proje Planlama ve İlerleme Takibi",
+        "body": "Projelerin planlanan ve gerçekleşen maliyetlerini, ilerleme durumlarını ve bütçe performansını anlık olarak takip ederek riskleri önceden yönetin."
       },
       "inventory": {
-        "title": "Stok ve depo yönetimi",
-        "body": "Satın almayı ve stoğu talepten teslimata kadar merkezileştirin, malzeme rezerve edin ve gereksiz alımlardan kaçının."
+        "title": "Stok ve Depo Yönetimi",
+        "body": "Malzeme giriş, çıkış, transfer ve tüketim süreçlerini proje bazında kontrol ederek stok maliyetlerini optimize edin."
+      },
+      "procurement": {
+        "title": "Satın Alma ve Tedarik Yönetimi",
+        "body": "Talep, teklif, sipariş ve tedarik süreçlerini dijitalleştirerek doğru malzemeyi doğru zamanda temin edin."
       },
       "contracts": {
-        "title": "Sözleşmeler ve hakediş",
-        "body": "Müteahhit sözleşmelerini ve tamamlanan iş hesaplarını, şantiye raporlarına dayalı ceza ve kesintiler dâhil otomatikleştirin."
+        "title": "Sözleşme ve Hakediş Yönetimi",
+        "body": "İşveren ve taşeron sözleşmeleri, hakedişler, kesintiler ve ödeme süreçlerini merkezi bir yapı üzerinden güvenle yönetin."
       },
       "finance": {
-        "title": "Finansal süreçler ve muhasebe",
-        "body": "Banka entegrasyonuyla banka, kasa, kredi ve çekleri yönetin; güvenli, hızlı ödemeler ve net finansal raporlama elde edin."
+        "title": "Finansal Yönetim ve Muhasebe",
+        "body": "Banka, kasa, cari hesap, ödeme, tahsilat ve muhasebe süreçlerini entegre finansal yapı ile kontrol altında tutun."
       },
-      "personnel": {
-        "title": "Personel yönetimi ve bordro",
-        "body": "Çalışan verilerini birleştirin, sahadan çalışma saatlerini toplayın, izinleri yönetin ve belge takibiyle aylık bordro oluşturun."
+      "hr": {
+        "title": "İnsan Kaynakları ve Bordro Yönetimi (Prizma HR)",
+        "body": "Personel özlük bilgileri, puantaj, izin, evrak, harcama, bordro ve çalışan maliyetlerini tek merkezden yönetin."
       },
       "mrp": {
-        "title": "Malzeme ihtiyaç planlaması",
-        "body": "Gerçek zamanlı stok takibiyle malzeme ihtiyacını önceden planlayın, eksik ve fazlalıkları önleyin."
+        "title": "Malzeme İhtiyaç Planlama (MRP)",
+        "body": "Proje ihtiyaçlarını önceden analiz ederek gereksiz stok oluşumunu önleyin ve satın alma süreçlerini verimli hale getirin."
       },
-      "accounting": {
-        "title": "Kümülatif gelir-gider muhasebesi",
-        "body": "Gelişmiş raporlama, geliri ve gideri gerçek zamanlı; proje ve dönem bazında analiz ederek güvenilir bütçeleme sağlar."
+      "analysis": {
+        "title": "Gelir, Gider ve Maliyet Analizi",
+        "body": "Projelerin gelir, gider, bütçe ve kârlılık performansını dönemsel ve kümülatif olarak analiz edin."
       },
-      "customers": {
-        "title": "Müşteri cari yönetimi",
-        "body": "Proje veya müşteri bazında gelir ve gideri takip edin, kârlılığı hassas biçimde değerlendirin."
+      "clients": {
+        "title": "İşveren ve Müşteri Yönetimi",
+        "body": "İşveren bazında hakediş, tahsilat, maliyet ve proje finansal performansını detaylı şekilde takip edin."
       },
       "dashboards": {
-        "title": "Panolar ve veri görselleştirme",
-        "body": "Özelleştirilebilir panolar, finansal ve operasyonel metrikleri gerçek zamanlı grafiklerle gösterir."
+        "title": "Dashboard ve Yönetim Raporları",
+        "body": "Finansal ve operasyonel verileri gelişmiş dashboardlar üzerinden analiz ederek hızlı ve stratejik kararlar alın."
+      },
+      "dms": {
+        "title": "Dijital Doküman Yönetimi (Prizma DISK)",
+        "body": "Şirket ve proje dokümanlarını güvenli dijital ortamda sınıflandırın, yönetin ve kolayca erişin."
+      },
+      "equipment": {
+        "title": "Ekipman Yönetimi (Prizma Equipment)",
+        "body": "Makine ve ekipmanların envanter, bakım, kullanım, arıza ve maliyet süreçlerini etkin şekilde yönetin."
+      },
+      "ohs": {
+        "title": "İş Sağlığı ve Güvenliği Yönetimi (İSG)",
+        "body": "İSG eğitimleri, denetimler, uygunsuzluklar ve düzeltici faaliyetleri dijital ortamda takip edin."
+      },
+      "subcon": {
+        "title": "Taşeron Yönetimi (Prizma SubCon)",
+        "body": "Taşeron sözleşmeleri, personel, ilerleme, hakediş ve maliyet süreçlerini proje bazında kontrol edin."
+      },
+      "legal": {
+        "title": "Hukuki Süreç Yönetimi (Prizma Legal)",
+        "body": "Dava, sözleşme, resmi bildirim ve hukuki süreçleri merkezi, güvenli ve izlenebilir bir sistem üzerinden yönetin."
       }
     }
   },
@@ -411,7 +514,7 @@
     "successBody": "Bir iş günü içinde sizinle iletişime geçeceğiz."
   },
   "footer": {
-    "about": "Hakkımızda",
+    "followUs": "Bizi takip edin",
     "aboutText": "Prizma, inşaat sektörü için tasarlanmış BPM, ERP, raporlama ve muhasebe platformudur. 21 yıllık deneyimle.",
     "quickAccess": "Hızlı erişim",
     "contact": "İletişim",

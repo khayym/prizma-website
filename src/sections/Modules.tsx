@@ -12,8 +12,6 @@ const modules: { key: string; tag: string }[] = [
   { key: "subcon", tag: "Prizma SCM" },
   { key: "legal", tag: "Prizma LEG" },
   { key: "dms", tag: "Prizma DMS" },
-  { key: "ai", tag: "Prizma AI" },
-  { key: "chat", tag: "Prizma Chat" },
 ];
 
 const icons: Record<string, React.ReactNode> = {
@@ -33,8 +31,6 @@ const icons: Record<string, React.ReactNode> = {
   ),
   legal: <path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0zM17 7l-3 7a3 3 0 006 0z" />,
   dms: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M9 13h6M9 17h6" />,
-  ai: <path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2M12 9a3 3 0 100 6 3 3 0 000-6z" />,
-  chat: <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />,
 };
 
 const ModuleIcon: React.FC<{ name: string }> = ({ name }) => (

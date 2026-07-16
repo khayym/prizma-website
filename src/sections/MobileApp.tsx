@@ -14,7 +14,7 @@ const MobileApp: React.FC = () => {
           <p className="mt-4 max-w-lg text-ink-600">{t("mobile.body")}</p>
 
           <ul className="mt-6 grid gap-2 sm:grid-cols-2">
-            {["access", "compat", "realtime", "ux"].map((key) => (
+            {["access", "realtime", "approvals", "ux", "secure", "compat"].map((key) => (
               <li
                 key={key}
                 className="flex items-center gap-2 text-sm text-ink-700"
@@ -61,7 +61,7 @@ const MobileApp: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto flex h-[560px] w-full max-w-md items-center justify-center">
+        <div className="relative mx-auto flex h-[420px] w-full max-w-md items-center justify-center sm:h-[560px]">
           <div className="pointer-events-none absolute inset-0 -z-10">
             <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-100 blur-3xl opacity-60" />
           </div>
@@ -69,12 +69,12 @@ const MobileApp: React.FC = () => {
           <PhoneFrame
             src={appMenu}
             alt="Prizma mobile menu"
-            className="absolute left-0 top-6 z-0 hidden sm:block w-[210px] -rotate-6"
+            className="absolute left-4 top-8 z-0 w-[150px] -rotate-6 sm:left-0 sm:top-6 sm:w-[210px]"
           />
           <PhoneFrame
             src={appHome}
             alt="Prizma mobile home dashboard"
-            className="relative z-10 w-[230px] sm:w-[240px] sm:translate-x-12 sm:translate-y-4 sm:rotate-3"
+            className="relative z-10 w-[165px] translate-x-10 translate-y-3 rotate-3 sm:w-[240px] sm:translate-x-12 sm:translate-y-4"
           />
         </div>
       </div>
