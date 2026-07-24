@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 hidden h-24 w-24 rounded-2xl bg-accent-400 sm:block" />
+            <div className="absolute -bottom-6 -right-6 -z-10 hidden h-24 w-24 rounded-2xl bg-accent-400 sm:block" />
           </div>
           <div>
             <span className="eyebrow">{t("about.storyEyebrow")}</span>
@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
             <p className="mt-4 text-ink-600">{t("about.storyBody4")}</p>
             <p className="mt-4 text-ink-600">{t("about.storyBody5")}</p>
             <a
-              href="https://www.youtube.com/@PrizmaFlow"
+              href="https://vkvideo.ru/@prizmaflow"
               target="_blank"
               rel="noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brand-800"
@@ -84,7 +84,7 @@ const AboutPage: React.FC = () => {
                 fill="currentColor"
                 aria-hidden="true"
               >
-                <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2 14.5v-9l7 4.5-7 4.5z" />
               </svg>
               {t("nav.trainingVideos")}
             </a>

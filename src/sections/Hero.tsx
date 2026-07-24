@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             <Link to="/#demo" className="btn-primary">
               {t("hero.primaryCta")}
             </Link>
-            <Link to="/#how" className="btn-ghost">
+            <Link to="/#demo-video" className="btn-ghost">
               {t("hero.secondaryCta")}
             </Link>
           </div>
@@ -32,8 +32,10 @@ const Hero: React.FC = () => {
                 21
               </div>
               <div className="text-sm">
-                <div className="font-semibold text-ink-900">21 years</div>
-                <div className="text-ink-600">built for construction</div>
+                <div className="font-semibold text-ink-900">
+                  {t("hero.yearsTitle")}
+                </div>
+                <div className="text-ink-600">{t("hero.yearsSub")}</div>
               </div>
             </div>
             <div className="hidden sm:block h-10 w-px bg-ink-200" />

@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               {t("footer.followUs")}
             </h4>
             <div className="mt-4 flex gap-3">
-              <SocialIcon href="https://www.youtube.com/@PrizmaFlow" label="YouTube">
+              <SocialIcon href="https://vkvideo.ru/@prizmaflow" label="VK Video">
                 <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
               </SocialIcon>
               <SocialIcon href="https://linkedin.com" label="LinkedIn">
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               </SocialIcon>
             </div>
             <a
-              href="https://www.youtube.com/@PrizmaFlow"
+              href="https://vkvideo.ru/@prizmaflow"
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50"
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                 fill="currentColor"
                 aria-hidden="true"
               >
-                <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2 14.5v-9l7 4.5-7 4.5z" />
               </svg>
               {t("nav.trainingVideos")}
             </a>
