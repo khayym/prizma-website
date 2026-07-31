@@ -44,6 +44,8 @@ jobs:
         env:
           PREFIX_PATHS: "true"
           NODE_OPTIONS: --max-old-space-size=4096
+          GATSBY_TURNSTILE_SITE_KEY: ${{ secrets.GATSBY_TURNSTILE_SITE_KEY }}
+          GATSBY_WEB3FORMS_KEY: ${{ secrets.GATSBY_WEB3FORMS_KEY }}
         run: npm run build -- --prefix-paths
 
       - name: Upload artifact
