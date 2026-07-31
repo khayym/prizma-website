@@ -16,6 +16,9 @@ export async function submitContactForm(
   if (!WEB3FORMS_KEY) return true;
 
   formData.append("access_key", WEB3FORMS_KEY);
+  // Web3Forms free plan has no Turnstile secret configured, so the token
+  // can't be verified server-side — drop it to keep it out of the emails.
+  formData.delete("cf-turnstile-response");
 
   const res = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
