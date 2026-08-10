@@ -76,10 +76,19 @@ const Footer: React.FC = () => {
               {t("footer.followUs")}
             </h4>
             <div className="mt-4 flex gap-3">
-              <SocialIcon href="https://vkvideo.ru/@prizmaflow" label="VK Video">
+              <SocialIcon
+                href="https://www.youtube.com/@prizmaflow"
+                label="YouTube"
+              >
                 <path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3-5 3z" />
               </SocialIcon>
-              <SocialIcon href="https://linkedin.com" label="LinkedIn">
+              <SocialIcon href="https://vkvideo.ru/@prizmaflow" label="VK Video">
+                <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm6 4.5v7l6-3.5-6-3.5z" />
+              </SocialIcon>
+              <SocialIcon
+                href="https://www.linkedin.com/company/prizma-flow/"
+                label="LinkedIn"
+              >
                 <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 18.34H5.67V9.67h2.67v8.67zM7 8.34a1.67 1.67 0 110-3.34 1.67 1.67 0 010 3.34zm11.34 10H15.67v-4.34c0-1.33-.67-2-1.67-2s-1.67.67-1.67 2v4.34H9.67V9.67h2.67v1.34c.34-.67 1.34-1.67 3-1.67 2 0 3 1.34 3 4v5z" />
               </SocialIcon>
               <SocialIcon href="https://vk.com" label="VK">
