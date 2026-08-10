@@ -1,10 +1,23 @@
 import * as React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import appHome from "../images/app-home.png";
-import appMenu from "../images/app-menu.png";
+import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
+import appHomeEn from "../images/app-home-en.png";
+import appHomeRu from "../images/app-home-ru.png";
+import appHomeTr from "../images/app-home-tr.png";
+import appMenuEn from "../images/app-menu-en.png";
+import appMenuRu from "../images/app-menu-ru.png";
+import appMenuTr from "../images/app-menu-tr.png";
+
+const screensByLanguage: Record<string, { home: string; menu: string }> = {
+  en: { home: appHomeEn, menu: appMenuEn },
+  ru: { home: appHomeRu, menu: appMenuRu },
+  tr: { home: appHomeTr, menu: appMenuTr },
+};
 
 const MobileApp: React.FC = () => {
   const { t } = useTranslation();
+  const { language } = useI18next();
+  const screens = screensByLanguage[language] ?? screensByLanguage.ru;
+
   return (
     <section className="section bg-ink-50 overflow-hidden">
       <div className="container grid items-center gap-16 lg:grid-cols-2">
@@ -67,12 +80,12 @@ const MobileApp: React.FC = () => {
           </div>
 
           <PhoneFrame
-            src={appMenu}
+            src={screens.menu}
             alt="Prizma mobile menu"
             className="absolute left-4 top-8 z-0 w-[150px] -rotate-6 sm:left-0 sm:top-6 sm:w-[210px]"
           />
           <PhoneFrame
-            src={appHome}
+            src={screens.home}
             alt="Prizma mobile home dashboard"
             className="relative z-10 w-[165px] translate-x-10 translate-y-3 rotate-3 sm:w-[240px] sm:translate-x-12 sm:translate-y-4"
           />
