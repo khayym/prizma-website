@@ -336,11 +336,11 @@
         "body": "Maintain control over banking, cash, current accounts, payments, collections, and accounting processes through an integrated financial structure."
       },
       "hr": {
-        "title": "Human Resources and Payroll Management (Prizma HR)",
+        "title": "Human Resources and Payroll Management",
         "body": "Manage employee records, timesheets, leave, documents, expenses, payroll, and personnel costs from a single centralized platform."
       },
       "mrp": {
-        "title": "Material Requirements Planning (MRP)",
+        "title": "Material Requirements Planning",
         "body": "Analyze project requirements in advance to prevent excess inventory and improve the efficiency of procurement processes."
       },
       "analysis": {
@@ -356,23 +356,23 @@
         "body": "Analyze financial and operational data through advanced dashboards to make faster and more strategic decisions."
       },
       "dms": {
-        "title": "Digital Document Management (Prizma DISK)",
+        "title": "Digital Document Management",
         "body": "Classify, manage, and easily access company and project documents within a secure digital environment."
       },
       "equipment": {
-        "title": "Equipment Management (Prizma Equipment)",
+        "title": "Equipment Management",
         "body": "Effectively manage the inventory, maintenance, usage, breakdown, and cost processes of machinery and equipment."
       },
       "ohs": {
-        "title": "Occupational Health and Safety Management (OHS)",
+        "title": "Occupational Health and Safety Management",
         "body": "Digitally track OHS training, inspections, non-conformities, and corrective actions."
       },
       "subcon": {
-        "title": "Subcontractor Management (Prizma SubCon)",
+        "title": "Subcontractor Management",
         "body": "Control subcontractor contracts, personnel, progress, progress payments, and costs on a project-by-project basis."
       },
       "legal": {
-        "title": "Legal Process Management (Prizma Legal)",
+        "title": "Legal Process Management",
         "body": "Manage legal cases, contracts, official notifications, and other legal processes through a centralized, secure, and traceable system."
       }
     }
@@ -483,9 +483,9 @@
         "readTime": "3 min read",
         "author": "Prizma Team",
         "role": "Product",
-        "title": "Human Resources Module (HRM)",
+        "title": "Human Resources Module",
         "excerpt": "Manage employee data, timesheets, payroll, overtime and leave from one central place.",
-        "lead": "Prizma's Human Resources (HRM) module simplifies employee management. It brings personnel data, attendance records, payroll calculations, overtime and leave processes together in one central place.",
+        "lead": "Prizma's Human Resources module simplifies employee management. It brings personnel data, attendance records, payroll calculations, overtime and leave processes together in one central place.",
         "quote": "",
         "sections": [
           {

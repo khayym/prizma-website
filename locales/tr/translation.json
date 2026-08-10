@@ -336,11 +336,11 @@
         "body": "Banka, kasa, cari hesap, ödeme, tahsilat ve muhasebe süreçlerini entegre finansal yapı ile kontrol altında tutun."
       },
       "hr": {
-        "title": "İnsan Kaynakları ve Bordro Yönetimi (Prizma HR)",
+        "title": "İnsan Kaynakları ve Bordro Yönetimi",
         "body": "Personel özlük bilgileri, puantaj, izin, evrak, harcama, bordro ve çalışan maliyetlerini tek merkezden yönetin."
       },
       "mrp": {
-        "title": "Malzeme İhtiyaç Planlama (MRP)",
+        "title": "Malzeme İhtiyaç Planlama",
         "body": "Proje ihtiyaçlarını önceden analiz ederek gereksiz stok oluşumunu önleyin ve satın alma süreçlerini verimli hale getirin."
       },
       "analysis": {
@@ -356,23 +356,23 @@
         "body": "Finansal ve operasyonel verileri gelişmiş dashboardlar üzerinden analiz ederek hızlı ve stratejik kararlar alın."
       },
       "dms": {
-        "title": "Dijital Doküman Yönetimi (Prizma DISK)",
+        "title": "Dijital Doküman Yönetimi",
         "body": "Şirket ve proje dokümanlarını güvenli dijital ortamda sınıflandırın, yönetin ve kolayca erişin."
       },
       "equipment": {
-        "title": "Ekipman Yönetimi (Prizma Equipment)",
+        "title": "Ekipman Yönetimi",
         "body": "Makine ve ekipmanların envanter, bakım, kullanım, arıza ve maliyet süreçlerini etkin şekilde yönetin."
       },
       "ohs": {
-        "title": "İş Sağlığı ve Güvenliği Yönetimi (İSG)",
+        "title": "İş Sağlığı ve Güvenliği Yönetimi",
         "body": "İSG eğitimleri, denetimler, uygunsuzluklar ve düzeltici faaliyetleri dijital ortamda takip edin."
       },
       "subcon": {
-        "title": "Taşeron Yönetimi (Prizma SubCon)",
+        "title": "Taşeron Yönetimi",
         "body": "Taşeron sözleşmeleri, personel, ilerleme, hakediş ve maliyet süreçlerini proje bazında kontrol edin."
       },
       "legal": {
-        "title": "Hukuki Süreç Yönetimi (Prizma Legal)",
+        "title": "Hukuki Süreç Yönetimi",
         "body": "Dava, sözleşme, resmi bildirim ve hukuki süreçleri merkezi, güvenli ve izlenebilir bir sistem üzerinden yönetin."
       }
     }
@@ -483,9 +483,9 @@
         "readTime": "3 dk okuma",
         "author": "Prizma Ekibi",
         "role": "Ürün",
-        "title": "İnsan Kaynakları Modülü (HRM)",
+        "title": "İnsan Kaynakları Modülü",
         "excerpt": "Personel verilerini, puantajı, bordroyu, fazla mesai ve izinleri tek merkezden yönetin.",
-        "lead": "Prizma'nın İnsan Kaynakları (HRM) modülü, işletmenizin çalışan yönetimini kolaylaştırır. Personel verilerini, devam kayıtlarını, bordro hesaplamalarını, fazla mesaileri ve izin süreçlerini tek bir merkezde toplar.",
+        "lead": "Prizma'nın İnsan Kaynakları modülü, işletmenizin çalışan yönetimini kolaylaştırır. Personel verilerini, devam kayıtlarını, bordro hesaplamalarını, fazla mesaileri ve izin süreçlerini tek bir merkezde toplar.",
         "quote": "",
         "sections": [
           {
