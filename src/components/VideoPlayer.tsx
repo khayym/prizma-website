@@ -1,7 +1,10 @@
 import * as React from "react";
 
 interface VideoPlayerProps {
-  src: string;
+  /** Self-hosted video file. Ignored when `embedSrc` is set. */
+  src?: string;
+  /** Third-party player URL rendered in an iframe once the user hits play. */
+  embedSrc?: string;
   title?: string;
   caption?: string;
   playLabel?: string;
@@ -10,6 +13,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
   src,
+  embedSrc,
   title,
   caption,
   playLabel = "Play video",
@@ -20,6 +24,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const handleStart = () => {
     setActive(true);
+    if (embedSrc) return;
     requestAnimationFrame(() => {
       videoRef.current?.play().catch(() => undefined);
     });
@@ -102,14 +107,26 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
               </button>
             )}
 
-            <video
-              ref={videoRef}
-              src={src}
-              className="absolute inset-0 h-full w-full object-cover"
-              preload={active ? "auto" : "none"}
-              playsInline
-              controls={active}
-            />
+            {embedSrc ? (
+              active && (
+                <iframe
+                  src={embedSrc}
+                  title={title ?? playLabel}
+                  className="absolute inset-0 h-full w-full border-0"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
+                  allowFullScreen
+                />
+              )
+            ) : (
+              <video
+                ref={videoRef}
+                src={src}
+                className="absolute inset-0 h-full w-full object-cover"
+                preload={active ? "auto" : "none"}
+                playsInline
+                controls={active}
+              />
+            )}
           </div>
         </div>
       </div>

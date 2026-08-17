@@ -1,7 +1,10 @@
 import * as React from "react";
-import { withPrefix } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Link from "../components/Link";
+import { vkEmbedUrl } from "../utils/vkVideo";
+
+/** Short showreel on VK Video — no narration, so one clip serves every locale. */
+const HERO_VIDEO_ID = 456239131;
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -75,17 +78,18 @@ const Hero: React.FC = () => {
                 </span>
               </div>
               <div className="relative flex-1 overflow-hidden rounded-xl bg-ink-950">
-                <video
-                  src={withPrefix("/videos/hero-loop.mp4")}
-                  className="absolute inset-0 h-full w-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  aria-hidden="true"
+                <iframe
+                  src={vkEmbedUrl(HERO_VIDEO_ID, {
+                    autoplay: "1",
+                    loop: "1",
+                  })}
+                  title={t("hero.title")}
+                  className="absolute inset-0 h-full w-full border-0"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
+                  allowFullScreen
                 />
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+                <div className="pointer-events-none absolute bottom-4 left-4 right-4 flex items-end justify-between">
                   <div>
                     <div className="text-xs font-medium text-white/70">
                       Active workflows
