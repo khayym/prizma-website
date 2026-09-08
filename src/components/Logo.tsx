@@ -13,11 +13,14 @@ const sources: Record<NonNullable<LogoProps['variant']>, string> = {
   light: logoLight,
 };
 
-const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark' }) => (
+const Logo: React.FC<LogoProps> = ({
+  className = 'h-11 lg:h-14',
+  variant = 'dark',
+}) => (
   <img
     src={sources[variant]}
     alt="Prizma Flow"
-    className={`h-8 w-auto ${className}`}
+    className={`w-auto ${className}`}
   />
 );
 

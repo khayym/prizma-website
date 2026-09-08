@@ -1,19 +1,13 @@
 import * as React from "react";
 import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import VideoPlayer from "../components/VideoPlayer";
-import { vkEmbedUrl } from "../utils/vkVideo";
-
-/** Narrated product tour, recorded once per language on VK Video. */
-const demoVideoIdByLanguage: Record<string, number> = {
-  en: 456239130,
-  ru: 456239133,
-  tr: 456239132,
-};
+import { productTourByLanguage, resolveVideo } from "../data/videos";
 
 const ProductDemo: React.FC = () => {
   const { t } = useTranslation();
   const { language } = useI18next();
-  const videoId = demoVideoIdByLanguage[language] ?? demoVideoIdByLanguage.ru;
+  const slot = productTourByLanguage[language] ?? productTourByLanguage.ru;
+  const media = resolveVideo(slot, { autoplay: "1" });
 
   return (
     <section id="demo-video" className="section bg-white">
@@ -29,7 +23,7 @@ const ProductDemo: React.FC = () => {
         <div className="mt-14">
           <VideoPlayer
             key={language}
-            embedSrc={vkEmbedUrl(videoId, { autoplay: "1" })}
+            {...(media ?? {})}
             title={t("productDemo.overlayTitle")}
             caption={t("productDemo.caption")}
             playLabel={t("productDemo.play")}

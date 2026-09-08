@@ -1,13 +1,11 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Link from "../components/Link";
-import { vkEmbedUrl } from "../utils/vkVideo";
-
-/** Short showreel on VK Video — no narration, so one clip serves every locale. */
-const HERO_VIDEO_ID = 456239131;
+import { heroShowreel, resolveVideo } from "../data/videos";
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
+  const showreel = resolveVideo(heroShowreel, { autoplay: "1", loop: "1" });
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="absolute inset-x-0 top-0 -z-10 h-[600px] bg-gradient-to-b from-brand-50 to-transparent" />
@@ -78,16 +76,31 @@ const Hero: React.FC = () => {
                 </span>
               </div>
               <div className="relative flex-1 overflow-hidden rounded-xl bg-ink-950">
-                <iframe
-                  src={vkEmbedUrl(HERO_VIDEO_ID, {
-                    autoplay: "1",
-                    loop: "1",
-                  })}
-                  title={t("hero.title")}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
-                  allowFullScreen
-                />
+                {showreel?.embedSrc ? (
+                  <iframe
+                    src={showreel.embedSrc}
+                    title={t("hero.title")}
+                    className="absolute inset-0 h-full w-full border-0"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
+                    allowFullScreen
+                  />
+                ) : showreel?.src ? (
+                  <video
+                    src={showreel.src}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
+                ) : (
+                  // Showreel not delivered yet — keep the mock dashboard chrome
+                  // with a branded fill rather than an empty black frame.
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-800 via-brand-900 to-ink-950">
+                    <div className="absolute inset-0 opacity-[0.16] [background-image:linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] [background-size:32px_32px]" />
+                    <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-accent-400/20 blur-3xl" />
+                  </div>
+                )}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
                 <div className="pointer-events-none absolute bottom-4 left-4 right-4 flex items-end justify-between">
                   <div>

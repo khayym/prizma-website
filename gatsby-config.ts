@@ -24,7 +24,9 @@ const config: GatsbyConfig = {
         background_color: "#ffffff",
         theme_color: "#2563eb",
         display: "standalone",
-        // Prism app-icon supplied by the brand team; generates favicons.
+        // The "a" flag mark lifted from the Prizma Flow wordmark; the wordmark
+        // itself is too wide to stay legible at favicon sizes. Generates the
+        // full favicon/apple-touch set.
         icon: "src/images/prizma-icon.png",
       },
     },

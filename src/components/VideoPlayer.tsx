@@ -21,6 +21,8 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 }) => {
   const [active, setActive] = React.useState(false);
   const videoRef = React.useRef<HTMLVideoElement | null>(null);
+  /** No clip delivered yet — show the poster without a play affordance. */
+  const awaitingClip = !src && !embedSrc;
 
   const handleStart = () => {
     setActive(true);
@@ -69,64 +71,79 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
           </div>
 
           <div className="relative aspect-[16/10] w-full bg-ink-950">
-            {!active && (
-              <button
-                type="button"
-                onClick={handleStart}
-                className="group absolute inset-0 z-10 flex items-center justify-center overflow-hidden focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-300"
-                aria-label={playLabel}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-800 to-ink-900" />
-                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#7dd3fc_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#2563eb_0%,transparent_50%)]" />
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-950/70 to-transparent" />
+            {!active &&
+              React.createElement(
+                awaitingClip ? "div" : "button",
+                awaitingClip
+                  ? {
+                      className:
+                        "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden",
+                    }
+                  : {
+                      type: "button",
+                      onClick: handleStart,
+                      className:
+                        "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-300",
+                      "aria-label": playLabel,
+                    },
+                <>
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-800 to-ink-900" />
+                  <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#7dd3fc_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#2563eb_0%,transparent_50%)]" />
+                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-950/70 to-transparent" />
 
-                <div className="relative flex flex-col items-center gap-5 px-8 text-center">
-                  <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 group-hover:scale-110 group-active:scale-95">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      aria-hidden="true"
-                      className="ml-1"
+                  <div className="relative flex flex-col items-center gap-5 px-8 text-center">
+                    <span
+                      className={`flex h-20 w-20 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 ${
+                        awaitingClip
+                          ? "opacity-40"
+                          : "group-hover:scale-110 group-active:scale-95"
+                      }`}
                     >
-                      <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
-                    </svg>
-                  </span>
-                  {title && (
-                    <span className="text-lg font-semibold text-white sm:text-xl">
-                      {title}
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                        className="ml-1"
+                      >
+                        <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
+                      </svg>
                     </span>
-                  )}
-                  {caption && (
-                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
-                      {caption}
-                    </span>
-                  )}
-                </div>
-              </button>
-            )}
+                    {title && (
+                      <span className="text-lg font-semibold text-white sm:text-xl">
+                        {title}
+                      </span>
+                    )}
+                    {!awaitingClip && caption && (
+                      <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
+                        {caption}
+                      </span>
+                    )}
+                  </div>
+                </>,
+              )}
 
-            {embedSrc ? (
-              active && (
-                <iframe
-                  src={embedSrc}
-                  title={title ?? playLabel}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
-                  allowFullScreen
-                />
-              )
-            ) : (
-              <video
-                ref={videoRef}
-                src={src}
-                className="absolute inset-0 h-full w-full object-cover"
-                preload={active ? "auto" : "none"}
-                playsInline
-                controls={active}
-              />
-            )}
+            {embedSrc
+              ? active && (
+                  <iframe
+                    src={embedSrc}
+                    title={title ?? playLabel}
+                    className="absolute inset-0 h-full w-full border-0"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
+                    allowFullScreen
+                  />
+                )
+              : src && (
+                  <video
+                    ref={videoRef}
+                    src={src}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    preload={active ? "auto" : "none"}
+                    playsInline
+                    controls={active}
+                  />
+                )}
           </div>
         </div>
       </div>
