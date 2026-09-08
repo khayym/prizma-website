@@ -8,10 +8,6 @@ const config: GatsbyConfig = {
       "Streamline workflows and boost efficiency across ERP and HR with Prizma Flow.",
     siteUrl: "https://prizmaflow.com",
   },
-  // Served from a subpath on GitHub Pages (khayym.github.io/prizma-website).
-  // Only applied when building with `--prefix-paths`; ignored for the
-  // production custom-domain build, so it can stay set here safely.
-  pathPrefix: "/prizma-website",
   graphqlTypegen: false,
   plugins: [
     "gatsby-plugin-postcss",
