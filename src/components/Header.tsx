@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             <Link
               key={item.key}
               to={item.href}
-              className="text-sm font-medium text-ink-700 transition hover:text-brand-700"
+              className="text-base font-medium text-ink-700 transition hover:text-brand-700"
             >
               {t(`nav.${item.key}`)}
             </Link>

@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-export const APP_STORE_URL =
+const APP_STORE_URL =
   "https://apps.apple.com/tr/app/prizma-flow/id1579328322";
-export const GOOGLE_PLAY_URL =
+const GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.bpm.theia";
 
 const badgeClass =

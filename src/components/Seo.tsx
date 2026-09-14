@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, withPrefix } from "gatsby";
 
 interface SeoProps {
   title?: string;
@@ -32,6 +32,7 @@ const Seo: React.FC<SeoProps> = ({ title, description, lang = "en" }) => {
     <>
       <html lang={lang} />
       <title>{pageTitle}</title>
+      <link rel="icon" href={withPrefix("/favicon.ico")} sizes="any" />
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
