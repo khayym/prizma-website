@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import Highlight from "../components/Highlight";
 
 const items = [
   "purchases",
@@ -19,14 +20,15 @@ const Faq: React.FC = () => {
   const [openKey, setOpenKey] = React.useState<string | null>(items[0]);
 
   return (
-    <section className="section">
+    <section id="faq" className="section">
       <div className="container">
-        <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{t("faq.eyebrow")}</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl">{t("faq.title")}</h2>
+        <div className="mx-auto max-w-2xl text-center" data-reveal>
+          <h2 className="section-title">
+            <Highlight text={t("faq.title")} className="text-brand-600" />
+          </h2>
         </div>
 
-        <div className="mt-12 grid items-start gap-4 lg:grid-cols-2">
+        <div className="mt-12 grid items-start gap-4 lg:grid-cols-2" data-reveal>
           {items.map((key) => {
             const isOpen = openKey === key;
             return (
@@ -42,8 +44,10 @@ const Faq: React.FC = () => {
                     {t(`faq.items.${key}.q`)}
                   </span>
                   <span
-                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition ${
-                      isOpen ? "rotate-45" : ""
+                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition ${
+                      isOpen
+                        ? "rotate-45 bg-brand-600 text-white"
+                        : "bg-brand-50 text-brand-700"
                     }`}
                     aria-hidden="true"
                   >

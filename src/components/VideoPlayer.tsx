@@ -5,7 +5,10 @@ interface VideoPlayerProps {
   src?: string;
   /** Third-party player URL rendered in an iframe once the user hits play. */
   embedSrc?: string;
+  /** Plain-text name of the video, used for the iframe title. */
   title?: string;
+  /** Content shown on the poster under the play button. */
+  overlay?: React.ReactNode;
   caption?: string;
   playLabel?: string;
   className?: string;
@@ -15,6 +18,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   src,
   embedSrc,
   title,
+  overlay,
   caption,
   playLabel = "Play video",
   className = "",
@@ -91,9 +95,9 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#7dd3fc_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#2563eb_0%,transparent_50%)]" />
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-950/70 to-transparent" />
 
-                  <div className="relative flex flex-col items-center gap-5 px-8 text-center">
+                  <div className="relative flex flex-col items-center gap-3 px-6 text-center sm:gap-5 sm:px-8">
                     <span
-                      className={`flex h-20 w-20 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 ${
+                      className={`flex h-14 w-14 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 sm:h-20 sm:w-20 ${
                         awaitingClip
                           ? "opacity-40"
                           : "group-hover:scale-110 group-active:scale-95"
@@ -105,16 +109,12 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
                         viewBox="0 0 24 24"
                         fill="none"
                         aria-hidden="true"
-                        className="ml-1"
+                        className="ml-1 h-6 w-6 sm:h-[30px] sm:w-[30px]"
                       >
                         <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
                       </svg>
                     </span>
-                    {title && (
-                      <span className="text-lg font-semibold text-white sm:text-xl">
-                        {title}
-                      </span>
-                    )}
+                    {overlay}
                     {!awaitingClip && caption && (
                       <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
                         {caption}

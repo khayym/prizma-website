@@ -2,38 +2,34 @@ import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Link from "./Link";
 import Logo from "./Logo";
+import YandexMap from "./YandexMap";
+import { navItems } from "../data/navigation";
+import { telHref } from "../utils/phone";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
-
-  const quickLinks: { key: string; href: string }[] = [
-    { key: "home", href: "/" },
-    { key: "about", href: "/about" },
-    { key: "services", href: "/services" },
-    { key: "blog", href: "/blog" },
-    { key: "contact", href: "/contact" },
-  ];
+  const phone = t("footer.phone");
 
   return (
     <footer className="relative overflow-hidden bg-brand-700 text-white">
       <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-brand-600" />
       <div className="absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-accent-400/30" />
       <div className="container relative py-16">
-        <div className="grid gap-10 lg:grid-cols-4">
-          <div className="lg:col-span-1 space-y-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+          <div className="space-y-4 lg:col-span-3">
             <Logo variant="light" />
             <p className="text-sm text-brand-100 max-w-xs">
               {t("footer.aboutText")}
             </p>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="text-sm font-semibold text-white">
               {t("footer.quickAccess")}
             </h4>
             <ul className="mt-4 space-y-2">
-              {quickLinks.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.key}>
                   <Link
                     to={item.href}
@@ -46,36 +42,11 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-white">
-              {t("footer.contact")}
-            </h4>
-            <ul className="mt-4 space-y-2 text-sm text-brand-100">
-              <li>
-                <a
-                  href={`tel:${t("footer.phone").replace(/\s/g, "")}`}
-                  className="transition hover:text-white"
-                >
-                  {t("footer.phone")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${t("footer.email")}`}
-                  className="transition hover:text-white"
-                >
-                  {t("footer.email")}
-                </a>
-              </li>
-              <li className="max-w-xs">{t("footer.address")}</li>
-            </ul>
-          </div>
-
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="text-sm font-semibold text-white">
               {t("footer.followUs")}
             </h4>
-            <div className="mt-4 flex gap-3">
+            <div className="mt-4 flex flex-wrap gap-3">
               <SocialIcon
                 href="https://www.youtube.com/@prizmaflow"
                 label="YouTube"
@@ -112,6 +83,35 @@ const Footer: React.FC = () => {
               </svg>
               {t("nav.trainingVideos")}
             </a>
+          </div>
+
+          <div className="lg:col-span-2">
+            <h4 className="text-sm font-semibold text-white">
+              {t("footer.contact")}
+            </h4>
+            <ul className="mt-4 space-y-2 text-sm text-brand-100">
+              <li>
+                <a href={telHref(phone)} className="transition hover:text-white">
+                  {phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${t("footer.email")}`}
+                  className="transition hover:text-white"
+                >
+                  {t("footer.email")}
+                </a>
+              </li>
+              <li className="max-w-xs">{t("footer.address")}</li>
+              <li className="max-w-xs">{t("contact.hours")}</li>
+            </ul>
+          </div>
+
+          <div className="sm:col-span-2 lg:col-span-3">
+            <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-white/25">
+              <YandexMap zoom={15} className="h-48" />
+            </div>
           </div>
         </div>
 

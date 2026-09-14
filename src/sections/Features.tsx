@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import Highlight from "../components/Highlight";
 import {
   featurePreviews,
   isReady,
@@ -120,7 +121,7 @@ interface FeatureCardProps {
 
 /** The approved card chrome — identical for filmed and not-yet-filmed cards. */
 const cardShell =
-  "group relative flex flex-col overflow-hidden rounded-2xl border border-ink-700/60 bg-ink-800/60 backdrop-blur transition-all duration-300 hover:border-accent-400/60 hover:bg-ink-800 hover:shadow-[0_20px_50px_-20px_rgba(190,242,100,0.25)]";
+  "group relative flex flex-col overflow-hidden rounded-2xl border border-ink-700/60 bg-ink-800/60 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent-400/60 hover:bg-ink-800 hover:shadow-[0_20px_50px_-20px_rgba(56,189,248,0.35)]";
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
   featureKey,
@@ -169,20 +170,21 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     return (
       <div className={cardShell}>
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink-950">
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-900/30 via-transparent to-ink-950/60" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-800/40 via-transparent to-ink-950/60" />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-500/30 blur-2xl transition duration-300 group-hover:bg-accent-400/40" />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
 
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
-              width="48"
-              height="48"
+              width="52"
+              height="52"
               viewBox="0 0 32 32"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.6"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-white/25 transition-colors duration-300 group-hover:text-white/40"
+              className="text-accent-300 transition duration-300 group-hover:scale-110 group-hover:text-accent-200"
               aria-hidden="true"
             >
               {glyphs[featureKey]}
@@ -249,19 +251,16 @@ const Features: React.FC = () => {
   return (
     <section id="features" className="section bg-ink-900 text-white">
       <div className="container">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
-            {t("features.eyebrow")}
-          </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl text-white">
-            {t("features.title")}
+        <div className="mx-auto max-w-3xl text-center" data-reveal>
+          <h2 className="section-title text-white">
+            <Highlight text={t("features.title")} className="text-accent-300" />
           </h2>
           {anyPlayable && (
             <p className="mt-3 text-sm text-ink-400">{t("features.hint")}</p>
           )}
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
           {featureOrder.map((key) => (
             <FeatureCard
               key={key}

@@ -1,136 +1,17 @@
 import * as React from "react";
 import { graphql, HeadFC } from "gatsby";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
-import PageHero from "../components/PageHero";
-import CtaBanner from "../sections/CtaBanner";
+import RedirectPage, {
+  RedirectHead,
+  type I18nPageContext,
+} from "../components/RedirectPage";
 
-const services: { key: string; icon: React.ReactNode }[] = [
-  {
-    key: "planning",
-    icon: <path d="M3 3v18h18M7 14l3-4 3 3 5-7" />,
-  },
-  {
-    key: "inventory",
-    icon: <path d="M3 7l9-4 9 4-9 4-9-4zM3 12l9 4 9-4M3 17l9 4 9-4" />,
-  },
-  {
-    key: "procurement",
-    icon: <path d="M6 6h15l-1.5 9h-12zM6 6L5 3H2M8 21a1 1 0 100-2 1 1 0 000 2zM18 21a1 1 0 100-2 1 1 0 000 2z" />,
-  },
-  {
-    key: "contracts",
-    icon: <path d="M8 3h8l4 4v14H4V3h4zM9 12h6M9 16h6M9 8h2" />,
-  },
-  {
-    key: "finance",
-    icon: <path d="M3 6h18v12H3zM3 10h18M7 15h3" />,
-  },
-  {
-    key: "hr",
-    icon: <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM22 21v-2a4 4 0 00-3-3.87" />,
-  },
-  {
-    key: "mrp",
-    icon: <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16zM3.3 7l8.7 5 8.7-5M12 22V12" />,
-  },
-  {
-    key: "analysis",
-    icon: <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />,
-  },
-  {
-    key: "clients",
-    icon: <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" />,
-  },
-  {
-    key: "dashboards",
-    icon: <path d="M4 19V5M9 19V9M14 19v-7M19 19v-3" />,
-  },
-  {
-    key: "dms",
-    icon: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M9 13h6M9 17h6" />,
-  },
-  {
-    key: "equipment",
-    icon: <path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.4-2.4 2.5-2.5z" />,
-  },
-  {
-    key: "ohs",
-    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />,
-  },
-  {
-    key: "subcon",
-    icon: <path d="M17 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />,
-  },
-  {
-    key: "legal",
-    icon: <path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0zM17 7l-3 7a3 3 0 006 0z" />,
-  },
-];
-
-const ServiceIcon: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <svg
-    width="22"
-    height="22"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    {children}
-  </svg>
-);
-
-const ServicesPage: React.FC = () => {
-  const { t } = useTranslation();
-  return (
-    <Layout>
-      <PageHero
-        eyebrow={t("services.eyebrow")}
-        title={t("services.title")}
-        subtitle={t("services.subtitle")}
-      />
-
-      <section className="section">
-        <div className="container">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <div
-                key={s.key}
-                className="group flex flex-col rounded-3xl border border-ink-100 bg-white p-8 transition hover:border-brand-200 hover:shadow-lg"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-700 text-white transition group-hover:bg-brand-800">
-                    <ServiceIcon>{s.icon}</ServiceIcon>
-                  </div>
-                  <span className="text-4xl font-semibold text-ink-100">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                </div>
-                <h3 className="mt-6 text-xl">
-                  {t(`services.items.${s.key}.title`)}
-                </h3>
-                <p className="mt-2 text-ink-600">
-                  {t(`services.items.${s.key}.body`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CtaBanner />
-    </Layout>
-  );
-};
+const ServicesPage: React.FC = () => <RedirectPage hash="services" />;
 
 export default ServicesPage;
 
-export const Head: HeadFC = () => <Seo title="Services" />;
+export const Head: HeadFC<object, I18nPageContext> = ({ pageContext }) => (
+  <RedirectHead hash="services" pageContext={pageContext} />
+);
 
 export const query = graphql`
   query ($language: String!) {

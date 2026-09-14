@@ -1,19 +1,21 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Link from "../components/Link";
-import { heroShowreel, resolveVideo } from "../data/videos";
+import Highlight from "../components/Highlight";
+import ConstructionLineArt from "../components/ConstructionLineArt";
+import DeviceShowcase from "../components/showcase/DeviceShowcase";
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
-  const showreel = resolveVideo(heroShowreel, { autoplay: "1", loop: "1" });
   return (
-    <section className="relative overflow-hidden bg-white">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[600px] bg-gradient-to-b from-brand-50 to-transparent" />
-      <div className="container grid gap-12 pt-16 pb-24 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-center lg:pt-24 lg:pb-32">
+    <section className="relative isolate overflow-hidden bg-white">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[640px] bg-gradient-to-b from-brand-50 to-transparent" />
+      <ConstructionLineArt className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[380px] w-full text-brand-300 opacity-60 [mask-image:linear-gradient(to_top,black_60%,transparent_100%)] sm:h-[480px] lg:h-[560px]" />
+
+      <div className="container grid gap-14 pt-14 pb-20 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-center lg:pt-20 lg:pb-28">
         <div>
-          <span className="eyebrow">{t("hero.eyebrow")}</span>
-          <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.05] text-ink-900">
-            {t("hero.title")}
+          <h1 className="text-4xl font-semibold leading-[1.05] text-ink-900 sm:text-5xl lg:text-6xl">
+            <Highlight text={t("hero.title")} className="text-brand-600" />
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink-600">
             {t("hero.subtitle")}
@@ -58,68 +60,8 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative lg:-mr-12 xl:-mr-24">
-          <div className="aspect-[5/4] rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-1 shadow-2xl lg:aspect-[6/5]">
-            <div className="flex h-full w-full flex-col rounded-[1.4rem] bg-ink-900 p-2">
-              <div className="flex items-center justify-between px-3 py-2">
-                <div className="flex items-center gap-1.5">
-                  <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
-                </div>
-                <span className="flex items-center gap-1.5 rounded-full bg-ink-800 px-2 py-0.5 text-[10px] font-medium text-accent-300">
-                  <span className="relative flex h-1.5 w-1.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
-                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent-400" />
-                  </span>
-                  LIVE
-                </span>
-              </div>
-              <div className="relative flex-1 overflow-hidden rounded-xl bg-ink-950">
-                {showreel?.embedSrc ? (
-                  <iframe
-                    src={showreel.embedSrc}
-                    title={t("hero.title")}
-                    className="absolute inset-0 h-full w-full border-0"
-                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
-                    allowFullScreen
-                  />
-                ) : showreel?.src ? (
-                  <video
-                    src={showreel.src}
-                    className="absolute inset-0 h-full w-full object-cover"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  />
-                ) : (
-                  // Showreel not delivered yet — keep the mock dashboard chrome
-                  // with a branded fill rather than an empty black frame.
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-800 via-brand-900 to-ink-950">
-                    <div className="absolute inset-0 opacity-[0.16] [background-image:linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] [background-size:32px_32px]" />
-                    <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-accent-400/20 blur-3xl" />
-                  </div>
-                )}
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
-                <div className="pointer-events-none absolute bottom-4 left-4 right-4 flex items-end justify-between">
-                  <div>
-                    <div className="text-xs font-medium text-white/70">
-                      Active workflows
-                    </div>
-                    <div className="mt-0.5 text-2xl font-semibold text-white">
-                      1,284
-                    </div>
-                  </div>
-                  <span className="rounded-full bg-white/10 px-2.5 py-1 text-xs font-semibold text-accent-300 backdrop-blur-sm">
-                    +12.4%
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 rounded-2xl bg-accent-400 sm:block" />
-          <div className="absolute -top-6 -right-6 hidden h-16 w-16 rounded-full bg-brand-200 sm:block" />
+        <div className="relative lg:-mr-8 xl:-mr-16">
+          <DeviceShowcase />
         </div>
       </div>
     </section>

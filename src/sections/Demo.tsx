@@ -2,7 +2,10 @@ import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Captcha from "../components/Captcha";
 import PhoneField from "../components/PhoneField";
+import Highlight from "../components/Highlight";
+import Glyph from "../components/Glyph";
 import { submitContactForm } from "../utils/contactForm";
+import { telHref } from "../utils/phone";
 
 const Demo: React.FC = () => {
   const { t } = useTranslation();
@@ -26,33 +29,22 @@ const Demo: React.FC = () => {
   return (
     <section id="demo" className="section bg-ink-50">
       <div className="container grid gap-12 lg:grid-cols-2">
-        <div>
-          <span className="eyebrow">{t("demo.eyebrow")}</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl">{t("demo.title")}</h2>
-          <p className="mt-4 max-w-lg text-ink-600">{t("demo.body")}</p>
-          <div className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-white px-4 py-3 ring-1 ring-ink-100">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z" />
-              </svg>
+        <div data-reveal>
+          <h2 className="section-title">
+            <Highlight text={t("demo.title")} className="text-brand-600" />
+          </h2>
+          <p className="mt-4 max-w-lg text-lg text-ink-600">{t("demo.body")}</p>
+          <a
+            href={telHref(t("demo.phoneLabel"))}
+            className="group mt-8 inline-flex items-center gap-3 rounded-2xl bg-white px-4 py-3 ring-1 ring-ink-100 transition hover:-translate-y-0.5 hover:shadow-lg hover:ring-brand-200"
+          >
+            <span className="icon-tile h-10 w-10 rounded-full">
+              <Glyph name="phone" size={17} strokeWidth={2} />
             </span>
-            <a
-              href={`tel:${t("demo.phoneLabel").replace(/\s/g, "")}`}
-              className="text-sm font-semibold text-ink-900"
-            >
+            <span className="text-base font-semibold text-ink-900">
               {t("demo.phoneLabel")}
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
 
         <form
@@ -62,19 +54,7 @@ const Demo: React.FC = () => {
           {sent ? (
             <div className="flex h-full min-h-[300px] flex-col items-center justify-center text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-100 text-brand-700">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 13l4 4L19 7" />
-                </svg>
+                <Glyph name="check" size={24} strokeWidth={2} />
               </div>
               <p className="mt-4 text-lg font-semibold text-ink-900">
                 {t("contact.successTitle")}

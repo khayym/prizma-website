@@ -1,38 +1,31 @@
 import * as React from "react";
-import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
-import appHomeEn from "../images/app-home-en.png";
-import appHomeRu from "../images/app-home-ru.png";
-import appHomeTr from "../images/app-home-tr.png";
-import appMenuEn from "../images/app-menu-en.png";
-import appMenuRu from "../images/app-menu-ru.png";
-import appMenuTr from "../images/app-menu-tr.png";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+import Highlight from "../components/Highlight";
+import StoreBadges from "../components/StoreBadges";
+import PhoneCarousel from "../components/showcase/PhoneCarousel";
+import appQr from "../images/app-qr.svg";
 
-const screensByLanguage: Record<string, { home: string; menu: string }> = {
-  en: { home: appHomeEn, menu: appMenuEn },
-  ru: { home: appHomeRu, menu: appMenuRu },
-  tr: { home: appHomeTr, menu: appMenuTr },
-};
+const featureKeys = ["access", "realtime", "approvals", "ux", "secure", "compat"];
 
 const MobileApp: React.FC = () => {
   const { t } = useTranslation();
-  const { language } = useI18next();
-  const screens = screensByLanguage[language] ?? screensByLanguage.ru;
 
   return (
-    <section className="section bg-ink-50 overflow-hidden">
-      <div className="container grid items-center gap-16 lg:grid-cols-2">
-        <div>
-          <span className="eyebrow">{t("mobile.eyebrow")}</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl">{t("mobile.title")}</h2>
-          <p className="mt-4 max-w-lg text-ink-600">{t("mobile.body")}</p>
+    <section id="mobile" className="section overflow-hidden bg-ink-50">
+      <div className="container grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
+        <div data-reveal>
+          <h2 className="text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
+            <Highlight text={t("mobile.title")} className="text-brand-600" />
+          </h2>
+          <p className="mt-6 max-w-xl text-lg text-ink-600">{t("mobile.body")}</p>
 
-          <ul className="mt-6 grid gap-2 sm:grid-cols-2">
-            {["access", "realtime", "approvals", "ux", "secure", "compat"].map((key) => (
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+            {featureKeys.map((key) => (
               <li
                 key={key}
-                className="flex items-center gap-2 text-sm text-ink-700"
+                className="flex items-center gap-3 text-base font-medium text-ink-800"
               >
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-accent-400 text-white shadow shadow-brand-600/30">
                   <svg
                     width="12"
                     height="12"
@@ -54,64 +47,27 @@ const MobileApp: React.FC = () => {
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="https://apps.apple.com/tr/app/prizma-flow/id1579328322"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary"
-            >
-              {t("mobile.appStore")}
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.bpm.theia"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-ghost"
-            >
-              {t("mobile.googlePlay")}
-            </a>
+          <div className="mt-10 flex flex-wrap items-center gap-5">
+            <StoreBadges />
+            <div className="hidden items-center gap-3 rounded-2xl bg-white p-2.5 pr-4 shadow-sm ring-1 ring-ink-100 sm:flex">
+              <img
+                src={appQr}
+                alt={t("mobile.qrAlt")}
+                width={88}
+                height={88}
+                className="h-[88px] w-[88px] rounded-lg"
+              />
+              <p className="max-w-[9rem] text-sm font-medium leading-snug text-ink-700">
+                {t("mobile.qrHint")}
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="relative mx-auto flex h-[420px] w-full max-w-md items-center justify-center sm:h-[560px]">
-          <div className="pointer-events-none absolute inset-0 -z-10">
-            <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-100 blur-3xl opacity-60" />
-          </div>
-
-          <PhoneFrame
-            src={screens.menu}
-            alt="Prizma mobile menu"
-            className="absolute left-4 top-8 z-0 w-[150px] -rotate-6 sm:left-0 sm:top-6 sm:w-[210px]"
-          />
-          <PhoneFrame
-            src={screens.home}
-            alt="Prizma mobile home dashboard"
-            className="relative z-10 w-[165px] translate-x-10 translate-y-3 rotate-3 sm:w-[240px] sm:translate-x-12 sm:translate-y-4"
-          />
-        </div>
+        <PhoneCarousel />
       </div>
     </section>
   );
 };
-
-interface PhoneFrameProps {
-  src: string;
-  alt: string;
-  className?: string;
-}
-
-const PhoneFrame: React.FC<PhoneFrameProps> = ({ src, alt, className = "" }) => (
-  <div
-    className={`rounded-[2.5rem] border-[8px] border-ink-900 bg-ink-900 shadow-2xl ${className}`}
-  >
-    <img
-      src={src}
-      alt={alt}
-      className="block w-full rounded-[1.9rem]"
-      loading="lazy"
-    />
-  </div>
-);
 
 export default MobileApp;

@@ -89,7 +89,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-400/10 blur-3xl" />
           <div className="container relative z-10 py-16 lg:py-24">
             <Link
-              to="/blog"
+              to="/#blog"
               className="inline-flex items-center gap-2 text-sm font-medium text-white/80 transition hover:text-white"
             >
               <BackIcon />

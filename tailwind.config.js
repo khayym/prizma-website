@@ -74,6 +74,15 @@ module.exports = {
         "2xl": "1rem",
         "3xl": "1.5rem",
       },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

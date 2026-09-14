@@ -11,12 +11,10 @@
     "blog": "Blog",
     "contact": "Contact",
     "requestDemo": "Request Demo",
-    "getStarted": "Get Started",
     "trainingVideos": "Training videos"
   },
   "hero": {
-    "eyebrow": "PRIZMA",
-    "title": "Streamline workflows, boost efficiency across ERP and HR",
+    "title": "Streamline workflows, <hl>boost efficiency</hl> across ERP and HR",
     "subtitle": "Manage your business processes with greater speed, control, and efficiency through Prizma. Centralize your ERP, HR, finance, procurement, and project management operations on a single platform, enabling seamless collaboration and smarter decision-making.",
     "primaryCta": "Request Demo",
     "secondaryCta": "See how it works",
@@ -29,64 +27,8 @@
     "procurements": "Successful procurements",
     "workflows": "Efficient workflows"
   },
-  "valueProp": {
-    "eyebrow": "Why Prizma",
-    "title": "Discover the Power of Digitalization",
-    "subtitle": "The advantages of digital transformation with Prizma",
-    "items": {
-      "process": {
-        "title": "Business Process Management",
-        "body": "Digitalize your workflows, accelerate approval processes, and transparently track every transaction."
-      },
-      "erp": {
-        "title": "Enterprise Resource Planning",
-        "body": "Manage your finance, procurement, inventory, contract, and project management processes through a fully integrated system."
-      },
-      "hr": {
-        "title": "Human Resources Management",
-        "body": "Easily manage employee records, timesheets, leave, personnel administration, and payroll processes within a centralized structure."
-      },
-      "equipment": {
-        "title": "Equipment Management",
-        "body": "Regularly monitor the location, usage, maintenance, operating hours, and cost information of machinery and equipment."
-      },
-      "ohs": {
-        "title": "Occupational Health and Safety",
-        "body": "Digitally record and manage OHS training, inspections, non-conformities, and corrective actions."
-      },
-      "subcon": {
-        "title": "Subcontractor Management",
-        "body": "Manage subcontractor contracts, employees, progress payments, project progress, and costs from a single platform."
-      },
-      "legal": {
-        "title": "Legal Process Management",
-        "body": "Securely and transparently track your contracts, legal cases, official documents, notifications, and legal obligations."
-      },
-      "dms": {
-        "title": "Document Management",
-        "body": "Store and authorize access to corporate documents and files in a centralized environment and quickly access their latest versions."
-      },
-      "reporting": {
-        "title": "Reporting and Business Intelligence",
-        "body": "Analyze your business processes in detail using real-time data, customizable reports, and visual dashboards."
-      },
-      "ai": {
-        "title": "AI-Powered Management",
-        "body": "Evaluate your data more efficiently and accelerate decision-making processes with AI-powered analyses and recommendations."
-      },
-      "chat": {
-        "title": "Corporate Communication",
-        "body": "Maintain communication between teams within the system and make process-related information sharing faster and more organized."
-      },
-      "settings": {
-        "title": "Flexible System Settings",
-        "body": "Customize user roles, access permissions, notifications, and system preferences according to your organization’s requirements."
-      }
-    }
-  },
   "features": {
-    "eyebrow": "Capabilities",
-    "title": "Prizma — manage business processes, finance and operations",
+    "title": "Prizma — manage <hl>business processes, finance</hl> and operations",
     "hint": "Hover or tap any capability to see it in motion.",
     "play": "Play preview",
     "pause": "Pause preview",
@@ -106,11 +48,10 @@
     }
   },
   "mobile": {
-    "eyebrow": "Mobile app",
-    "title": "Prizma on iOS and Android",
+    "title": "The <hl>Prizma</hl> mobile app on iOS and Android",
     "body": "Manage your business processes, projects, and pending approvals anytime, anywhere with the Prizma mobile application. Its user-friendly interface, secure infrastructure, and real-time data access allow you to monitor your processes seamlessly, whether you are working in the office, on-site, or remotely.",
-    "appStore": "Download on the App Store",
-    "googlePlay": "Get it on Google Play",
+    "appStore": "Download on the",
+    "googlePlay": "Get it on",
     "features": {
       "access": "Easy Access from Anywhere",
       "realtime": "Real-Time Updates",
@@ -118,60 +59,13 @@
       "ux": "User-Friendly Interface",
       "secure": "Secure Data Access",
       "compat": "iOS and Android Compatibility"
-    }
-  },
-  "modules": {
-    "eyebrow": "Services",
-    "title": "Prizma modules",
-    "subtitle": "One platform for every construction process — from workflows and ERP to HR, equipment, safety and reporting.",
-    "items": {
-      "process": {
-        "title": "Process Management",
-        "body": "Digitalizes business processes to improve operational efficiency and centralizes process management through approval mechanisms and automated workflows."
-      },
-      "erp": {
-        "title": "Enterprise Resource Planning",
-        "body": "Optimizes resource utilization by managing inventory, warehouse operations, procurement, and material movements within an integrated system."
-      },
-      "accounting": {
-        "title": "General Accounting",
-        "body": "Manages income and expenses, bank and cash transactions, and incoming and outgoing invoices through a single platform."
-      },
-      "reporting": {
-        "title": "Reporting & Business Intelligence",
-        "body": "Analyzes financial and operational data in real time, providing managers with valuable insights for strategic decision-making."
-      },
-      "hr": {
-        "title": "Human Resources",
-        "body": "Digitalizes human resources operations by centrally managing employee records, timesheets, leave, payroll, personnel documents, expense receipts, and employee-related processes."
-      },
-      "equipment": {
-        "title": "Equipment Management",
-        "body": "Supports operational continuity by tracking the inventory, location, usage, and maintenance processes of machinery and equipment."
-      },
-      "hse": {
-        "title": "Occupational Health & Safety",
-        "body": "Enables the effective management of OHS training, site inspections, non-conformity records, and corrective actions."
-      },
-      "subcon": {
-        "title": "Subcontractor Management",
-        "body": "Digitally manages subcontractor agreements, personnel, performance monitoring, and progress payment processes."
-      },
-      "legal": {
-        "title": "Legal Management",
-        "body": "Enables legal cases, contracts, formal notices, notifications, and other legal processes to be centrally managed and monitored."
-      },
-      "dms": {
-        "title": "Document Management",
-        "body": "Provides fast access to information by supporting corporate document, file, and version management through a secure digital archive infrastructure."
-      }
-    }
+    },
+    "qrHint": "Scan the QR code with your phone to download the app",
+    "qrAlt": "QR code to download the Prizma mobile app"
   },
   "productDemo": {
-    "eyebrow": "Product tour",
-    "title": "See Prizma in action",
+    "title": "See Prizma <hl>in action</hl>",
     "body": "A full walkthrough of how teams plan budgets, route approvals, and track spend across every site.",
-    "overlayTitle": "Prizma platform demo",
     "caption": "Watch demo · 6:02",
     "play": "Play product demo"
   },
@@ -181,20 +75,18 @@
     "cta": "Book a demo"
   },
   "demo": {
-    "eyebrow": "See the product",
-    "title": "Request a demo",
+    "title": "Request <hl>a demo</hl>",
     "body": "Prizma is a powerful BPM/ERP platform serving multiple industries. Optimize processes, boost efficiency, reduce cost, and deliver projects on time.",
     "name": "Your name",
     "email": "Work email",
     "company": "Company",
     "phone": "Phone",
-    "message": "How can we help?",
+    "message": "Message",
     "submit": "Send",
     "phoneLabel": "+7 495 532 12 10"
   },
   "faq": {
-    "eyebrow": "FAQ",
-    "title": "Frequently asked questions",
+    "title": "Frequently asked <hl>questions</hl>",
     "items": {
       "purchases": {
         "q": "How can we track our purchase requests and approval processes?",
@@ -239,17 +131,14 @@
     }
   },
   "cta": {
-    "title": "Meet Prizma and make a difference in your business.",
-    "button": "Contact us"
+    "title": "Meet Prizma and make a difference in your business."
   },
   "about": {
-    "eyebrow": "About us",
-    "title": "21 years building ERP for construction",
+    "title": "<hl>21 years</hl> building ERP for construction",
     "subtitle": "With over 21 years of industry expertise, Prizma is a comprehensive ERP, business process management, financial management, and reporting platform designed specifically for the construction industry.",
     "yearsLabel": "Years of Industry Experience",
     "yearsBody": "From the initial request to the final progress payment, Prizma is developed in line with the real workflow of the construction industry, bringing together field and office processes on a single platform.",
-    "storyEyebrow": "Our story",
-    "storyTitle": "Technology That Understands Construction",
+    "storyTitle": "Technology That <hl>Understands</hl> Construction",
     "storyBody1": "Prizma is more than just software; it is a management platform built on over 21 years of field experience, real project requirements, and the dynamics of the construction industry.",
     "storyBody2": "Developed through a detailed analysis of the challenges faced in budgeting, procurement, finance, human resources, and project management, Prizma has evolved into an integrated solution that enables businesses to manage all their operations from a single platform.",
     "mission": {
@@ -262,8 +151,7 @@
       "title": "The ERP standard for construction",
       "body": "Our vision is to become the leading digital transformation and ERP platform for the global construction industry. By combining innovative technologies, data-driven insights, and industry expertise, we empower organizations to optimize operations, improve decision-making, and achieve sustainable growth."
     },
-    "offerEyebrow": "What we offer",
-    "offerTitle": "An integrated digital management solution that manages all construction business processes on a single platform",
+    "offerTitle": "An integrated digital management solution that manages all construction business processes <hl>on a single platform</hl>",
     "storyBody3": "Continuously enhanced through experience gained from real projects, Prizma accelerates processes, strengthens operational control, and provides managers with powerful analytical tools to make the right decisions at the right time.",
     "storyBody4": "Today, more than 5,000 users manage their daily operations faster, more transparently, and more efficiently through Prizma’s reliable infrastructure.",
     "storyBody5": "By closely following the evolving needs of the industry, we continue to develop stronger, more flexible, and smarter solutions with every new project.",
@@ -311,8 +199,7 @@
     }
   },
   "services": {
-    "eyebrow": "Services",
-    "title": "End-to-End Digital Control in Construction Management with Prizma ERP",
+    "title": "<hl>End-to-End Digital Control</hl> in Construction Management with Prizma ERP",
     "subtitle": "Prizma ERP brings company and project management together on a single platform, helping businesses control costs, accelerate processes, and provide managers with accurate, real-time decision support.",
     "items": {
       "planning": {
@@ -378,16 +265,10 @@
     }
   },
   "blog": {
-    "eyebrow": "Blog",
-    "title": "Insights for construction teams",
+    "title": "Insights for <hl>construction teams</hl>",
     "subtitle": "Practical guides on digitizing budgets, procurement, finance and HR — straight from the people who build Prizma.",
     "featured": "Featured",
     "readMore": "Read article",
-    "newsletterTitle": "Stay ahead of the build",
-    "newsletterBody": "Get new articles and product updates in your inbox once a month. No spam.",
-    "newsletterPlaceholder": "Your work email",
-    "newsletterCta": "Subscribe",
-    "newsletterThanks": "Thanks for subscribing! Check your inbox to confirm.",
     "backToBlog": "Back to blog",
     "relatedTitle": "Related articles",
     "ctaInline": "Want to see how this works in Prizma? Book a quick demo with our team.",
@@ -501,14 +382,13 @@
     }
   },
   "contact": {
-    "eyebrow": "Contact",
-    "title": "Have a question?",
+    "title": "Have a <hl>question?</hl>",
     "subtitle": "Tell us about your projects and we'll show you how Prizma fits your workflow. We usually reply within one business day.",
     "phoneLabel": "Call us",
     "emailLabel": "Email us",
     "addressLabel": "Visit us",
     "hoursLabel": "Working hours",
-    "hours": "Mon–Fri, 9:00–18:00 (MSK)",
+    "hours": "Monday–Saturday, 9:00–19:00 (MSK)",
     "mapTitle": "Prizma office location in Moscow",
     "formTitle": "Send us a message",
     "formNote": "Fill in the form and our team will get back to you shortly.",
@@ -524,5 +404,23 @@
     "email": "info@prizmaflow.com",
     "address": "Igarsky proezd 11, Moscow, Russia",
     "rights": "All rights reserved."
+  },
+  "appLink": {
+    "body": "Taking you to the app store for your device. If nothing happens, download the app below."
+  },
+  "showcase": {
+    "label": "Prizma interface",
+    "carouselHint": "Drag to spin",
+    "prev": "Previous screen",
+    "next": "Next screen",
+    "modules": {
+      "home": "Home",
+      "processes": "Processes",
+      "erp": "ERP",
+      "hr": "HR",
+      "isg": "HSE",
+      "menu": "Menu",
+      "equipment": "Equipment"
+    }
   }
 }
