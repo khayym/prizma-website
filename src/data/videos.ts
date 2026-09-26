@@ -9,8 +9,8 @@ import { vkEmbedUrl } from "../utils/vkVideo";
  * that has just been recorded, change that one slot — nothing else in the
  * codebase needs to move:
  *
- *   budget: pending,              ->  budget: vk(456239140),
- *   budget: pending,              ->  budget: file("/videos/budget.mp4"),
+ *   heroShowreel = pending   ->  heroShowreel = vk(456239140)
+ *   heroShowreel = pending   ->  heroShowreel = file("/videos/hero.mp4")
  *
  * Keep the slot as `pending` rather than pointing it at an unrelated clip: the
  * placeholder is honest about what is not filmed yet, a stand-in clip is not.
@@ -73,25 +73,75 @@ export const productTourByLanguage: Record<string, VideoSlot> = {
   tr: vk(456239132),
 };
 
-/**
- * Per-feature preview clips for the Features grid.
- *
- * All twelve are awaiting capture. Until each one lands, its card shows the
- * branded placeholder; the keys match `features.items.*` in the locale files.
- */
-export const featurePreviews = {
-  budget: pending,
-  projects: pending,
-  approvals: pending,
-  routes: pending,
-  control: pending,
-  history: pending,
-  export: pending,
-  monitoring: pending,
-  integration: pending,
-  personnel: pending,
-  hr: pending,
-  ar: pending,
-} satisfies Record<string, VideoSlot>;
+/** Cards of the Features grid, in display order; keys match `features.items.*`. */
+export const featureKeys = [
+  "budget",
+  "projects",
+  "approvals",
+  "routes",
+  "control",
+  "history",
+  "export",
+  "monitoring",
+  "integration",
+  "personnel",
+  "hr",
+  "ar",
+] as const;
 
-export type FeatureKey = keyof typeof featurePreviews;
+export type FeatureKey = (typeof featureKeys)[number];
+
+/** A narrated module walkthrough, self-hosted under `static/videos/features/<lang>/`. */
+export interface FeatureVideo {
+  src: string;
+  poster: string;
+  /** Name of the walkthrough; replaces the card label when the video exists. */
+  title: string;
+  /** Running time shown on the card, m:ss. */
+  duration: string;
+}
+
+const featureVideo = (
+  lang: string,
+  n: string,
+  title: string,
+  duration: string,
+): FeatureVideo => ({
+  src: `/videos/features/${lang}/${n}.mp4`,
+  poster: `/videos/features/${lang}/${n}.jpg`,
+  title,
+  duration,
+});
+
+/**
+ * Walkthrough videos per site language. Video N belongs to card N of the grid.
+ * A card without a video in the current language keeps its placeholder tile,
+ * so add an entry here (and the two files) as each recording is delivered.
+ * Source recordings are compressed with:
+ *   ffmpeg -i in.mov -vf "fps=24,scale=1280:-2" -c:v libx264 -preset slow -crf 28
+ *     -tune animation -pix_fmt yuv420p -c:a aac -b:a 64k -ac 1 -movflags +faststart out.mp4
+ */
+const featureVideos: Record<string, Partial<Record<FeatureKey, FeatureVideo>>> = {
+  tr: {
+    budget: featureVideo("tr", "01", "Satın Alma Siparişi", "5:30"),
+    projects: featureVideo("tr", "02", "Ödeme Talebi", "5:31"),
+    approvals: featureVideo("tr", "03", "ERP — 1C Entegrasyonu", "3:11"),
+    routes: featureVideo("tr", "04", "İK — Personel Yönetimi", "3:53"),
+    control: featureVideo("tr", "05", "İK — Puantaj ve Bordro", "4:13"),
+    history: featureVideo("tr", "06", "Ekipman", "4:23"),
+    export: featureVideo("tr", "07", "İSG — Projeler ve Uygunsuzluklar", "3:24"),
+    monitoring: featureVideo("tr", "08", "İSG — Denetim ve Takip", "4:53"),
+    integration: featureVideo("tr", "09", "Legal — Dava ve Duruşma Yönetimi", "4:02"),
+    personnel: featureVideo("tr", "10", "Disk — Doküman Yönetimi", "4:10"),
+    hr: featureVideo("tr", "11", "Raporlar — Finansal Dashboard", "5:47"),
+    ar: featureVideo("tr", "12", "Raporlar — Proje Dashboard", "6:53"),
+  },
+};
+
+export const getFeatureVideo = (
+  language: string,
+  key: FeatureKey,
+): FeatureVideo | undefined => {
+  const video = featureVideos[language]?.[key];
+  return video && { ...video, src: withPrefix(video.src), poster: withPrefix(video.poster) };
+};

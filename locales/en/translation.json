@@ -29,9 +29,8 @@
   },
   "features": {
     "title": "Prizma — manage <hl>business processes, finance</hl> and operations",
-    "hint": "Hover or tap any capability to see it in motion.",
-    "play": "Play preview",
-    "pause": "Pause preview",
+    "hint": "Click a video to watch.",
+    "play": "Play video",
     "items": {
       "budget": "Actual cost vs. budget tracking",
       "projects": "Unlimited projects and sites",
@@ -45,7 +44,8 @@
       "personnel": "Personnel tracked by budget codes",
       "hr": "Transparent HR process management",
       "ar": "Accounts payable and receivable control"
-    }
+    },
+    "close": "Close"
   },
   "mobile": {
     "title": "The <hl>Prizma</hl> mobile app on iOS and Android",

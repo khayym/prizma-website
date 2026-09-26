@@ -29,9 +29,8 @@
   },
   "features": {
     "title": "Prizma — <hl>iş süreçleri, finans</hl> ve operasyon yönetimi",
-    "hint": "Hareketi görmek için bir özelliğin üzerine gelin veya dokunun.",
-    "play": "Önizlemeyi başlat",
-    "pause": "Önizlemeyi durdur",
+    "hint": "İzlemek için bir videoya tıklayın.",
+    "play": "Videoyu oynat",
     "items": {
       "budget": "Fiili maliyet vs bütçe takibi",
       "projects": "Sınırsız proje ve şantiye",
@@ -45,7 +44,8 @@
       "personnel": "Bütçe koduyla personel takibi",
       "hr": "Şeffaf İK süreç yönetimi",
       "ar": "Borç ve alacak kontrolü"
-    }
+    },
+    "close": "Kapat"
   },
   "mobile": {
     "title": "<hl>Prizma</hl> mobil uygulaması iOS ve Android'de",

@@ -1,29 +1,12 @@
 import * as React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import Highlight from "../components/Highlight";
 import {
-  featurePreviews,
-  isReady,
-  resolveVideo,
+  featureKeys,
+  getFeatureVideo,
   type FeatureKey,
-  type VideoSlot,
+  type FeatureVideo,
 } from "../data/videos";
-
-/** Order the cards appear in the grid; keys match `features.items.*`. */
-const featureOrder: FeatureKey[] = [
-  "budget",
-  "projects",
-  "approvals",
-  "routes",
-  "control",
-  "history",
-  "export",
-  "monitoring",
-  "integration",
-  "personnel",
-  "hr",
-  "ar",
-];
 
 /**
  * Glyph per feature, drawn on the placeholder tile so the twelve cards stay
@@ -113,10 +96,10 @@ const glyphs: Record<FeatureKey, React.ReactNode> = {
 
 interface FeatureCardProps {
   featureKey: FeatureKey;
-  slot: VideoSlot;
   label: string;
+  video?: FeatureVideo;
   playLabel: string;
-  pauseLabel: string;
+  onPlay: () => void;
 }
 
 /** The approved card chrome — identical for filmed and not-yet-filmed cards. */
@@ -125,27 +108,11 @@ const cardShell =
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
   featureKey,
-  slot,
   label,
+  video,
   playLabel,
-  pauseLabel,
+  onPlay,
 }) => {
-  const videoRef = React.useRef<HTMLVideoElement | null>(null);
-  const [active, setActive] = React.useState(false);
-  const media = resolveVideo(slot);
-
-  const start = React.useCallback(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    setActive(true);
-    v.play().catch(() => undefined);
-  }, []);
-
-  const stop = React.useCallback(() => {
-    setActive(false);
-    videoRef.current?.pause();
-  }, []);
-
   const caption = (
     <div className="flex items-start gap-3 p-5">
       <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-400 text-ink-900">
@@ -159,14 +126,15 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           />
         </svg>
       </span>
-      <span className="text-sm font-medium text-ink-100">{label}</span>
+      <span className="text-sm font-medium text-ink-100">
+        {video?.title ?? label}
+      </span>
     </div>
   );
 
-  // No clip delivered yet — same tile as a filmed card, just without the video
-  // and without the play affordance. Styling stays identical to the approved
-  // design so the grid does not change shape when clips land.
-  if (!media) {
+  // No walkthrough in this language yet — same tile, without the play
+  // affordance, so the grid does not change shape when recordings land.
+  if (!video) {
     return (
       <div className={cardShell}>
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink-950">
@@ -196,47 +164,28 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     );
   }
 
-  const toggle = () => (active ? stop() : start());
-
   return (
-    <div
-      className={cardShell}
-      onMouseEnter={start}
-      onMouseLeave={stop}
-    >
+    <div className={cardShell}>
       <button
         type="button"
-        onClick={toggle}
-        onFocus={start}
-        onBlur={stop}
-        aria-label={active ? `${pauseLabel} — ${label}` : `${playLabel} — ${label}`}
-        aria-pressed={active}
+        onClick={onPlay}
+        aria-label={`${playLabel} — ${video.title}`}
         className="relative block aspect-[16/9] w-full overflow-hidden bg-ink-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400"
       >
-        <video
-          ref={videoRef}
-          src={media.src}
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500"
-          style={{ opacity: active ? 1 : 0.7 }}
-          preload="metadata"
-          muted
-          loop
-          playsInline
-          aria-hidden="true"
+        <img
+          src={video.poster}
+          alt=""
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover object-left-top opacity-80 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-900/30 via-transparent to-ink-950/60" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
-
-        <span
-          className={`pointer-events-none absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-ink-950/70 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur-sm transition-opacity duration-300 ${
-            active ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent-400" />
-          </span>
-          Preview
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/10 to-ink-950/30" />
+        <span className="absolute left-1/2 top-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" className="ml-0.5">
+            <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
+          </svg>
+        </span>
+        <span className="absolute bottom-3 right-3 rounded-full bg-ink-950/80 px-2 py-0.5 text-[11px] font-semibold text-white backdrop-blur-sm">
+          {video.duration}
         </span>
       </button>
       {caption}
@@ -244,9 +193,72 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   );
 };
 
+interface VideoModalProps {
+  video: FeatureVideo;
+  closeLabel: string;
+  onClose: () => void;
+}
+
+/** Full-screen player for a walkthrough: sound, controls, Esc or backdrop to close. */
+const VideoModal: React.FC<VideoModalProps> = ({ video, closeLabel, onClose }) => {
+  const closeRef = React.useRef<HTMLButtonElement>(null);
+
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    closeRef.current?.focus();
+    return () => {
+      document.body.style.overflow = overflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={video.title}
+      onClick={onClose}
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/90 p-4 backdrop-blur-sm sm:p-8"
+    >
+      <div className="w-full max-w-6xl" onClick={(e) => e.stopPropagation()}>
+        <div className="mb-3 flex items-center justify-between gap-4">
+          <span className="text-base font-semibold text-white sm:text-lg">
+            {video.title}
+          </span>
+          <button
+            ref={closeRef}
+            type="button"
+            onClick={onClose}
+            aria-label={closeLabel}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400"
+          >
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
+        <video
+          src={video.src}
+          poster={video.poster}
+          controls
+          autoPlay
+          playsInline
+          className="max-h-[80vh] w-full rounded-xl bg-black shadow-2xl"
+        />
+      </div>
+    </div>
+  );
+};
+
 const Features: React.FC = () => {
   const { t } = useTranslation();
-  const anyPlayable = featureOrder.some((key) => isReady(featurePreviews[key]));
+  const { language } = useI18next();
+  const [playing, setPlaying] = React.useState<FeatureVideo | null>(null);
+  const close = React.useCallback(() => setPlaying(null), []);
+  const videos = featureKeys.map((key) => getFeatureVideo(language, key));
 
   return (
     <section id="features" className="section bg-ink-900 text-white">
@@ -255,24 +267,28 @@ const Features: React.FC = () => {
           <h2 className="section-title text-white">
             <Highlight text={t("features.title")} className="text-accent-300" />
           </h2>
-          {anyPlayable && (
+          {videos.some(Boolean) && (
             <p className="mt-3 text-sm text-ink-400">{t("features.hint")}</p>
           )}
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
-          {featureOrder.map((key) => (
+          {featureKeys.map((key, i) => (
             <FeatureCard
               key={key}
               featureKey={key}
-              slot={featurePreviews[key]}
               label={t(`features.items.${key}`)}
+              video={videos[i]}
               playLabel={t("features.play")}
-              pauseLabel={t("features.pause")}
+              onPlay={() => setPlaying(videos[i] ?? null)}
             />
           ))}
         </div>
       </div>
+
+      {playing && (
+        <VideoModal video={playing} closeLabel={t("features.close")} onClose={close} />
+      )}
     </section>
   );
 };
