@@ -262,6 +262,12 @@
         "title": "Legal Process Management",
         "body": "Manage legal cases, contracts, official notifications, and other legal processes through a centralized, secure, and traceable system."
       }
+    },
+    "groups": {
+      "projects": "Projects & Finance",
+      "supply": "Procurement & Inventory",
+      "people": "People & Site",
+      "management": "Management & Reporting"
     }
   },
   "blog": {

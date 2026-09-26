@@ -1,125 +1,85 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import PageHero from "../components/PageHero";
+import Highlight from "../components/Highlight";
+import { useScreens, type WebModuleKey } from "../components/showcase/screens";
 
-const services: { key: string; icon: React.ReactNode }[] = [
+/** Services grouped into tabs; labels live under `services.groups.*`. */
+const groups: { key: string; items: string[]; screen: WebModuleKey }[] = [
   {
-    key: "planning",
-    icon: <path d="M3 3v18h18M7 14l3-4 3 3 5-7" />,
+    key: "projects",
+    items: ["planning", "contracts", "finance", "analysis", "clients"],
+    screen: "processes",
   },
-  {
-    key: "inventory",
-    icon: <path d="M3 7l9-4 9 4-9 4-9-4zM3 12l9 4 9-4M3 17l9 4 9-4" />,
-  },
-  {
-    key: "procurement",
-    icon: <path d="M6 6h15l-1.5 9h-12zM6 6L5 3H2M8 21a1 1 0 100-2 1 1 0 000 2zM18 21a1 1 0 100-2 1 1 0 000 2z" />,
-  },
-  {
-    key: "contracts",
-    icon: <path d="M8 3h8l4 4v14H4V3h4zM9 12h6M9 16h6M9 8h2" />,
-  },
-  {
-    key: "finance",
-    icon: <path d="M3 6h18v12H3zM3 10h18M7 15h3" />,
-  },
-  {
-    key: "hr",
-    icon: <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM22 21v-2a4 4 0 00-3-3.87" />,
-  },
-  {
-    key: "mrp",
-    icon: <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16zM3.3 7l8.7 5 8.7-5M12 22V12" />,
-  },
-  {
-    key: "analysis",
-    icon: <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />,
-  },
-  {
-    key: "clients",
-    icon: <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" />,
-  },
-  {
-    key: "dashboards",
-    icon: <path d="M4 19V5M9 19V9M14 19v-7M19 19v-3" />,
-  },
-  {
-    key: "dms",
-    icon: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M9 13h6M9 17h6" />,
-  },
-  {
-    key: "equipment",
-    icon: <path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.4-2.4 2.5-2.5z" />,
-  },
-  {
-    key: "ohs",
-    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4" />,
-  },
-  {
-    key: "subcon",
-    icon: <path d="M17 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />,
-  },
-  {
-    key: "legal",
-    icon: <path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0zM17 7l-3 7a3 3 0 006 0z" />,
-  },
+  { key: "supply", items: ["inventory", "procurement", "mrp"], screen: "erp" },
+  { key: "people", items: ["hr", "equipment", "ohs", "subcon"], screen: "hr" },
+  { key: "management", items: ["dashboards", "dms", "legal"], screen: "equipment" },
 ];
 
-const ServiceIcon: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    {children}
-  </svg>
-);
-
-/** Former Services page, now a home-page section. */
+/** Former Services page, now a tabbed section in the zoom.com "One platform" pattern. */
 const Services: React.FC = () => {
   const { t } = useTranslation();
-  return (
-    <div id="services">
-      <PageHero
-        as="h2"
-        title={t("services.title")}
-        subtitle={t("services.subtitle")}
-      />
+  const screens = useScreens();
+  const [active, setActive] = React.useState(0);
+  const group = groups[active];
 
-      <section className="section">
-        <div className="container">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
-            {services.map((s, i) => (
-              <div
-                key={s.key}
-                className="group flex flex-col rounded-3xl border border-ink-100 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="icon-tile h-14 w-14">
-                    <ServiceIcon>{s.icon}</ServiceIcon>
-                  </span>
-                  <span className="text-4xl font-semibold text-ink-100 transition group-hover:text-brand-100">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                </div>
-                <h3 className="mt-6 text-xl">
-                  {t(`services.items.${s.key}.title`)}
-                </h3>
-                <p className="mt-2 text-ink-600">
-                  {t(`services.items.${s.key}.body`)}
-                </p>
-              </div>
-            ))}
-          </div>
+  return (
+    <section id="services" className="section bg-white">
+      <div className="container">
+        <div className="mx-auto max-w-3xl text-center" data-reveal>
+          <h2 className="section-title">
+            <Highlight text={t("services.title")} className="text-brand-600" />
+          </h2>
+          <p className="mt-4 text-lg text-ink-600">{t("services.subtitle")}</p>
         </div>
-      </section>
-    </div>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-2" role="tablist" data-reveal>
+          {groups.map((g, i) => (
+            <button
+              key={g.key}
+              type="button"
+              role="tab"
+              aria-selected={i === active}
+              onClick={() => setActive(i)}
+              className={`rounded-full px-5 py-2.5 text-[15px] font-semibold transition duration-300 ${
+                i === active
+                  ? "bg-white text-brand-600 shadow-pop ring-1 ring-brand-300"
+                  : "bg-ink-50 text-ink-600 hover:bg-brand-100 hover:text-ink-900"
+              }`}
+            >
+              {t(`services.groups.${g.key}`)}
+            </button>
+          ))}
+        </div>
+
+        <div
+          key={group.key}
+          className="surface mt-8 grid items-center gap-8 p-6 sm:p-8 lg:grid-cols-2 lg:p-10"
+          role="tabpanel"
+        >
+          <div className="overflow-hidden rounded-2xl shadow-pop">
+            <img
+              src={screens.web[group.screen]}
+              alt=""
+              loading="lazy"
+              className="aspect-[16/10] w-full object-cover object-left-top"
+            />
+          </div>
+          <ul className="space-y-5">
+            {group.items.map((key) => (
+              <li key={key} className="flex gap-3">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-600" />
+                <p className="text-ink-600">
+                  <span className="font-semibold text-ink-900">
+                    {t(`services.items.${key}.title`)}:
+                  </span>{" "}
+                  {t(`services.items.${key}.body`)}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
   );
 };
 

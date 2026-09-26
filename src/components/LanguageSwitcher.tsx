@@ -7,10 +7,20 @@ const languages = [
   { code: "en", label: "EN" },
 ];
 
-const LanguageSwitcher: React.FC = () => {
+interface LanguageSwitcherProps {
+  /** `dark` sits on the navy header; `light` on white panels. */
+  variant?: "light" | "dark";
+}
+
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = "light" }) => {
   const { language, changeLanguage } = useI18next();
+  const dark = variant === "dark";
   return (
-    <div className="inline-flex items-center rounded-full border border-ink-200 p-1 text-xs font-semibold">
+    <div
+      className={`inline-flex items-center rounded-full p-0.5 text-[11px] font-semibold ${
+        dark ? "bg-white/10" : "bg-brand-100"
+      }`}
+    >
       {languages.map((lang) => {
         const active = lang.code === language;
         return (
@@ -18,10 +28,14 @@ const LanguageSwitcher: React.FC = () => {
             key={lang.code}
             type="button"
             onClick={() => changeLanguage(lang.code)}
-            className={`rounded-full px-3 py-1 transition ${
+            className={`rounded-full px-2.5 py-1.5 transition ${
               active
-                ? "bg-ink-900 text-white"
-                : "text-ink-600 hover:text-ink-900"
+                ? dark
+                  ? "bg-white text-ink-900"
+                  : "bg-ink-900 text-white"
+                : dark
+                  ? "text-white/80 hover:text-white"
+                  : "text-ink-600 hover:text-ink-900"
             }`}
             aria-pressed={active}
           >

@@ -9,47 +9,73 @@
     scroll-padding-top: 5rem;
   }
   body {
-    @apply font-sans text-ink-800 antialiased bg-white;
+    @apply font-sans text-ink-900 antialiased bg-white;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-ink-900;
+    @apply font-display font-normal tracking-normal text-ink-900;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700;
+  /* Buttons follow zoom.com: 10px corners, 600 weight, 300ms ease-in-out. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded px-5 py-3 text-[15px] font-semibold leading-none transition duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2;
   }
-  .btn-accent {
-    @apply inline-flex items-center justify-center rounded-full bg-accent-400 px-6 py-3 text-sm font-semibold text-ink-900 shadow-sm transition hover:bg-accent-500;
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700;
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center rounded-full border border-ink-200 bg-white px-6 py-3 text-sm font-semibold text-ink-800 transition hover:border-brand-600 hover:bg-brand-600 hover:text-white;
+    @apply btn bg-brand-100 text-ink-900 hover:bg-brand-200;
+  }
+  .btn-dark {
+    @apply btn bg-ink-950 text-white hover:bg-ink-900;
+  }
+  .btn-light {
+    @apply btn bg-white text-ink-900 hover:bg-brand-100;
+  }
+  /* Kept for older call sites; same look as the light pill. */
+  .btn-accent {
+    @apply btn-light;
   }
   .section {
-    @apply py-16 sm:py-20 lg:py-24;
+    @apply py-16 sm:py-20 lg:py-28;
   }
+  /* Display serif at Zoom's measured sizes (46px / 1.14 on desktop). */
   .section-title {
-    @apply text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl;
+    @apply font-display text-[2.125rem] font-normal leading-[1.14] sm:text-[2.5rem] lg:text-[2.875rem];
   }
-  /* Emphasized words on blue backgrounds: blue text on a white marker. */
+  .display-title {
+    @apply font-display text-[2.5rem] font-normal leading-[1.1] sm:text-[3.25rem] lg:text-[4rem];
+  }
+  /* Emphasized words: blue on light, pale blue on navy. */
   .hl-marker {
-    @apply rounded-xl bg-white px-2 text-brand-700;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+    @apply text-brand-300;
+  }
+  .surface {
+    @apply rounded-3xl bg-brand-50;
   }
   .icon-tile {
-    @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-600 to-accent-400 text-white shadow-lg shadow-brand-600/30 ring-4 ring-brand-50 transition duration-300 group-hover:-translate-y-0.5 group-hover:rotate-6 group-hover:shadow-brand-600/50;
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white;
+  }
+  /* Arrow button in the corner of a card, as on zoom.com news cards. */
+  .card-arrow {
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-900 transition duration-300 group-hover:bg-brand-600 group-hover:text-white;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 
 /* Scroll reveal — see `useRevealOnScroll` in Layout. */
 [data-reveal] {
   transition:
-    opacity 0.7s ease,
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
 }
 .reveal-ready [data-reveal]:not(.is-revealed) {
   opacity: 0;
-  transform: translateY(1.5rem);
+  transform: translateY(1rem);
 }

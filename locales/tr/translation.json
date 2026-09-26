@@ -262,6 +262,12 @@
         "title": "Hukuki Süreç Yönetimi",
         "body": "Dava, sözleşme, resmi bildirim ve hukuki süreçleri merkezi, güvenli ve izlenebilir bir sistem üzerinden yönetin."
       }
+    },
+    "groups": {
+      "projects": "Proje ve Finans",
+      "supply": "Tedarik ve Stok",
+      "people": "İK ve Saha",
+      "management": "Yönetim ve Raporlama"
     }
   },
   "blog": {

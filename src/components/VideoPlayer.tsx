@@ -14,6 +14,7 @@ interface VideoPlayerProps {
   className?: string;
 }
 
+/** Rounded media block with a navy poster; the player mounts on first play. */
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
   src,
   embedSrc,
@@ -37,119 +38,69 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   };
 
   return (
-    <div className={`relative mx-auto w-full max-w-5xl ${className}`}>
-      <div className="pointer-events-none absolute -inset-x-10 -bottom-10 -top-6 -z-10">
-        <div className="absolute left-1/2 top-1/2 h-[80%] w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] bg-gradient-to-br from-brand-100 to-accent-100 opacity-60 blur-3xl" />
-      </div>
-
-      <div className="relative rounded-[1.75rem] border-[10px] border-ink-900 bg-ink-900 shadow-[0_30px_80px_-20px_rgba(15,23,42,0.45)]">
-        <div className="absolute left-1/2 top-[6px] z-20 -translate-x-1/2">
-          <div className="h-1.5 w-12 rounded-full bg-ink-800" />
-        </div>
-
-        <div className="overflow-hidden rounded-[0.85rem] bg-ink-950">
-          <div className="flex items-center gap-3 border-b border-ink-200/10 bg-ink-50 px-4 py-2.5">
-            <div className="flex gap-1.5">
-              <span className="h-3 w-3 rounded-full bg-red-400" />
-              <span className="h-3 w-3 rounded-full bg-yellow-400" />
-              <span className="h-3 w-3 rounded-full bg-green-400" />
-            </div>
-            <div className="ml-2 flex flex-1 items-center justify-center">
-              <div className="flex max-w-xs items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-ink-500 shadow-sm">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
+    <div className={`relative overflow-hidden rounded-3xl bg-brand-950 ${className}`}>
+      <div className="relative aspect-[16/9] w-full">
+        {!active &&
+          React.createElement(
+            awaitingClip ? "div" : "button",
+            awaitingClip
+              ? { className: "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden" }
+              : {
+                  type: "button",
+                  onClick: handleStart,
+                  className:
+                    "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-300",
+                  "aria-label": playLabel,
+                },
+            <>
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "radial-gradient(110% 90% at 50% 110%, #2563eb 0%, #1e40af 35%, #172554 80%)",
+                }}
+              />
+              <div className="relative flex flex-col items-center gap-4 px-6 text-center sm:gap-6 sm:px-8">
+                <span
+                  className={`flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-pop transition-transform duration-300 sm:h-20 sm:w-20 ${
+                    awaitingClip ? "opacity-40" : "group-hover:scale-110 group-active:scale-95"
+                  }`}
                 >
-                  <path
-                    d="M12 2a7 7 0 017 7c0 4.5-5.5 11-7 13-1.5-2-7-8.5-7-13a7 7 0 017-7zm0 5a2 2 0 100 4 2 2 0 000-4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span>prizmaflow.com/app</span>
-              </div>
-            </div>
-            <div className="hidden sm:block w-12" />
-          </div>
-
-          <div className="relative aspect-[16/10] w-full bg-ink-950">
-            {!active &&
-              React.createElement(
-                awaitingClip ? "div" : "button",
-                awaitingClip
-                  ? {
-                      className:
-                        "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden",
-                    }
-                  : {
-                      type: "button",
-                      onClick: handleStart,
-                      className:
-                        "group absolute inset-0 z-10 flex items-center justify-center overflow-hidden focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-300",
-                      "aria-label": playLabel,
-                    },
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-800 to-ink-900" />
-                  <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#7dd3fc_0%,transparent_45%),radial-gradient(circle_at_85%_75%,#2563eb_0%,transparent_50%)]" />
-                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-950/70 to-transparent" />
-
-                  <div className="relative flex flex-col items-center gap-3 px-6 text-center sm:gap-5 sm:px-8">
-                    <span
-                      className={`flex h-14 w-14 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 sm:h-20 sm:w-20 ${
-                        awaitingClip
-                          ? "opacity-40"
-                          : "group-hover:scale-110 group-active:scale-95"
-                      }`}
-                    >
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        aria-hidden="true"
-                        className="ml-1 h-6 w-6 sm:h-[30px] sm:w-[30px]"
-                      >
-                        <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
-                      </svg>
-                    </span>
-                    {overlay}
-                    {!awaitingClip && caption && (
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
-                        {caption}
-                      </span>
-                    )}
-                  </div>
-                </>,
-              )}
-
-            {embedSrc
-              ? active && (
-                  <iframe
-                    src={embedSrc}
-                    title={title ?? playLabel}
-                    className="absolute inset-0 h-full w-full border-0"
-                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
-                    allowFullScreen
-                  />
-                )
-              : src && (
-                  <video
-                    ref={videoRef}
-                    src={src}
-                    className="absolute inset-0 h-full w-full object-cover"
-                    preload={active ? "auto" : "none"}
-                    playsInline
-                    controls={active}
-                  />
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="ml-1">
+                    <path d="M6 4l16 8-16 8z" fill="#2563eb" />
+                  </svg>
+                </span>
+                {overlay}
+                {!awaitingClip && caption && (
+                  <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    {caption}
+                  </span>
                 )}
-          </div>
-        </div>
-      </div>
+              </div>
+            </>,
+          )}
 
-      <div className="mx-auto mt-2 h-3 w-[103%] -translate-x-[1.5%] rounded-b-3xl bg-gradient-to-b from-ink-200 to-ink-100 shadow-md" />
-      <div className="mx-auto h-1 w-1/5 rounded-b-full bg-ink-200/80" />
+        {embedSrc
+          ? active && (
+              <iframe
+                src={embedSrc}
+                title={title ?? playLabel}
+                className="absolute inset-0 h-full w-full border-0"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock"
+                allowFullScreen
+              />
+            )
+          : src && (
+              <video
+                ref={videoRef}
+                src={src}
+                className="absolute inset-0 h-full w-full object-cover"
+                preload={active ? "auto" : "none"}
+                playsInline
+                controls={active}
+              />
+            )}
+      </div>
     </div>
   );
 };

@@ -56,7 +56,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
   const { postKey } = pageContext;
   const base = `blog.posts.${postKey}`;
 
-  const tone = toneByKey[postKey] ?? "from-brand-700 to-ink-900";
+  const tone = toneByKey[postKey] ?? "from-brand-600 to-brand-950";
   const image = blogImages[postKey];
   const sections =
     (t(`${base}.sections`, { returnObjects: true }) as unknown as Section[]) ||
@@ -71,7 +71,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
     <Layout>
       <article>
         {/* Article hero */}
-        <header className="relative overflow-hidden bg-ink-900">
+        <header className="relative overflow-hidden bg-brand-950">
           {image && (
             <img
               src={image}
@@ -82,12 +82,12 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
           <div
             className={`absolute inset-0 ${
               image
-                ? "bg-gradient-to-br from-ink-950/85 via-ink-950/70 to-brand-900/70"
+                ? "bg-gradient-to-br from-ink-950/85 via-ink-950/70 to-brand-950/70"
                 : `bg-gradient-to-br ${tone}`
             }`}
           />
-          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-400/10 blur-3xl" />
-          <div className="container relative z-10 py-16 lg:py-24">
+          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-600/20 blur-3xl" />
+          <div className="container relative z-10 pb-16 pt-32 lg:pb-24 lg:pt-40">
             <Link
               to="/#blog"
               className="inline-flex items-center gap-2 text-sm font-medium text-white/80 transition hover:text-white"
@@ -136,7 +136,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
               ))}
 
               {quote && (
-                <blockquote className="my-10 border-l-4 border-brand-700 bg-ink-50 px-6 py-5 text-lg font-medium italic text-ink-800">
+                <blockquote className="my-10 border-l-4 border-brand-600 bg-brand-50 px-6 py-5 font-display text-xl text-ink-900">
                   “{quote}”
                 </blockquote>
               )}
@@ -160,7 +160,7 @@ const BlogPostTemplate: React.FC<PageProps<object, PageContext>> = ({
                 <Link
                   key={p.key}
                   to={`/blog/${p.key}`}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-ink-100 bg-white transition hover:border-brand-200 hover:shadow-lg"
+                  className="group flex flex-col overflow-hidden rounded-3xl bg-brand-50 transition duration-300 hover:-translate-y-1 hover:shadow-pop"
                 >
                   <div className={`h-32 overflow-hidden bg-gradient-to-br ${p.tone}`}>
                     <img

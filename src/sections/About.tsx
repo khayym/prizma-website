@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import PageHero from "../components/PageHero";
 import Highlight from "../components/Highlight";
 import Glyph, { type GlyphName } from "../components/Glyph";
 
@@ -17,71 +16,58 @@ const offers: { key: string; glyph: GlyphName }[] = [
   { key: "secure", glyph: "shield" },
 ];
 
-/** Former About page, now a home-page section. */
+/** Former About page, now a home-page section in the zoom.com layout. */
 const About: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div id="about">
-      <PageHero as="h2" title={t("about.title")} subtitle={t("about.subtitle")} />
-
+    <div id="about" className="bg-white">
       {/* Story */}
       <section className="section">
-        <div className="container grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-center">
-          <div data-reveal>
-            <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-accent-500 p-1 shadow-2xl shadow-brand-600/20">
-              <div className="flex h-full w-full flex-col justify-end rounded-[1.4rem] bg-ink-900 p-8">
-                <div className="text-6xl font-semibold text-white">21</div>
-                <div className="mt-2 text-lg font-medium text-accent-300">
-                  {t("about.yearsLabel")}
-                </div>
-                <p className="mt-3 text-sm text-ink-300">
-                  {t("about.yearsBody")}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div data-reveal>
-            <h3 className="section-title">
-              <Highlight text={t("about.storyTitle")} className="text-brand-600" />
-            </h3>
-            <p className="mt-5 text-ink-600">{t("about.storyBody1")}</p>
-            <p className="mt-4 text-ink-600">{t("about.storyBody2")}</p>
-            <p className="mt-4 text-ink-600">{t("about.storyBody3")}</p>
-            <p className="mt-4 text-ink-600">{t("about.storyBody4")}</p>
-            <p className="mt-4 text-ink-600">{t("about.storyBody5")}</p>
+        <div className="container grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5" data-reveal>
+            <h2 className="section-title">
+              <Highlight text={t("about.title")} className="text-brand-600" />
+            </h2>
+            <p className="mt-5 text-lg text-ink-600">{t("about.subtitle")}</p>
             <a
               href="https://vkvideo.ru/@prizmaflow"
               target="_blank"
               rel="noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brand-800"
+              className="btn-ghost mt-8"
             >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2 14.5v-9l7 4.5-7 4.5z" />
-              </svg>
+              <Glyph name="chevronRight" size={16} strokeWidth={2.4} />
               {t("nav.trainingVideos")}
             </a>
           </div>
+          <div className="lg:col-span-6 lg:col-start-7" data-reveal>
+            <h3 className="font-display text-2xl text-ink-900 sm:text-3xl">
+              <Highlight text={t("about.storyTitle")} className="text-brand-600" />
+            </h3>
+            <div className="mt-5 space-y-4 text-ink-600">
+              <p>{t("about.storyBody1")}</p>
+              <p>{t("about.storyBody2")}</p>
+              <p>{t("about.storyBody3")}</p>
+              <p>{t("about.storyBody4")}</p>
+              <p>{t("about.storyBody5")}</p>
+            </div>
+          </div>
         </div>
-      </section>
 
-      {/* Mission & Vision */}
-      <section className="section bg-ink-50">
-        <div className="container grid gap-6 md:grid-cols-2" data-reveal>
+        {/* 21 years, mission, vision */}
+        <div className="container mt-16 grid gap-5 lg:grid-cols-3" data-reveal>
+          <div className="flex flex-col justify-between rounded-3xl bg-gradient-to-b from-brand-600 to-brand-950 p-8 text-white">
+            <div className="font-display text-7xl leading-none">21</div>
+            <div>
+              <div className="mt-8 font-display text-2xl">{t("about.yearsLabel")}</div>
+              <p className="mt-3 text-sm text-white/80">{t("about.yearsBody")}</p>
+            </div>
+          </div>
           {(["mission", "vision"] as const).map((k) => (
-            <div
-              key={k}
-              className="rounded-3xl border border-ink-100 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:shadow-xl lg:p-10"
-            >
-              <span className="inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-700">
+            <div key={k} className="surface p-8">
+              <span className="text-sm font-semibold text-brand-600">
                 {t(`about.${k}.label`)}
               </span>
-              <h3 className="mt-5 text-2xl">{t(`about.${k}.title`)}</h3>
+              <h3 className="mt-3 font-display text-2xl">{t(`about.${k}.title`)}</h3>
               <p className="mt-3 text-ink-600">{t(`about.${k}.body`)}</p>
             </div>
           ))}
@@ -89,24 +75,26 @@ const About: React.FC = () => {
       </section>
 
       {/* What we offer */}
-      <section className="section">
+      <section className="section pt-0">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center" data-reveal>
-            <h3 className="section-title">
+            <h2 className="section-title">
               <Highlight text={t("about.offerTitle")} className="text-brand-600" />
-            </h3>
+            </h2>
           </div>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5" data-reveal>
             {offers.map((o) => (
               <div
                 key={o.key}
-                className="group rounded-2xl border border-ink-100 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl"
+                className="group surface p-6 transition duration-300 hover:-translate-y-1 hover:shadow-pop"
               >
                 <span className="icon-tile">
                   <Glyph name={o.glyph} size={20} />
                 </span>
-                <h4 className="mt-5 text-lg">{t(`about.offer.${o.key}.title`)}</h4>
-                <p className="mt-2 text-sm text-ink-600">
+                <h3 className="mt-5 font-sans text-base font-semibold leading-snug text-ink-900">
+                  {t(`about.offer.${o.key}.title`)}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink-600">
                   {t(`about.offer.${o.key}.body`)}
                 </p>
               </div>

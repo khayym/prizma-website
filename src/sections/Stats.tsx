@@ -32,10 +32,7 @@ const formatValue = (value: number, item: StatItem, done: boolean) => {
   return `${text}${item.suffix}`;
 };
 
-const CountUp: React.FC<{ item: StatItem; start: boolean }> = ({
-  item,
-  start,
-}) => {
+const CountUp: React.FC<{ item: StatItem; start: boolean }> = ({ item, start }) => {
   const [display, setDisplay] = React.useState(formatValue(0, item, false));
 
   React.useEffect(() => {
@@ -56,6 +53,7 @@ const CountUp: React.FC<{ item: StatItem; start: boolean }> = ({
   return <>{display}</>;
 };
 
+/** Ratings-style figures row: serif numbers separated by hairlines. */
 const Stats: React.FC = () => {
   const { t } = useTranslation();
   const ref = React.useRef<HTMLDivElement>(null);
@@ -75,28 +73,25 @@ const Stats: React.FC = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section className="section">
+    <section className="section pb-8 lg:pb-12">
       <div className="container">
         <div
           ref={ref}
-          className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4 lg:gap-8"
+          className="grid grid-cols-2 gap-y-10 lg:grid-cols-4 lg:divide-x lg:divide-ink-200"
         >
           {items.map((item) => (
-            <div
-              key={item.key}
-              className="group cursor-default rounded-2xl border border-ink-100 bg-white p-4 transition duration-300 hover:-translate-y-1 hover:border-brand-700 hover:bg-brand-700 hover:shadow-xl sm:p-6"
-            >
-              <div className="text-2xl font-semibold text-ink-900 transition duration-300 group-hover:text-white sm:text-4xl">
+            <div key={item.key} className="px-4 text-center">
+              <div className="font-display text-4xl leading-none text-ink-900 sm:text-5xl lg:text-[3.5rem]">
                 <CountUp item={item} start={visible} />
               </div>
-              <div className="mt-1 text-xs text-ink-600 transition duration-300 group-hover:text-brand-100 sm:mt-2 sm:text-sm">
+              <div className="mt-3 text-sm text-ink-500 sm:text-base">
                 {t(`stats.${item.key}`)}
               </div>
             </div>

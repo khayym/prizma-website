@@ -104,7 +104,7 @@ interface FeatureCardProps {
 
 /** The approved card chrome — identical for filmed and not-yet-filmed cards. */
 const cardShell =
-  "group relative flex flex-col overflow-hidden rounded-2xl border border-ink-700/60 bg-ink-800/60 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent-400/60 hover:bg-ink-800 hover:shadow-[0_20px_50px_-20px_rgba(56,189,248,0.35)]";
+  "group relative flex flex-col overflow-hidden rounded-3xl bg-brand-50 transition duration-300 hover:-translate-y-1 hover:shadow-pop";
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
   featureKey,
@@ -115,7 +115,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   const caption = (
     <div className="flex items-start gap-3 p-5">
-      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-400 text-ink-900">
+      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path
             d="M2 7l3.5 3.5L12 4"
@@ -126,7 +126,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           />
         </svg>
       </span>
-      <span className="text-sm font-medium text-ink-100">
+      <span className="text-[15px] font-semibold text-ink-900">
         {video?.title ?? label}
       </span>
     </div>
@@ -137,10 +137,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   if (!video) {
     return (
       <div className={cardShell}>
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink-950">
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-800/40 via-transparent to-ink-950/60" />
-          <div className="pointer-events-none absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-500/30 blur-2xl transition duration-300 group-hover:bg-accent-400/40" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-to-b from-brand-600 to-brand-950">
 
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
@@ -152,7 +149,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               strokeWidth="1.6"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-accent-300 transition duration-300 group-hover:scale-110 group-hover:text-accent-200"
+              className="text-white/80 transition duration-300 group-hover:scale-110 group-hover:text-white"
               aria-hidden="true"
             >
               {glyphs[featureKey]}
@@ -170,21 +167,21 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         type="button"
         onClick={onPlay}
         aria-label={`${playLabel} — ${video.title}`}
-        className="relative block aspect-[16/9] w-full overflow-hidden bg-ink-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400"
+        className="relative block aspect-[16/9] w-full overflow-hidden bg-brand-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600"
       >
         <img
           src={video.poster}
           alt=""
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover object-left-top opacity-80 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+          className="absolute inset-0 h-full w-full object-cover object-left-top transition duration-500 group-hover:scale-105"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/10 to-ink-950/30" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
         <span className="absolute left-1/2 top-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-2xl transition-transform duration-300 group-hover:scale-110">
           <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" className="ml-0.5">
-            <path d="M6 4l16 8-16 8z" fill="#1d4ed8" />
+            <path d="M6 4l16 8-16 8z" fill="#2563eb" />
           </svg>
         </span>
-        <span className="absolute bottom-3 right-3 rounded-full bg-ink-950/80 px-2 py-0.5 text-[11px] font-semibold text-white backdrop-blur-sm">
+        <span className="absolute bottom-3 right-3 rounded-full bg-brand-950/80 px-2 py-0.5 text-[11px] font-semibold text-white backdrop-blur-sm">
           {video.duration}
         </span>
       </button>
@@ -221,11 +218,11 @@ const VideoModal: React.FC<VideoModalProps> = ({ video, closeLabel, onClose }) =
       aria-modal="true"
       aria-label={video.title}
       onClick={onClose}
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/90 p-4 backdrop-blur-sm sm:p-8"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-brand-950/90 p-4 backdrop-blur-sm sm:p-8"
     >
       <div className="w-full max-w-6xl" onClick={(e) => e.stopPropagation()}>
         <div className="mb-3 flex items-center justify-between gap-4">
-          <span className="text-base font-semibold text-white sm:text-lg">
+          <span className="font-display text-xl text-white sm:text-2xl">
             {video.title}
           </span>
           <button
@@ -261,14 +258,14 @@ const Features: React.FC = () => {
   const videos = featureKeys.map((key) => getFeatureVideo(language, key));
 
   return (
-    <section id="features" className="section bg-ink-900 text-white">
+    <section id="features" className="section bg-white">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center" data-reveal>
-          <h2 className="section-title text-white">
-            <Highlight text={t("features.title")} className="text-accent-300" />
+          <h2 className="section-title">
+            <Highlight text={t("features.title")} className="text-brand-600" />
           </h2>
           {videos.some(Boolean) && (
-            <p className="mt-3 text-sm text-ink-400">{t("features.hint")}</p>
+            <p className="mt-4 text-lg text-ink-600">{t("features.hint")}</p>
           )}
         </div>
 

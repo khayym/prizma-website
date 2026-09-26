@@ -87,7 +87,7 @@ const ContactPage: React.FC = () => {
               {cards.map((c) => (
                 <div
                   key={c.key}
-                  className="group rounded-2xl border border-ink-100 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl"
+                  className="group surface p-6 transition duration-300 hover:-translate-y-1 hover:shadow-pop"
                 >
                   <span className="icon-tile">
                     <Glyph name={c.glyph} size={20} />
@@ -109,7 +109,7 @@ const ContactPage: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-4 overflow-hidden rounded-2xl border border-ink-100">
+            <div className="mt-4 overflow-hidden rounded-2xl shadow-card">
               <YandexMap className="h-72" />
             </div>
           </div>
@@ -127,7 +127,7 @@ const ContactPage: React.FC = () => {
                 setStatus("error");
               }
             }}
-            className="rounded-3xl border border-ink-100 bg-white p-8 shadow-sm lg:p-10"
+            className="rounded-3xl bg-white p-8 shadow-card lg:p-10"
           >
             {sent ? (
               <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">

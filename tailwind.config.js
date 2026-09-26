@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Prizma Flow brand blue (matches CRM $primary #2563eb / hover #1d4ed8)
+        // Prizma Flow brand blue (matches CRM $primary #2563eb / hover #1d4ed8).
+        // Layout follows zoom.com; the colors stay Prizma's own.
         brand: {
           50: "#eff6ff",
           100: "#dbeafe",
@@ -46,20 +47,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "sans-serif",
-        ],
+        sans: ["Inter", "Helvetica", "Arial", "Noto Sans", "sans-serif"],
+        display: ["Newsreader", "Georgia", "Times New Roman", "serif"],
       },
       container: {
         center: true,
         padding: {
           DEFAULT: "1rem",
           sm: "1.5rem",
-          lg: "2rem",
+          lg: "2.5rem",
         },
         screens: {
           sm: "640px",
@@ -70,18 +66,21 @@ module.exports = {
         },
       },
       borderRadius: {
+        DEFAULT: "0.625rem",
         xl: "0.75rem",
         "2xl": "1rem",
-        "3xl": "1.5rem",
+        "3xl": "1.25rem",
+        "4xl": "1.5rem",
       },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-12px)" },
-        },
+      boxShadow: {
+        card: "0 0 4px 0 rgba(0, 0, 0, 0.2)",
+        pop: "0 12px 32px -12px rgba(23, 37, 84, 0.35)",
       },
-      animation: {
-        float: "float 6s ease-in-out infinite",
+      transitionDuration: {
+        DEFAULT: "300ms",
+      },
+      transitionTimingFunction: {
+        DEFAULT: "ease-in-out",
       },
     },
   },
