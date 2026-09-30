@@ -17,15 +17,18 @@ This document is the canonical reference for the new landing page. All copy in t
 - **Email:** info@prizmaflow.com
 - **Social:** YouTube (@PrizmaFlow), LinkedIn (Prizma Flow), VK (@prizmaflow)
 - **Apps:** iOS (App Store), Android (Google Play)
-- **Copyright:** © 2024 Prizma. All Rights Reserved.
+- **Copyright:** © 2026 Prizma. All Rights Reserved.
 
 ### Who they are (RU, exact)
+
 > «Prizma — это мощная платформа для управления бизнес-процессами, ERP, отчетности и бухгалтерии, разработанная с учетом потребностей строительной отрасли и основанная на 21-летнем опыте.»
 
 ### Mission (RU, exact)
+
 > «Prizma — это инновационное и удобное ERP-решение, разработанное с учетом нужд строительных компаний, чтобы повысить их эффективность.»
 
 ### Vision (RU, exact)
+
 > «Prizma ставит перед собой цель стать ведущим поставщиком ERP-решений для строительного сектора.»
 
 ---
@@ -34,13 +37,13 @@ This document is the canonical reference for the new landing page. All copy in t
 
 Five branded modules sold under the Prizma umbrella:
 
-| Module      | What it is                                                                 |
-|-------------|----------------------------------------------------------------------------|
-| Prizma FLOW | Business process & workflow management (BPM)                               |
-| Prizma ERP  | Inventory, warehouse, material movement                                    |
-| Prizma HR   | Personnel, time-tracking, leave, payroll                                   |
-| Prizma DMS  | Document management                                                        |
-| Prizma BI   | Reporting, dashboards, analytics                                           |
+| Module      | What it is                                   |
+| ----------- | -------------------------------------------- |
+| Prizma FLOW | Business process & workflow management (BPM) |
+| Prizma ERP  | Inventory, warehouse, material movement      |
+| Prizma HR   | Personnel, time-tracking, leave, payroll     |
+| Prizma DMS  | Document management                          |
+| Prizma BI   | Reporting, dashboards, analytics             |
 
 ### Four featured modules on the home page
 
@@ -53,14 +56,14 @@ Five branded modules sold under the Prizma umbrella:
 
 ## 3. Navigation
 
-| Key     | RU                 | TR              | EN          |
-|---------|--------------------|-----------------|-------------|
-| home    | Главная страница   | Ana Sayfa       | Home        |
-| about   | О нас              | Hakkımızda      | About Us    |
-| services| Услуги             | Hizmetler       | Services    |
-| blog    | Блог               | Blog            | Blog        |
-| contact | Контакты           | İletişim        | Contact     |
-| cta     | Запрос Демо        | Demo Talep Et   | Request Demo|
+| Key      | RU               | TR            | EN           |
+| -------- | ---------------- | ------------- | ------------ |
+| home     | Главная страница | Ana Sayfa     | Home         |
+| about    | О нас            | Hakkımızda    | About Us     |
+| services | Услуги           | Hizmetler     | Services     |
+| blog     | Блог             | Blog          | Blog         |
+| contact  | Контакты         | İletişim      | Contact      |
+| cta      | Запрос Демо      | Demo Talep Et | Request Demo |
 
 Language switcher: **Русский · Türkçe · English**
 
@@ -69,54 +72,59 @@ Language switcher: **Русский · Türkçe · English**
 ## 4. Home page sections — exact copy
 
 ### 4.1 Hero
+
 - **Eyebrow:** PRIZMA
 - **Headline (RU):** «Упростите рабочие процессы, увеличьте эффективность в ERP и HR!»
 - **Body (RU):** «Управляйте своими бизнес-процессами быстро и эффективно с Prizma! С помощью интуитивно понятного интерфейса вы легко настроите рабочие процессы, повысив эффективность в управлении ERP и человеческими ресурсами. Завершайте проекты вовремя и в пределах бюджета, при этом переопределяя ваш способ работы через цифровизацию. Prizma готов стать сильным партнером, который перенесет ваш бизнес в будущее с решениями, специально разработанными для строительной отрасли!»
 - **CTA:** Запрос Демо
 
 ### 4.2 Value proposition — 9 benefits
+
 - **Headline:** «Откройте для себя силу цифровизации!»
 - **Subheadline:** «Преимущества цифровой трансформации с Prizma»
 
-| # | RU title                          | RU body                                                                                              |
-|---|-----------------------------------|------------------------------------------------------------------------------------------------------|
-| 1 | Оцифровка бизнес-процессов        | Увеличьте эффективность и снизьте затраты.                                                           |
-| 2 | Быстрое проектирование процессов  | Интуитивно понятный интерфейс позволяет легко и быстро создавать рабочие процессы.                   |
-| 3 | Комплексное решение               | Интегрированная система управления для строительной отрасли. Все процессы на одной платформе.        |
-| 4 | Повышение производительности      | Ускоряет рабочие процессы и оптимизирует использование ресурсов через цифровизацию.                  |
-| 5 | Анализ в реальном времени         | Отслеживайте расходы и прогресс проекта с мониторингом и отчетами в реальном времени.                |
-| 6 | Легкая интеграция                 | Гладкая совместимость с вашими текущими системами.                                                   |
-| 7 | Гибкий мобильный доступ           | Управляйте процессами из любой точки мира, в поле или удалённо.                                      |
-| 8 | Продвинутое управление доступом   | Контроль доступа и защита данных от ненужного вмешательства.                                         |
-| 9 | Индивидуализированная отчетность  | Детализированные отчёты, адаптированные под ваши нужды, для стратегических решений.                  |
+| #   | RU title                         | RU body                                                                                       |
+| --- | -------------------------------- | --------------------------------------------------------------------------------------------- |
+| 1   | Оцифровка бизнес-процессов       | Увеличьте эффективность и снизьте затраты.                                                    |
+| 2   | Быстрое проектирование процессов | Интуитивно понятный интерфейс позволяет легко и быстро создавать рабочие процессы.            |
+| 3   | Комплексное решение              | Интегрированная система управления для строительной отрасли. Все процессы на одной платформе. |
+| 4   | Повышение производительности     | Ускоряет рабочие процессы и оптимизирует использование ресурсов через цифровизацию.           |
+| 5   | Анализ в реальном времени        | Отслеживайте расходы и прогресс проекта с мониторингом и отчетами в реальном времени.         |
+| 6   | Легкая интеграция                | Гладкая совместимость с вашими текущими системами.                                            |
+| 7   | Гибкий мобильный доступ          | Управляйте процессами из любой точки мира, в поле или удалённо.                               |
+| 8   | Продвинутое управление доступом  | Контроль доступа и защита данных от ненужного вмешательства.                                  |
+| 9   | Индивидуализированная отчетность | Детализированные отчёты, адаптированные под ваши нужды, для стратегических решений.           |
 
 ### 4.3 Stats
+
 - 50+ Партнер
 - 5 000+ Довольный пользователь
 - 500 000+ Успешный процесс закупок
 - 1 000 000+ Эффективный рабочий процесс
 
 ### 4.4 Features — 12 capability cards
+
 **Section headline:** «Prizma — управление бизнес-процессами, финансами и операционной деятельностью»
 
-| # | RU title                                                            |
-|---|----------------------------------------------------------------------|
-| 1 | Отслеживание фактических затрат vs бюджета                          |
-| 2 | Безлимитное количество проектов / строительных объектов              |
-| 3 | Прозрачность в процессе утверждения                                 |
-| 4 | Разные маршруты для заявок на закупку                                |
-| 5 | Эффективный контроль за бюджетом                                    |
-| 6 | Детальный и простой анализ прошлых цен на закупки                    |
-| 7 | Лёгкий экспорт всех данных в формате Excel                          |
-| 8 | Простой и прозрачный контроль за процессами закупок                  |
-| 9 | Полностью интегрированное управление процессами                     |
-|10 | Контроль персонала по бюджетным кодам                               |
-|11 | Прозрачное управление процессами персонала                          |
-|12 | Контроль расчётных счетов (AR/AP)                                   |
+| #   | RU title                                                |
+| --- | ------------------------------------------------------- |
+| 1   | Отслеживание фактических затрат vs бюджета              |
+| 2   | Безлимитное количество проектов / строительных объектов |
+| 3   | Прозрачность в процессе утверждения                     |
+| 4   | Разные маршруты для заявок на закупку                   |
+| 5   | Эффективный контроль за бюджетом                        |
+| 6   | Детальный и простой анализ прошлых цен на закупки       |
+| 7   | Лёгкий экспорт всех данных в формате Excel              |
+| 8   | Простой и прозрачный контроль за процессами закупок     |
+| 9   | Полностью интегрированное управление процессами         |
+| 10  | Контроль персонала по бюджетным кодам                   |
+| 11  | Прозрачное управление процессами персонала              |
+| 12  | Контроль расчётных счетов (AR/AP)                       |
 
 Each card has a 2–3 sentence body in the original site. Stored full text in §8 below.
 
 ### 4.5 Mobile app
+
 - **Eyebrow:** Prizam (sic — typo on live site, fix to "Prizma")
 - **Headline:** «О Приложении Prizma для Мобильных Устройств»
 - **Body:** «Мобильное приложение Prizma позволяет управлять бизнес-процессами в любое время и в любом месте. Удобный интерфейс, мощные функции, безопасность данных и быстрый доступ.»
@@ -124,16 +132,19 @@ Each card has a 2–3 sentence body in the original site. Stored full text in §
 - **CTAs:** Apple App Store · Google Play
 
 ### 4.6 Modules
+
 - **Eyebrow:** Услуги
 - **Headline:** МОДУЛИ PRIZMA
 - Four cards (see §2) — "Подробнее" link on each
 - Product line strip: Prizma FLOW · Prizma ERP · Prizma HR · Prizma DMS · Prizma BI
 
 ### 4.7 How it works
+
 - **Eyebrow:** ПРОЦЕСС РАБОТЫ
 - **Headline:** «Как работает Prizma?»
 
 ### 4.8 Demo request
+
 - **Eyebrow:** ОЗНАКОМЬТЕСЬ С НАШИМ ПРОДУКТОМ
 - **Headline:** ЗАЯВКА НА ДЕМО
 - **Body:** «Prizma — это мощное программное обеспечение для управления бизнес-процессами и ERP, предназначенное для множества отраслей. Оптимизируйте процессы, повысьте эффективность, снизьте затраты и обеспечьте своевременное завершение проектов.»
@@ -142,6 +153,7 @@ Each card has a 2–3 sentence body in the original site. Stored full text in §
 - **Submit:** Отправить
 
 ### 4.9 FAQ — 3 items
+
 1. **Q:** «Есть ли материалы, заказанные через закупку, в наличии на складе? Есть ли они на складах других строительных объектов?»
    **A:** «Благодаря модульной структуре Prizma, контроль за запасами на складе и на уровне проекта осуществляется быстро и эффективно, с возможностью проверки наличия материалов на складах разных объектов.»
 
@@ -152,6 +164,7 @@ Each card has a 2–3 sentence body in the original site. Stored full text in §
    **A:** «В процессе подачи предложений Prizma не только предоставляет подробную информацию о каждом поставщике, но и позволяет добавлять несколько альтернативных предложений. Это способствует прозрачности процесса закупок и помогает выбрать оптимальное предложение.»
 
 ### 4.10 Final CTA
+
 - **Body:** «Познакомьтесь с Prizma и создайте разницу в вашем бизнесе.»
 - **Button:** Свяжитесь с нами
 
@@ -161,36 +174,36 @@ Each card has a 2–3 sentence body in the original site. Stored full text in §
 
 (Source: /services, currently displayed in Turkish)
 
-| # | TR                                  | EN                                  |
-|---|-------------------------------------|--------------------------------------|
-| 1 | Proje Planlama ve İlerleme Takibi  | Project Planning & Progress Tracking |
-| 2 | Stok ve Depo Yönetimi               | Inventory & Warehouse Management     |
-| 3 | Sözleşme ve Hakediş Süreçleri      | Contracts & Progress Payments        |
-| 4 | Finansal Süreçler ve Muhasebe       | Financial Operations & Accounting    |
-| 5 | Personel Yönetimi ve Bordro         | Personnel Management & Payroll       |
-| 6 | Malzeme İhtiyaçlarının Planlanması | Material Requirements Planning       |
-| 7 | Gelir-Gider Kümülatif Takibi        | Cumulative Income–Expense Tracking   |
-| 8 | İşveren Hesapları                   | Employer Account Management          |
-| 9 | Dashboard & Visualization           | Dashboard & Visualization            |
+| #   | TR                                 | EN                                   |
+| --- | ---------------------------------- | ------------------------------------ |
+| 1   | Proje Planlama ve İlerleme Takibi  | Project Planning & Progress Tracking |
+| 2   | Stok ve Depo Yönetimi              | Inventory & Warehouse Management     |
+| 3   | Sözleşme ve Hakediş Süreçleri      | Contracts & Progress Payments        |
+| 4   | Finansal Süreçler ve Muhasebe      | Financial Operations & Accounting    |
+| 5   | Personel Yönetimi ve Bordro        | Personnel Management & Payroll       |
+| 6   | Malzeme İhtiyaçlarının Planlanması | Material Requirements Planning       |
+| 7   | Gelir-Gider Kümülatif Takibi       | Cumulative Income–Expense Tracking   |
+| 8   | İşveren Hesapları                  | Employer Account Management          |
+| 9   | Dashboard & Visualization          | Dashboard & Visualization            |
 
 ---
 
 ## 6. Footer
 
-| Column         | Items                                                                       |
-|----------------|------------------------------------------------------------------------------|
-| About          | Tagline (see §1)                                                            |
-| Quick access   | Home · About · Services · Blog · Contact                                    |
-| Contact        | Phone · Email · Address                                                     |
-| Social & apps  | YouTube · LinkedIn · VK · App Store · Google Play                           |
+| Column        | Items                                             |
+| ------------- | ------------------------------------------------- |
+| About         | Tagline (see §1)                                  |
+| Quick access  | Home · About · Services · Blog · Contact          |
+| Contact       | Phone · Email · Address                           |
+| Social & apps | YouTube · LinkedIn · VK · App Store · Google Play |
 
-Copyright line: **Copyright 2024 Prizma. All Rights Reserved.**
+Copyright line: **Copyright 2026 Prizma. All Rights Reserved.**
 
 ---
 
 ## 7. Brand & design notes
 
-- Logo updated November 2024 (see live site for current mark)
+- Logo updated November 2026 (see live site for current mark)
 - Primary palette: forest green + white + soft gray dividers
 - Accent: bright/lime green for CTAs
 - Typography: clean sans-serif (system default)
@@ -205,58 +218,70 @@ New site reference: **DataWise / Nexo SaaS UI Kit** (Figma) — kept same green 
 Stored verbatim for use in features expanded cards or services page.
 
 **1. Отслеживание фактических затрат vs запланированного бюджета**
+
 > Сравнивайте ваш бюджет с фактическими расходами в реальном времени, чтобы быстро выявить отклонения, что позволит усилить финансовый контроль и сохранить дисциплину бюджета.
 
 **2. Безлимитное количество проектов / строительных объектов**
+
 > Управляйте всеми вашими проектами на одной платформе без ограничения их количества, эффективно используя ресурсы и оптимизируя процессы.
 
 **3. Прозрачность в процессе утверждения**
+
 > С помощью модуля управления закупками Prizma вы можете легко утверждать заявки в электронной форме. Создайте индивидуальные маршруты утверждения, соответствующие потребностям каждого строительного объекта, и управлять утверждениями более быстро и эффективно. Это позволит оптимизировать бизнес-процессы, снизить затраты и повысить производительность.
 
 **4. Разные маршруты для заявок на закупку**
+
 > С помощью модуля управления закупками Prizma вы можете легко утверждать заявки в электронной форме. Создайте индивидуальные маршруты утверждения, соответствующие потребностям каждого строительного объекта, и управлять утверждениями быстрее, эффективнее и без проблем.
 
 **5. Эффективный контроль за бюджетом**
+
 > Осуществляйте закупки, соответствующие бюджетам проектных мероприятий, контролируя процессы запроса, оценки предложений и размещения заказов. Это поможет избежать ненужных закупок и перерасхода бюджета.
 
 **6. Детальный и простой анализ прошлых цен на закупки**
+
 > Анализируя предыдущие закупки и средние цены за последний период, вы можете быстро проверять предложения. Это поможет находить лучшие возможности для переговоров и избегать ненужных затрат.
 
 **7. Лёгкий экспорт всех данных в формате Excel**
+
 > С помощью Prizma вы можете легко экспортировать все ваши заявки в формате Excel и управлять финансовыми операциями с использованием банковских форматов для быстрых, безопасных и безошибочных транзакций.
 
 **8. Простой и прозрачный контроль за процессами закупок**
+
 > С помощью Prizma вы можете контролировать полученные счета, отслеживая каждый этап процесса закупки: поступление на склад, статус заказа, детали предложения и процессы запроса, мгновенно выявляя возможные нарушения.
 
 **9. Полностью интегрированное управление процессами**
+
 > Prizma интегрирует процессы бюджета, закупок, склада, бухгалтерии, финансов и управления проектами, обеспечивая лёгкое отслеживание поставок материалов, движений, поступлений на склад, счетов и заказов.
 
 **10. Контроль персонала по бюджетным кодам**
+
 > С помощью Prizma вы можете управлять табелями учёта рабочего времени по бюджетным кодам, отслеживая, сколько времени каждый сотрудник работает на строительном объекте и в какой деятельности.
 
 **11. Прозрачное управление процессами персонала**
+
 > С помощью Prizma вы можете прозрачно управлять выходами на работу, запросами на отпуск и повышением зарплаты, следить за процессами утверждения и обеспечивать ясность в принятии решений.
 
 **12. Контроль расчётных счетов (AR/AP)**
+
 > С помощью Prizma вы можете управлять расчётами с поставщиками, подрядчиками и заказчиками в реальном времени, отслеживать дебиторскую и кредиторскую задолженность, оптимизируя финансовые процессы.
 
 ---
 
 ## 9. Mapping — old sections → new site sections
 
-| Old (prizmaflow.com)       | New file                              |
-|----------------------------|---------------------------------------|
-| Header / nav               | src/components/Header.tsx             |
-| Hero                       | src/sections/Hero.tsx                 |
-| Benefits (9)               | src/sections/ValueProp.tsx            |
-| Stats (4)                  | src/sections/Stats.tsx                |
-| Features (12)              | src/sections/Features.tsx             |
-| Mobile app                 | src/sections/MobileApp.tsx            |
-| Modules (4 + family of 5)  | src/sections/Modules.tsx              |
-| How it works               | src/sections/HowItWorks.tsx           |
-| Demo request               | src/sections/Demo.tsx                 |
-| FAQ                        | src/sections/Faq.tsx                  |
-| Final CTA                  | src/sections/CtaBanner.tsx            |
-| Footer                     | src/components/Footer.tsx             |
+| Old (prizmaflow.com)      | New file                    |
+| ------------------------- | --------------------------- |
+| Header / nav              | src/components/Header.tsx   |
+| Hero                      | src/sections/Hero.tsx       |
+| Benefits (9)              | src/sections/ValueProp.tsx  |
+| Stats (4)                 | src/sections/Stats.tsx      |
+| Features (12)             | src/sections/Features.tsx   |
+| Mobile app                | src/sections/MobileApp.tsx  |
+| Modules (4 + family of 5) | src/sections/Modules.tsx    |
+| How it works              | src/sections/HowItWorks.tsx |
+| Demo request              | src/sections/Demo.tsx       |
+| FAQ                       | src/sections/Faq.tsx        |
+| Final CTA                 | src/sections/CtaBanner.tsx  |
+| Footer                    | src/components/Footer.tsx   |
 
 Translation tokens live in `locales/{en,ru,tr}/translation.json`.
