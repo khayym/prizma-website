@@ -2,7 +2,7 @@
   "common": {
     "backToTop": "Yukarı çık",
     "sending": "Gönderiliyor…",
-    "formError": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya bize doğrudan e-posta gönderin."
+    "formError": "Lütfen tekrar deneyin veya bize doğrudan e-posta gönderin."
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -16,8 +16,8 @@
   },
   "hero": {
     "eyebrow": "PRIZMA",
-    "title": "İnşaat sektörü için güçlü ERP ve iş süreçleri yönetimi",
-    "subtitle": "Satın alma, stok, finans, insan kaynakları ve proje yönetimi süreçlerinizi tek merkezden yönetin. Prizma ile operasyonlarınızı dijitalleştirin, verimliliği artırın ve projelerinizi tam kontrol altında tutun.",
+    "title": "İnşaat Sektörü için geliştirilmiş, Yapay Zeka Destekli ERP yazılımı,
+      "subtitle": "Yapay Zeka Destekli Satınalma Yönetimi, Ambar Stok Yönetimi , Finans , Personel Yönetimi ve ISG süreçlerinizi tek merkezden yönetin. Prizma ile operasyonlarınızı dijitalleştirin, verimliliği artırın ve projelerinizi tam kontrol altında tutun.",
     "primaryCta": "Demo Talep Et",
     "secondaryCta": "Nasıl çalışır",
     "yearsTitle": "21 yıllık deneyim",
@@ -25,8 +25,8 @@
   },
   "stats": {
     "partners": "İş Ortağı",
-    "users": "Mutlu Kullanıcı",
-    "procurements": "Başarılı Satın Alma",
+    "users": "Kullanıcı",
+    "procurements": "Başarılı SatınAlma",
     "workflows": "Verimli İş Akışı"
   },
   "valueProp": {
@@ -40,27 +40,27 @@
       },
       "erp": {
         "title": "Kurumsal Kaynak Planlama",
-        "body": "Finans, satın alma, stok, sözleşme ve proje yönetimi süreçlerinizi entegre bir sistem üzerinden yönetin."
+        "body": "Finans, Satınalma, Stok, Personel ve Proje yönetimi süreçlerinizi entegre bir sistem üzerinden yönetin."
       },
       "hr": {
         "title": "İnsan Kaynakları Yönetimi",
-        "body": "Personel kayıtları, puantaj, izin, özlük ve bordro süreçlerini merkezi bir yapı altında kolayca takip edin."
+        "body": "Personel Sicil yönetimi, Puantaj, Bordo, Personel Hesabını tek yapı altında kolayca takip edin."
       },
       "equipment": {
         "title": "Ekipman Yönetimi",
-        "body": "Makine ve ekipmanların konum, kullanım, bakım, çalışma süresi ve maliyet bilgilerini düzenli olarak izleyin."
+        "body": "Makine ve Ekipmanlar Takibi, Pauntaj, Bakım, çalışma süresi ve maliyet bilgilerini düzenli olarak izleyin."
       },
       "ohs": {
         "title": "İş Sağlığı ve Güvenliği",
-        "body": "İSG eğitimlerini, denetimleri, uygunsuzlukları ve düzeltici faaliyetleri dijital ortamda kayıt altına alın."
+        "body": "Uygunsuzluk Takibi, Denetim, Proje ve Taşeron Deokumantasyonu, İSG eğitimlerini kayıt altına alın."
       },
       "subcon": {
         "title": "Taşeron Yönetimi",
-        "body": "Taşeron sözleşmelerini, çalışanları, hakedişleri, ilerleme durumlarını ve maliyetleri tek platformdan yönetin."
+        "body": "Taşeron sözleşmelerini, hakedişleri, ilerleme durumlarını ve maliyetlerini yönetin."
       },
       "legal": {
         "title": "Hukuki Süreç Yönetimi",
-        "body": "Sözleşme, dava, resmi belge, bildirim ve hukuki yükümlülüklerinizi güvenli ve izlenebilir biçimde takip edin."
+        "body": "Sözleşme, Dava Takibi, resmi belge, bildirim ve hukuki yükümlülüklerinizi güvenli ve izlenebilir biçimde takip edin."
       },
       "dms": {
         "title": "Doküman Yönetimi",
@@ -86,7 +86,7 @@
   },
   "features": {
     "eyebrow": "Özellikler",
-    "title": "Prizma — iş süreçleri, finans ve operasyon yönetimi",
+    "title": "Prizma — Süreç Yönetimi, Finans ve operasyon yönetimi",
     "hint": "Hareketi görmek için bir özelliğin üzerine gelin veya dokunun.",
     "play": "Önizlemeyi başlat",
     "pause": "Önizlemeyi durdur",
@@ -96,19 +96,19 @@
       "approvals": "Şeffaf onay akışları",
       "routes": "Özel satın alma rotaları",
       "control": "Etkin bütçe kontrolü",
-      "history": "Geçmiş satın alma fiyat analizi",
+      "history": "Geçmiş Satınalma fiyat analizi",
       "export": "Tek tıkla Excel'e aktarma",
-      "monitoring": "Satın alma süreç takibi",
+      "monitoring": "Satınalma süreç takibi",
       "integration": "Tam entegre süreç yönetimi",
-      "personnel": "Bütçe koduyla personel takibi",
-      "hr": "Şeffaf İK süreç yönetimi",
+      "personnel": "Bütçe koduyla Personel takibi",
+      "hr": "Etkili Personel yönetimi",
       "ar": "Borç ve alacak kontrolü"
     }
   },
   "mobile": {
     "eyebrow": "Mobil uygulama",
     "title": "Prizma iOS ve Android'de",
-    "body": "Prizma mobil uygulamasıyla iş süreçlerinizi, projelerinizi ve onay bekleyen işlemlerinizi her zaman, her yerden yönetin. Kullanıcı dostu arayüzü, güvenli altyapısı ve gerçek zamanlı veri erişimi sayesinde ofiste, sahada veya uzaktan çalışırken süreçlerinizi kesintisiz takip edin.",
+    "body": "Prizma Mobil ile Talepleri, Sirapişleri ve Ödemeleri Cepten Onaylayın, Sahada veya uzaktan çalışırken süreçlerinizi kesintisiz takip edin.",
     "appStore": "App Store'dan indirin",
     "googlePlay": "Google Play'den edinin",
     "features": {
@@ -123,7 +123,7 @@
   "modules": {
     "eyebrow": "Hizmetler",
     "title": "Prizma Modülleri",
-    "subtitle": "Tüm inşaat süreçleri için tek platform — iş akışları ve ERP'den İK, ekipman, iş güvenliği ve raporlamaya kadar.",
+    "subtitle": "Projelerinizi planladığınız zamanda planladığınız bütçeyle tamamlamanıza yardımcı çözümler.",
     "items": {
       "process": {
         "title": "Süreç Yönetimi",
@@ -131,7 +131,7 @@
       },
       "erp": {
         "title": "Kurumsal Kaynak Planlama",
-        "body": "Envanter, depo, satın alma ve malzeme hareketlerini entegre bir yapı altında yöneterek kaynak kullanımını optimize eder."
+        "body": "Satınalma, Depo,  ve malzeme hareketlerini entegre bir yapı altında yöneterek kaynak kullanımını optimize eder."
       },
       "accounting": {
         "title": "Genel Muhasebe",
@@ -170,7 +170,7 @@
   "productDemo": {
     "eyebrow": "Tanıtım videosu",
     "title": "Prizma'yı iş başında görün",
-    "body": "Ekiplerin bütçeleri nasıl planladığını, onayları nasıl yönlendirdiğini ve her sahada harcamaları nasıl izlediğini ayrıntılı olarak gösteren tanıtım.",
+    "body": "Prizma ile proje süreçlerinizi merkezi bir yapıda yönetebilir; dokümanları, görevleri, kararları, saha kayıtlarını ve proje geçmişini aynı sistem üzerinde tutabilirsiniz.",
     "overlayTitle": "Prizma platform demosu",
     "caption": "Demoyu izleyin · 4:41",
     "play": "Demoyu başlat"
@@ -183,7 +183,7 @@
   "demo": {
     "eyebrow": "Ürünümüzü tanıyın",
     "title": "Demo talebi",
-    "body": "Prizma, farklı sektörlere hizmet veren güçlü bir BPM/ERP platformudur. Süreçleri optimize edin, verimliliği artırın, maliyeti düşürün ve projeleri zamanında tamamlayın.",
+    "body": "Projelerinizi hâlâ Excel dosyaları üzerinden takip ediyorsanız, proje bilgilerinin dağılması ve güncelliğini kaybetmesi kaçınılmaz hale gelebilir. Excel’e dayalı proje yönetiminin oluşturduğu riskleri ve gormek zordur.,
     "name": "Adınız",
     "email": "İş e-postası",
     "company": "Şirket",
@@ -197,20 +197,20 @@
     "title": "Sıkça sorulan sorular",
     "items": {
       "purchases": {
-        "q": "Satın alma taleplerimizi ve onay süreçlerini nasıl takip edebiliriz?",
-        "a": "Prizma FLOW ile satın alma taleplerinin hangi aşamada olduğu, kimde beklediği ve onay durumları anlık olarak takip edilir."
+        "q": "Satınalma ve onay süreçlerini nasıl takip edebiliriz?",
+        "a": "Prizma ile Satınalma süreçlerini hangi aşamada olduğu, kimde beklediği ve onay durumları anlık takip edilir."
       },
       "orders": {
         "q": "Siparişlerimizin durumunu ve teslim süreçlerini görebilir miyiz?",
-        "a": "Prizma ERP ile verilen siparişlerin teslimat, miktar, tedarikçi ve açık sipariş durumları kolayca raporlanabilir."
+        "a": "Prizma ile verilen siparişlerin teslimat, miktar, tedarikçi ve açık sipariş durumları kolayca raporlanabilir."
       },
       "payments": {
         "q": "Bekleyen ödeme taleplerini ve ödeme süreçlerini nasıl kontrol ederiz?",
-        "a": "Ödeme talepleri, onay durumları ve gerçekleşen ödemeler süreç bazlı takip edilerek finansal kontrol sağlanır."
+        "a": "Ödeme Listelerini, onay durumları ve gerçekleşen ödemeleri süreç bazlı takip edilerek finansal kontrol sağlanır."
       },
       "quotes": {
-        "q": "Tedarikçi tekliflerini ve satın alma karşılaştırmalarını görüntüleyebilir miyiz?",
-        "a": "Alınan teklifler, tedarikçi fiyatları ve satın alma geçmişleri kayıt altında tutulur, kolayca analiz edilir."
+        "q": "Tedarikçi tekliflerini ve Satınalma karşılaştırmalarını görüntüleyebilir miyiz?",
+        "a": "Alınan teklifler, tedarikçi fiyatları ve Satınalma geçmişleri kayıt altında tutulur, kolayca analiz edilir."
       },
       "stages": {
         "q": "Süreçlerin hangi aşamada olduğunu ve geciken işleri nasıl takip ederiz?",
@@ -218,11 +218,11 @@
       },
       "reports": {
         "q": "Operasyonel ve finansal verilerimizi raporlayabilir miyiz?",
-        "a": "Prizma Raporlama ile satın alma, sipariş, ödeme, maliyet ve bütçe verileri detaylı raporlar üzerinden analiz edilir."
+        "a": "Prizma Raporlama ile satınalma, ödeme, maliyet ve bütçe verileri detaylı raporlar üzerinden analiz edilir."
       },
       "dashboards": {
         "q": "Yönetim için özel rapor ve dashboard oluşturabilir miyiz?",
-        "a": "Prizma Raporlama ile ihtiyaçlara göre özelleştirilebilir raporlar ve görsel yönetim panelleri hazırlanabilir."
+        "a": "Prizma Raporlama ile Hazır Proje Yönetim raporları mevcuttur, Ek olarak Özel Dashboard'lar hazırlanabilir."
       },
       "hr": {
         "q": "Personel, puantaj, izin ve bordro süreçlerini nasıl yönetebiliriz?",
@@ -509,7 +509,7 @@
     "addressLabel": "Bizi ziyaret edin",
     "hoursLabel": "Çalışma saatleri",
     "hours": "Pzt–Cum, 9:00–18:00 (MSK)",
-    "mapTitle": "Prizma'nın Moskova ofis konumu",
+    "mapTitle": "Prizma'nın Moskova Ofis konumu",
     "formTitle": "Bize mesaj gönderin",
     "formNote": "Formu doldurun, ekibimiz en kısa sürede size dönecektir.",
     "successTitle": "Teşekkürler!",
