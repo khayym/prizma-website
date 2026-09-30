@@ -23,34 +23,20 @@ const About: React.FC = () => {
     <div id="about" className="bg-white">
       {/* Story */}
       <section className="section">
-        <div className="container grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-5" data-reveal>
-            <h2 className="section-title">
-              <Highlight text={t("about.title")} className="text-brand-600" />
-            </h2>
-            <p className="mt-5 text-lg text-ink-600">{t("about.subtitle")}</p>
-            <a
-              href="https://vkvideo.ru/@prizmaflow"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-ghost mt-8"
-            >
-              <Glyph name="chevronRight" size={16} strokeWidth={2.4} />
-              {t("nav.trainingVideos")}
-            </a>
-          </div>
-          <div className="lg:col-span-6 lg:col-start-7" data-reveal>
-            <h3 className="font-display text-2xl text-ink-900 sm:text-3xl">
-              <Highlight text={t("about.storyTitle")} className="text-brand-600" />
-            </h3>
-            <div className="mt-5 space-y-4 text-ink-600">
-              <p>{t("about.storyBody1")}</p>
-              <p>{t("about.storyBody2")}</p>
-              <p>{t("about.storyBody3")}</p>
-              <p>{t("about.storyBody4")}</p>
-              <p>{t("about.storyBody5")}</p>
-            </div>
-          </div>
+        <div className="container" data-reveal>
+          <h2 className="section-title">
+            <Highlight text={t("about.title")} className="text-brand-600" />
+          </h2>
+          <p className="mt-5 text-lg text-ink-600">{t("about.subtitle")}</p>
+          <a
+            href="https://vkvideo.ru/@prizmaflow"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-ghost mt-8"
+          >
+            <Glyph name="chevronRight" size={16} strokeWidth={2.4} />
+            {t("nav.trainingVideos")}
+          </a>
         </div>
 
         {/* 21 years, mission, vision */}
