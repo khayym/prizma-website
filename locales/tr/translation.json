@@ -16,7 +16,7 @@
   },
   "hero": {
     "eyebrow": "PRIZMA",
-    "title": "İnşaat Sektörü için geliştirilmiş, Yapay Zeka Destekli ERP yazılımı,
+    "title": "İnşaat Sektörü için geliştirilmiş, Yapay Zeka Destekli Süreç Yönetimi ve ERP yazılımıdır,
       "subtitle": "Yapay Zeka Destekli Satınalma Yönetimi, Ambar Stok Yönetimi , Finans , Personel Yönetimi ve ISG süreçlerinizi tek merkezden yönetin. Prizma ile operasyonlarınızı dijitalleştirin, verimliliği artırın ve projelerinizi tam kontrol altında tutun.",
     "primaryCta": "Demo Talep Et",
     "secondaryCta": "Nasıl çalışır",
@@ -80,7 +80,7 @@
       },
       "settings": {
         "title": "Esnek Sistem Ayarları",
-        "body": "Kullanıcı rolleri, erişim yetkileri, bildirimler ve sistem tercihlerini kurumunuzun ihtiyaçlarına göre özelleştirin."
+        "body": "Kullanıcı yetkileri, Parametreler ve Sistem Tanımlarını istediğiniz şekilde özelleştirin."
       }
     }
   },
@@ -92,9 +92,9 @@
     "pause": "Önizlemeyi durdur",
     "items": {
       "budget": "Fiili maliyet vs bütçe takibi",
-      "projects": "Sınırsız proje ve şantiye",
-      "approvals": "Şeffaf onay akışları",
-      "routes": "Özel satın alma rotaları",
+      "projects": "Sınırsız proje",
+      "approvals": "Hızlı onay akışları",
+      "routes": "Özel Satınalma rotaları",
       "control": "Etkin bütçe kontrolü",
       "history": "Geçmiş Satınalma fiyat analizi",
       "export": "Tek tıkla Excel'e aktarma",
